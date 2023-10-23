@@ -6,77 +6,77 @@ export const nigeria = {
       id: 1,
       nombre: 'Fernet con Coca-Cola',
       categoria: 'Tragos',
-      descripcion: '',
+      descripcion: 'Descripción opcional del producto',
       precio: 3000
     },
     {
       id: 2,
       nombre: 'Vodka con Naranja',
       categoria: 'Tragos',
-      descripcion: '',
+      descripcion: 'Descripción opcional del producto',
       precio: 3000
     },
     {
       id: 3,
       nombre: 'Gin Tonic',
       categoria: 'Tragos',
-      descripcion: '',
+      descripcion: 'Descripción opcional del producto',
       precio: 3000
     },
     {
       id: 4,
       nombre: 'Caipirinha',
       categoria: 'Tragos',
-      descripcion: '',
+      descripcion: 'Descripción opcional del producto',
       precio: 3000
     },
     {
       id: 5,
       nombre: 'Bacardi con Coca-Cola',
       categoria: 'Tragos',
-      descripcion: '',
+      descripcion: 'Descripción opcional del producto',
       precio: 3000
     },
     {
       id: 6,
       nombre: 'Chandon Extra Brut',
       categoria: 'Botellas',
-      descripcion: '',
+      descripcion: 'Descripción opcional del producto',
       precio: 3000
     },
     {
       id: 7,
       nombre: 'Chandon Extra Brut',
       categoria: 'Botellas',
-      descripcion: '',
+      descripcion: 'Descripción opcional del producto',
       precio: 9000
     },
     {
       id: 8,
       nombre: 'Fernet Branca',
       categoria: 'Botellas',
-      descripcion: '',
+      descripcion: 'Descripción opcional del producto',
       precio: 9000
     },
     {
       id: 9,
       nombre: 'Vodka Smirnoff',
       categoria: 'Botellas',
-      descripcion: '',
+      descripcion: 'Descripción opcional del producto',
       precio: 9000
     },
     {
       id: 10,
       nombre: 'Vodka Smirnoff Saborizado',
       categoria: 'Botellas',
-      descripcion: '',
+      descripcion: 'Descripción opcional del producto',
       precio: 9000
     },
     {
       id: 11,
       nombre: 'Jaggermeister',
       categoria: 'Botellas',
-      descripcion: '',
+      descripcion: 'Descripción opcional del producto',
       precio: 12000
     }
   ]
