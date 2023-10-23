@@ -1,4 +1,4 @@
-import { FaCartPlus, FaPlus, FaMinus } from 'react-icons/fa6'
+import { FaPlus, FaMinus } from 'react-icons/fa6'
 // crear un json con nombre_trago y precio
 const bar = {
   nombre: 'Nigeria Club',
@@ -123,11 +123,11 @@ export default function Home (): JSX.Element {
 
             {/* Add or substract */}
             <div className='flex gap-1 items-center'>
-              <FaPlus />
+              <FaPlus className="text-cartPink" />
               <div className='bg-buttonSoftPink px-2 py-1 rounded-xl'>
                 2
               </div>
-              <FaMinus />
+              <FaMinus className='text-bgblue' />
             </div>
 
           </div>
