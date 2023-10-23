@@ -1,6 +1,6 @@
 import { nigeria } from '../constants/nigeria'
 import AddToCartButton from '@/components/AddToCartButton'
-import ProductQuantity from '@/components/ProductQuantity'
+// import ProductQuantity from '@/components/ProductQuantity'
 
 export default function Home (): JSX.Element {
   return (
