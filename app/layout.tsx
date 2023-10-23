@@ -24,7 +24,7 @@ export default function RootLayout ({
       <body className={`${montserrat.variable} bg-bgblue font-montserrat`}>
         <header className='flex flex-col justify-center items-center py-4'>
           <Image width={120} height={25} src={'/logo.png'} alt='logo' />
-          <span className='mt-4 w-full h-[0.1px] bg-[#EAECEF]'></span>
+          <span className='mt-4 w-full h-[0.9px] bg-[#EAECEF]/50'></span>
         </header>
         {children}
       </body>
