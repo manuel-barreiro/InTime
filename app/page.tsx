@@ -4,7 +4,7 @@ import ProductCard from '@/components/ProductCard'
 export default function Home (): JSX.Element {
   return (
     <main className="">
-      <h1 className="text-white font-black text-3xl text-center mb-6">{nigeria.nombre}</h1>
+      <h1 className="text-white font-black text-3xl text-center mt-4 mb-6">{nigeria.nombre}</h1>
 
       {nigeria.categorias_productos.map((categoria) => (
         <>

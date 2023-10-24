@@ -22,7 +22,7 @@ export default function RootLayout ({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} bg-bgblue font-montserrat`}>
-        <header className='flex flex-col justify-center items-center py-4'>
+        <header className='flex flex-col justify-center items-center pt-4 sticky top-0 bg-bgblue'>
           <Image width={120} height={25} src={'/logo.png'} alt='logo' />
           <span className='mt-4 w-full h-[0.9px] bg-[#EAECEF]/50'></span>
         </header>
