@@ -4,14 +4,11 @@ import AddToCartButton from '@/components/AddToCartButton'
 interface Producto {
   key: number
   nombre: string
-  categoria: string
-  descripcion: string
   precio: number
 }
 
 export default function ProductCard ({
   nombre,
-  descripcion,
   precio
 }: Producto): JSX.Element {
   return (
@@ -21,9 +18,6 @@ export default function ProductCard ({
       <div className="flex flex-col justify-between items-start w-full gap-1">
         <p className="uppercase font-semibold text-md">
           {nombre}
-        </p>
-        <p className="text-xs text-gray-500">
-          {descripcion}
         </p>
         <p className="text-cartPink font-bold text-lg my-1">
           {`$ ${precio}`}
