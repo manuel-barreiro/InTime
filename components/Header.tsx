@@ -14,7 +14,7 @@ export default function Header (): JSX.Element {
       <button className='top-6 right-6 absolute flex'>
         <FaCartShopping className='text-white w-6 h-6' />
         <div className='rounded-full bg-cartPink h-4 w-4 -ml-3 -mt-2 flex items-center justify-center'>
-         <span className='text-[10px]'>{cartQuantity}</span>
+         <span className='text-[10px] text-white font-medium'>{cartQuantity}</span>
         </div>
       </button>}
       <span className='mt-4 w-full h-[0.9px] bg-[#EAECEF]/50'></span>

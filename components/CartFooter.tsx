@@ -2,6 +2,7 @@
 
 import { FaCartShopping } from 'react-icons/fa6'
 import { useShoppingCart } from '@/context/ShoppingCartContext'
+import { formatCurrency } from '@/utilities/formatCurrency'
 
 
 export default function CartFooter (): JSX.Element {
@@ -12,8 +13,8 @@ export default function CartFooter (): JSX.Element {
       {cartQuantity > 0 ? 
       <div className="bg-cartPink fixed bottom-0 w-full flex items-center justify-between px-6 py-3">
         <div className='flex flex-col gap-2'>
-          <p className="text-white font-semibold text-lg">N° de productos: <span className='font-light'>{cartQuantity}</span></p>
-          <p className="text-white font-semibold text-lg">Subtotal: <span className='font-light'>{cartSubtotal}</span></p>
+          {/* <p className="text-white font-semibold text-lg">N° de productos: <span className='font-light'>{cartQuantity}</span></p> */}
+          <p className="text-white font-semibold text-lg">Subtotal: <span className='font-light'>{formatCurrency(cartSubtotal)}</span></p>
         </div>
         <button
           onClick={() => {console.log(cartQuantity, cartItems)}} 

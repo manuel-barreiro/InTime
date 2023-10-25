@@ -2,6 +2,7 @@ import AddToCartButton from '@/components/AddToCartButton'
 import { useShoppingCart } from '@/context/ShoppingCartContext'
 import { FaCartPlus } from 'react-icons/fa'
 import { FaMinus, FaPlus } from 'react-icons/fa6'
+import { formatCurrency } from '@/utilities/formatCurrency'
 // import ProductQuantity from '@/components/ProductQuantity'
 
 type Product = {
@@ -29,7 +30,7 @@ export default function ProductCard ({
           {nombre}
         </p>
         <p className="text-cartPink font-bold text-lg my-1">
-          {`${precio}`}
+          {formatCurrency(precio)}
         </p>
       </div>
 
