@@ -25,8 +25,9 @@ export default function Menu (): JSX.Element {
                     {subcategoria.productos.map((producto) => (
                       <ProductCard
                         key={producto.prod_id}
+                        prod_id={producto.prod_id}
                         nombre={producto.nombre}
-                        precio={formatCurrency(producto.precio)}
+                        precio={producto.precio}
                       />
                     ))}
                   </div>
