@@ -1,9 +1,7 @@
-import AddToCartButton from '@/components/AddToCartButton'
 import { useShoppingCart } from '@/context/ShoppingCartContext'
 import { FaCartPlus } from 'react-icons/fa'
 import { FaMinus, FaPlus } from 'react-icons/fa6'
 import { formatCurrency } from '@/utilities/formatCurrency'
-// import ProductQuantity from '@/components/ProductQuantity'
 
 type Product = {
   prod_id: number
@@ -51,7 +49,7 @@ export default function ProductCard ({
           <button onClick={() => increaseCartQuantity(prod_id)}>
             <FaPlus className="text-cartPink w-6 h-6" />
           </button>
-          <div className='bg-buttonSoftPink px-3 py-2 rounded-xl'>
+          <div className='bg-buttonSoftPink text-md font-medium px-3 py-2 rounded-xl'>
             {quantity}
           </div>
           <button onClick={() => decreaseCartQuantity(prod_id)}>

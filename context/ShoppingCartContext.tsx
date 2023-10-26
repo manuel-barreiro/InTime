@@ -1,7 +1,6 @@
 'use client'
 
 import { createContext, useContext, useState } from 'react'
-import { nigeria } from '../constants/nigeriaNuevo'
 
 type ShoppingCartProviderProps = {
   children: React.ReactNode
@@ -74,7 +73,6 @@ export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps): 
       }
     })
   }
-
 
   return (
     <ShoppingCartContext.Provider value={{ openCart, closeCart, getItemQuantity, increaseCartQuantity, decreaseCartQuantity, cartItems, cartSubtotal, cartQuantity }}>
