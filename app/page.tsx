@@ -1,16 +1,13 @@
 'use client'
 
 import Menu from '@/components/Menu'
-import CartFooter from '@/components/CartFooter'
-import { ShoppingCartProvider, useShoppingCart } from '@/context/ShoppingCartContext'
-import Header from '@/components/Header'
+import MenuFooter from '@/components/MenuFooter'
 
 export default function Home (): JSX.Element {
   return (
       <main className="">
-        <Header />
         <Menu />
-        <CartFooter />
+        <MenuFooter />
       </main>
   )
 }

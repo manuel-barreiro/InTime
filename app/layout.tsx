@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
-import Image from 'next/image'
 import { ShoppingCartProvider } from '@/context/ShoppingCartContext'
+import Header from '@/components/Header'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -24,6 +24,7 @@ export default function RootLayout ({
     <html lang="es">
       <body className={`${montserrat.variable} bg-bgblue font-montserrat scrollbar-hide`}>
         <ShoppingCartProvider>
+          <Header />
           {children}
         </ShoppingCartProvider>
       </body>
