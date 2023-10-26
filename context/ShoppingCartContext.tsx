@@ -1,6 +1,7 @@
 'use client'
 
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
+// import { useLocalStorage } from "../hooks/useLocalStorage"
 
 type ShoppingCartProviderProps = {
   children: React.ReactNode
@@ -36,6 +37,23 @@ export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps): 
   const closeCart = () => setIsOpen(false)
 
   const [cartItems, setCartItems] = useState<CartItem[]>([])
+
+  useEffect(() => {
+    const cart: string | null = localStorage.getItem('cartItems')
+    if (cart) {
+      const cartItems = JSON.parse(cart)
+      if (cartItems.length > 0) {
+        setCartItems(cartItems)
+      }
+    } else {
+      setCartItems([])
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems))
+  }, [cartItems])
+
   const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0)
   const cartSubtotal = cartItems.reduce((subtotal, item) => item.quantity * item.price + subtotal, 0)
 
