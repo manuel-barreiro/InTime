@@ -30,14 +30,14 @@ export default function CarritoItem ({ id, name, quantity, price}: CartItem): JS
           <div>
             {/* Increase or Decrease */}
             <div className='flex gap-2 items-center'>
-              <button onClick={() => increaseCartQuantity(id)}>
-                <FaPlus className="text-cartPink w-6 h-6" />
+              <button onClick={() => decreaseCartQuantity(id)}>
+                <FaMinus className='text-productCardBg w-6 h-6' />
               </button>
               <div className='bg-buttonSoftPink text-md font-medium px-3 py-2 rounded-xl'>
                 <span className='text-bgblue'>{quantity}</span>
               </div>
-              <button onClick={() => decreaseCartQuantity(id)}>
-                <FaMinus className='text-productCardBg w-6 h-6' />
+              <button onClick={() => increaseCartQuantity(id)}>
+                <FaPlus className="text-cartPink w-6 h-6" />
               </button>
             </div>   
           </div>

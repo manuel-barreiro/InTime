@@ -46,14 +46,14 @@ export default function ProductCard ({
         </button>) :
         // Increase or Decrease
         (<div className='flex gap-2 items-center'>
-          <button onClick={() => increaseCartQuantity(prod_id)}>
-            <FaPlus className="text-cartPink w-6 h-6" />
+          <button onClick={() => decreaseCartQuantity(prod_id)}>
+            <FaMinus className='text-bgblue w-6 h-6' />
           </button>
           <div className='bg-buttonSoftPink text-md font-medium px-3 py-2 rounded-xl'>
             {quantity}
           </div>
-          <button onClick={() => decreaseCartQuantity(prod_id)}>
-            <FaMinus className='text-bgblue w-6 h-6' />
+          <button onClick={() => increaseCartQuantity(prod_id)}>
+            <FaPlus className="text-cartPink w-6 h-6" />
           </button>
         </div>)
         }
