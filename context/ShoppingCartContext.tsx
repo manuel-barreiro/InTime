@@ -37,7 +37,8 @@ export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps): 
   const closeCart = () => setIsOpen(false)
 
   const [cartItems, setCartItems] = useState<CartItem[]>([])
-
+  
+  // Read localStorage
   useEffect(() => {
     const cart: string | null = localStorage.getItem('cartItems')
     if (cart) {
@@ -50,6 +51,7 @@ export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps): 
     }
   }, [])
 
+  // Set localStorage on state change
   useEffect(() => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems))
   }, [cartItems])
