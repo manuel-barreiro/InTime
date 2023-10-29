@@ -32,7 +32,7 @@ export default function Carrito(): JSX.Element {
       ) }
       <div className='flex flex-col gap-2 items-center'>
         {cartItems.map((item: CartItem) => (
-          <CarritoItem id={item.id} name={item.name} price={item.price} quantity={item.quantity} />
+          <CarritoItem key={item.id} id={item.id} name={item.name} price={item.price} quantity={item.quantity} />
         ))}
       </div>
       
