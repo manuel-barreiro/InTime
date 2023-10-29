@@ -4,7 +4,7 @@ import { IProduct } from "@/constants/product";
 import mercadopago from "mercadopago";
 
 export async function POST(request: Request){
-  const url = "http://localhost:3000";
+  const url = "https://intime-nigeria.vercel.app/";
 
   mercadopago.configure({
     access_token: process.env.ACCESS_TOKEN!,
