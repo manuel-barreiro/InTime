@@ -18,7 +18,7 @@ export async function POST(request: Request){
     };
   });
 
-  const URL = "http://localhost:3000";
+  const URL = "https://intime-nigeria.vercel.app";
 
   console.log(cartMp)
 
