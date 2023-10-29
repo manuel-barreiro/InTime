@@ -1,10 +1,9 @@
 import { CreatePreferencePayload } from "mercadopago/models/preferences/create-payload.model";
 import { NextResponse } from 'next/server';
-import { IProduct } from "@/constants/product";
 import mercadopago from "mercadopago";
 
 export async function POST(request: Request){
-  const url = "https://intime-nigeria.vercel.app/";
+  const url = "https://intime-nigeria.vercel.app";
 
   mercadopago.configure({
     access_token: process.env.ACCESS_TOKEN!,
