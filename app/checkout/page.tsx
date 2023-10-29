@@ -22,7 +22,7 @@ export default function page() {
       <h1 className="text-white font-black text-3xl text-center mt-4 mb-6">Realizar Pedido</h1>
       <p className="text-white font-semibold text-lg">N° de productos: <span className='font-light'>{cartQuantity}</span></p>
       <p className="text-white font-semibold text-lg">Total: <span className='font-light'>{formatCurrency(cartSubtotal)}</span></p>
-      <MercadoPagoButton cartMp={cartItems}></MercadoPagoButton>
+      <MercadoPagoButton envioCarrito={cartItems}></MercadoPagoButton>
     </div>
   )
 }

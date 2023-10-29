@@ -4,9 +4,12 @@ import { IProduct } from "@/constants/product";
 import mercadopago from "mercadopago";
 
 export async function POST(request: Request){
+  const url = "http://localhost:3000";
+
   mercadopago.configure({
     access_token: process.env.ACCESS_TOKEN!,
   });
+
   // Recibo el cartItems
   const recepcionCarrito = await request.json();
   // Lo mapeo para que tenga el formato que requiere la API de MELI
@@ -18,21 +21,17 @@ export async function POST(request: Request){
     };
   });
 
-  const URL = "https://intime-nigeria.vercel.app";
-
   console.log(cartMp)
-
-  // return NextResponse.json('server response')
 
   try {
     const preference: CreatePreferencePayload = {
       items: cartMp,
       auto_return: "approved",
       back_urls: {
-        success: `${URL}`,
-        failure: `${URL}`,
+        success: `${url}`,
+        failure: `${url}`,
       },
-      notification_url: `${URL}/api/notify`,
+      notification_url: `${url}/api/notify`,
     };
 
     const responseMp = await mercadopago.preferences.create(preference);
