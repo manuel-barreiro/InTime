@@ -10,7 +10,9 @@ export default function Header (): JSX.Element {
 
   return (
     <header className='w-full flex flex-col justify-center items-center pt-4 sticky top-0 z-50 bg-bgblue'>
-      <Image width={120} height={25} src={'/logo.png'} alt='logo' />
+      <Link href={'/'}>
+        <Image width={120} height={25} src={'/logo.svg'} alt='logo' />
+      </Link>
       {cartQuantity > 0 && 
       <button className='top-5 right-6 absolute flex'>
         <Link href={'/cart'}>
