@@ -4,12 +4,18 @@ import Image from 'next/image'
 import { ShoppingCartProvider, useShoppingCart } from '@/context/ShoppingCartContext'
 import { FaCartShopping } from 'react-icons/fa6'
 import Link from 'next/link'
+import { BiSolidFoodMenu } from "react-icons/bi";
 
 export default function Header (): JSX.Element {
   const { cartQuantity } = useShoppingCart()
 
   return (
     <header className='w-full flex flex-col justify-center items-center pt-4 sticky top-0 z-50 bg-bgblue'>
+      <button className='top-4 left-6 absolute flex'>
+        <Link href={'/'}>
+          <BiSolidFoodMenu className='text-white w-6 h-6' />
+        </Link>
+      </button>
       <Link href={'/'}>
         <Image width={120} height={25} src={'/shortcutLogo.svg'} alt='logo' priority={true} />
       </Link>
