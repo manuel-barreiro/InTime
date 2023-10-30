@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import mercadopago from "mercadopago";
 
 export async function POST(request: Request){
-  const url = "https://in-time.com.ar";
+  const url = "https://shortcut.com.ar";
 
   mercadopago.configure({
     access_token: process.env.ACCESS_TOKEN!,
