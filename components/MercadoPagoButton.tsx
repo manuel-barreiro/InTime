@@ -2,18 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { IProduct } from "@/constants/product";
-import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
-
-
+import Image from "next/image";
 
 interface MercadoPagoButtonProps {
   envioCarrito: IProduct[];
 }
 
 export const MercadoPagoButton = ({ envioCarrito }: MercadoPagoButtonProps) => {
-  initMercadoPago('TEST-94ae4081-76df-40a3-b0a7-a62d93671e97');
 
-  const [preferenceId, setPreferenceId] = useState<string>('');
+  const [url, setUrl] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(true);
 
   const generateLink = async () => {
@@ -24,26 +21,35 @@ export const MercadoPagoButton = ({ envioCarrito }: MercadoPagoButtonProps) => {
         body: JSON.stringify(envioCarrito)
       })
       const data = await res.json()
-      setPreferenceId(data.id)
-      console.log(data.id)
+      setUrl(data.url)
+      console.log(data.url)
     } catch (error) {
       console.error(error);
     }
     setLoading(false);
   };
 
+  useEffect(() => {
+    generateLink()
+  }, [])
+
   return (
-    <div className="flex flex-col gap-5">
-      <button className="text-white" onClick={generateLink}>
+    <div className="flex flex-col gap-5 items-center">
+      {/* <button className="text-white" onClick={generateLink}>
         generateLink
-      </button>
-      {preferenceId && (
-        // <button>
-        //   <a href={url} target="_blank" className="text-white">PAGAR CON MP</a>
-        // </button>
-        <div className="max-w-sm">
-          <Wallet initialization={{ preferenceId }} />
+      </button> */}
+      {url && (
+        <div className="flex flex-col gap-2 items-center">
+          <button className="rounded-md bg-[#186eae] hover:bg-sky-800 max-w-md p-5">
+            <a href={url} className="text-white flex gap-3 items-center">
+              <Image src={'/MPLogo.svg'} height={50} width={50} alt="mp"/>
+              Pagar con Mercado Pago
+            </a>
+          </button>
+          <span className="text-gray-400">Pagá de manera segura</span>
         </div>
+        
+        
       )} 
     </div>
   );

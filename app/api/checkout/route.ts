@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import mercadopago from "mercadopago";
 
 export async function POST(request: Request){
-  const url = "https://intime-nigeria.vercel.app";
+  const url = "https://in-time.com.ar";
 
   mercadopago.configure({
     access_token: process.env.ACCESS_TOKEN!,
@@ -29,13 +29,14 @@ export async function POST(request: Request){
       back_urls: {
         success: `${url}`,
         failure: `${url}`,
+        pending: `${url}`
       },
       notification_url: `${url}/api/notify`,
     };
 
     const responseMp = await mercadopago.preferences.create(preference);
 
-    return NextResponse.json({ id: responseMp.body.id })
+    return NextResponse.json({ url: responseMp.body.init_point })
 
   } catch (error) {
     return NextResponse.json(error)
