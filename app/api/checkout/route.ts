@@ -35,7 +35,7 @@ export async function POST(request: Request){
 
     const responseMp = await mercadopago.preferences.create(preference);
 
-    return NextResponse.json({ url: responseMp.body.init_point })
+    return NextResponse.json({ id: responseMp.body.id })
 
   } catch (error) {
     return NextResponse.json(error)

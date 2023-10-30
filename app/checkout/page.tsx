@@ -5,7 +5,6 @@ import { useShoppingCart } from "@/context/ShoppingCartContext";
 import { formatCurrency } from "@/utilities/formatCurrency";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa6";
-// import { MercadoPagoButton } from "@/components/MercadoPagoButton";
 
 export default function page() {
   const { cartItems, cartSubtotal, cartQuantity } = useShoppingCart()
