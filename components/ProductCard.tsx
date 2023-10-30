@@ -49,7 +49,7 @@ export default function ProductCard ({
           <button onClick={() => decreaseCartQuantity(prod_id)}>
             <FaMinus className='text-bgblue w-6 h-6' />
           </button>
-          <div className='bg-buttonSoftPink text-md font-medium px-3 py-2 rounded-xl'>
+          <div className='bg-gradient-to-r from-rose-200 to-pink-300 text-md font-medium px-3 py-2 rounded-xl'>
             {quantity}
           </div>
           <button onClick={() => increaseCartQuantity(prod_id)}>
