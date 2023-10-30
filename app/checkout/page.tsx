@@ -73,8 +73,7 @@ export default function page() {
   // console.log('nasshe: ', cartMp)
 
   return (
-    <div className='relative h-auto'>
-      
+    <div className='relative h-auto mb-10'>
       <button className='absolute top-2 left-7'>
         <Link href={'/cart'}>
           <FaArrowLeft className=' text-white w-6 h-6' />
@@ -101,7 +100,7 @@ export default function page() {
               ))}
             </TableBody>
           </Table>
-          <h3 className="text-2xl font-extrabold text-white mb-1 mt-2 text-center  text-transparent bg-clip-text bg-gradient-to-t from-rose-400 to-rose-600">Resumen</h3>
+          <h3 className="text-2xl font-extrabold mb-1 mt-2 text-center  text-transparent bg-clip-text bg-gradient-to-t from-rose-400 to-rose-600">Resumen</h3>
           <Table className="text-white">
             <TableHeader>
               <TableRow>
