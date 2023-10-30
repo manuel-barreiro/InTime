@@ -11,8 +11,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'InTime',
-  description: 'Pedí con InTime y ahorrate de hacer fila en eventos.'
+  title: 'ShortCut',
+  description: 'Pedí con ShortCut y ahorrate de hacer fila en eventos.'
 }
 
 export default function RootLayout ({
