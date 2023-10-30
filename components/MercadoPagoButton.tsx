@@ -13,25 +13,24 @@ export const MercadoPagoButton = ({ envioCarrito }: MercadoPagoButtonProps) => {
   const [url, setUrl] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(true);
 
-  const generateLink = async () => {
-    setLoading(true);
-    try {
-      const res = await fetch('/api/checkout', {
-        method: 'POST', 
-        body: JSON.stringify(envioCarrito)
-      })
-      const data = await res.json()
-      setUrl(data.url)
-      console.log(data.url)
-    } catch (error) {
-      console.error(error);
-    }
-    setLoading(false);
-  };
-
   useEffect(() => {
+    const generateLink = async () => {
+      setLoading(true);
+      try {
+        const res = await fetch('/api/checkout', {
+          method: 'POST', 
+          body: JSON.stringify(envioCarrito)
+        })
+        const data = await res.json()
+        setUrl(data.url)
+        console.log(data.url)
+      } catch (error) {
+        console.error(error);
+      }
+      setLoading(false);
+    };
     generateLink()
-  }, [])
+  }, [envioCarrito])
 
   return (
     <div className="flex flex-col gap-5 items-center">

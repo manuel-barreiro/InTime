@@ -28,7 +28,7 @@ export async function POST(request: Request){
       auto_return: "approved",
       back_urls: {
         success: `${url}`,
-        failure: `${url}`,
+        failure: `${url}/checkout`,
         pending: `${url}`
       },
       notification_url: `${url}/api/notify`,
