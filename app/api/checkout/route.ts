@@ -14,7 +14,7 @@ export async function POST(request: Request){
     };
   });
 
-  const url = "https://a2a4-200-114-144-88.ngrok-free.app";
+  const url = "https://shortcut.com.ar";
 
   try {
 
