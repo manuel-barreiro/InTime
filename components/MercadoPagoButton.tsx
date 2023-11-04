@@ -3,12 +3,15 @@
 import { useEffect, useState } from "react";
 import { IProduct } from "@/constants/product";
 import Image from "next/image";
+import { useShoppingCart } from "@/context/ShoppingCartContext";
 
 interface MercadoPagoButtonProps {
   envioCarrito: IProduct[];
 }
 
 export const MercadoPagoButton = ({ envioCarrito }: MercadoPagoButtonProps) => {
+
+  const { contactInfo } = useShoppingCart()
 
   const [url, setUrl] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(true);
@@ -19,7 +22,7 @@ export const MercadoPagoButton = ({ envioCarrito }: MercadoPagoButtonProps) => {
       try {
         const res = await fetch('/api/checkout', {
           method: 'POST', 
-          body: JSON.stringify(envioCarrito)
+          body: JSON.stringify({envioCarrito, contactInfo})
         })
         const data = await res.json()
         setUrl(data.url)

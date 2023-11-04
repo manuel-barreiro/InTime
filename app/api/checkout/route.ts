@@ -1,42 +1,52 @@
-import { CreatePreferencePayload } from "mercadopago/models/preferences/create-payload.model";
 import { NextResponse } from 'next/server';
-import mercadopago from "mercadopago";
 
 export async function POST(request: Request){
-  const url = "https://shortcut.com.ar";
-
-  mercadopago.configure({
-    access_token: process.env.ACCESS_TOKEN!,
-  });
 
   // Recibo el cartItems
-  const recepcionCarrito = await request.json();
+  const { envioCarrito, contactInfo } = await request.json();
   // Lo mapeo para que tenga el formato que requiere la API de MELI
-  const cartMp = recepcionCarrito.map((item: any) => {
+  const cartMp = envioCarrito.map((item: any) => {
     return {
+      id: item.id,
       title: item.name,
       unit_price: item.price,
-      quantity: item.quantity
+      quantity: item.quantity,
     };
   });
 
-  console.log(cartMp)
+  const url = "https://a2a4-200-114-144-88.ngrok-free.app";
 
   try {
-    const preference: CreatePreferencePayload = {
+
+    const preference = {
       items: cartMp,
       auto_return: "approved",
       back_urls: {
-        success: `${url}`,
-        failure: `${url}/checkout`,
-        pending: `${url}`
+        success: `${url}/success`,
+        failure: `${url}/failed`,
+        pending: `${url}/failed`
       },
       notification_url: `${url}/api/notify`,
+      currency_id: 'ARS',
+      metadata: contactInfo
     };
 
-    const responseMp = await mercadopago.preferences.create(preference);
+    const resPreferenceAPI = await fetch('https://api.mercadopago.com/checkout/preferences', {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${process.env.ACCESS_TOKEN!}`
+      },
+      body: JSON.stringify(preference)
+      })
 
-    return NextResponse.json({ url: responseMp.body.init_point })
+    // console.log(resPreferenceAPI)
+
+    const responseMp = await resPreferenceAPI.json()
+
+    // console.log(responseMp)
+
+    return NextResponse.json({ url: responseMp.init_point })
 
   } catch (error) {
     return NextResponse.json(error)

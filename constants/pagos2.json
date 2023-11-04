@@ -1,0 +1,3830 @@
+{
+    "results": [
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {
+                    "e2e_id": null
+                },
+                "location": {
+                    "source": "Payer",
+                    "state_id": "AR-B"
+                },
+                "type": "CHECKOUT"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://shortcut.com.ar/api/notify",
+            "date_approved": "2023-10-31T20:27:27.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "23438533389",
+                    "type": "CUIL"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "1355088740",
+                "type": null,
+                "first_name": null,
+                "email": "marcospizzini85@gmail.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-31T20:27:27.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-31T20:27:27.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66202903408-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66202903408,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12936967480",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "ip_address": "186.12.20.90",
+                "nsu_processadora": null,
+                "available_balance": null,
+                "items": [
+                    {
+                        "quantity": "1",
+                        "category_id": null,
+                        "picture_url": null,
+                        "description": null,
+                        "id": null,
+                        "title": "PruebaXXX",
+                        "unit_price": "10"
+                    }
+                ]
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-18T20:27:27.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-31T20:27:30.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "3.24.1",
+            "date_created": "2023-10-31T20:27:27.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://shortcut.com.ar/api/notify",
+            "date_approved": "2023-10-31T14:38:36.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "23438533389",
+                    "type": "CUIL"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "1355088740",
+                "type": null,
+                "first_name": null,
+                "email": "marcospizzini85@gmail.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-31T14:38:36.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-31T14:38:36.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66183092218-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66183092218,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12924467587",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-18T14:38:36.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-31T14:38:37.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "3.24.1",
+            "date_created": "2023-10-31T14:38:36.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://shortcut.com.ar/api/notify",
+            "date_approved": "2023-10-31T13:13:04.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "23438533389",
+                    "type": "CUIL"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "1355088740",
+                "type": null,
+                "first_name": null,
+                "email": "marcospizzini85@gmail.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-31T13:13:03.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-31T13:13:03.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66006328399-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66006328399,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12922527489",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-18T13:13:04.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-31T13:13:05.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "3.24.1",
+            "date_created": "2023-10-31T13:13:03.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://shortcut.com.ar/api/notify",
+            "date_approved": "2023-10-31T11:34:11.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "20430215478",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "263379869",
+                "type": null,
+                "first_name": null,
+                "email": "juanipizzzini@gmail.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-31T11:34:11.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-31T11:34:11.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66173089100-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66173089100,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12922915088",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-18T11:34:11.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-31T11:34:12.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "3.24.1",
+            "date_created": "2023-10-31T11:34:11.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://shortcut.com.ar/api/notify",
+            "date_approved": "2023-10-30T17:57:58.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "30716325047",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "511728651",
+                "type": null,
+                "first_name": null,
+                "email": "pedidos@nutriveg.com.ar"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10.06,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-30T17:57:58.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-30T17:57:58.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66141225568-001",
+                    "type": "fee",
+                    "client_id": 0
+                },
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-30T17:57:58.000-04:00",
+                    "metadata": {
+                        "mov_type": "expense",
+                        "user_id": 511728651,
+                        "tax_status": "applied",
+                        "mov_detail": "tax_withholding_payer",
+                        "mov_financial_entity": "debitos_creditos",
+                        "tax_id": 77367296306
+                    },
+                    "amounts": {
+                        "original": 0.06,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-30T17:57:58.000-04:00",
+                    "name": "tax_withholding_payer-debitos_creditos",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "payer",
+                        "to": "mp"
+                    },
+                    "id": "66141225568-002",
+                    "type": "tax",
+                    "client_id": 0
+                }
+            ],
+            "id": 66141225568,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12905377767",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-17T17:57:58.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-30T17:58:00.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-30T17:57:58.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://shortcut.com.ar/api/notify",
+            "date_approved": "2023-10-30T16:28:17.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "20427201792",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "193757580",
+                "type": null,
+                "first_name": null,
+                "email": "manuelbarreiro3815@yahoo.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-30T16:28:17.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-30T16:28:17.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66136091290-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66136091290,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12905989554",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-17T16:28:17.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-30T16:28:19.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-30T16:28:17.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://in-time.com.ar/api/notify",
+            "date_approved": "2023-10-30T10:02:39.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "20427201792",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "193757580",
+                "type": null,
+                "first_name": null,
+                "email": "manuelbarreiro3815@yahoo.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-30T10:02:38.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-30T10:02:38.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66115594794-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66115594794,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12893660679",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-17T10:02:39.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-30T10:02:40.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-30T10:02:38.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 102.5,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": "2023-10-30T07:53:45.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "23438533389",
+                    "type": "CUIL"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "1355088740",
+                "type": null,
+                "first_name": null,
+                "email": "marcospizzini85@gmail.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 2500,
+                "acquirer_reference": null,
+                "installment_amount": 2500,
+                "financial_institution": null,
+                "net_received_amount": 2397.5,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": "MERPAGO*MANUELALEJANDROBARREIRO",
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [
+                        {
+                            "amount": 102.5,
+                            "date_created": "2023-10-30T09:00:47.000-04:00",
+                            "reserve_id": null,
+                            "operation": {
+                                "id": 1536939762,
+                                "type": "refund_payment"
+                            },
+                            "client_id": 3016981581429034,
+                            "currency_id": "ARS"
+                        }
+                    ],
+                    "last_updated": "2023-10-30T09:00:47.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 102.5,
+                        "refunded": 102.5
+                    },
+                    "date_created": "2023-10-30T07:53:44.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66110445890-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66110445890,
+            "payment_type_id": "debit_card",
+            "payment_method": {
+                "issuer_id": "1",
+                "data": {
+                    "routing_data": {
+                        "merchant_account_id": "1007"
+                    }
+                },
+                "id": "debvisa",
+                "type": "debit_card"
+            },
+            "order": {
+                "id": "12894241758",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "released",
+            "brand_id": null,
+            "status_detail": "refunded",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {
+                "first_six_digits": "406663",
+                "expiration_year": 2028,
+                "bin": "40666332",
+                "date_created": "2023-10-30T07:53:44.000-04:00",
+                "expiration_month": 10,
+                "id": "9241824958",
+                "cardholder": {
+                    "identification": {
+                        "number": "43853338",
+                        "type": "DNI"
+                    },
+                    "name": "Pizzini marcos"
+                },
+                "last_four_digits": "1019",
+                "date_last_updated": "2023-10-30T07:53:44.000-04:00"
+            },
+            "integrator_id": null,
+            "status": "refunded",
+            "accounts_info": null,
+            "transaction_amount_refunded": 2500,
+            "transaction_amount": 2500,
+            "description": "Fernet Branca",
+            "financing_group": null,
+            "money_release_date": "2023-10-30T09:00:48.000-04:00",
+            "merchant_number": null,
+            "refunds": [
+                {
+                    "funder": null,
+                    "alternative_refund_mode": null,
+                    "reason": null,
+                    "metadata": {
+                        "status_detail": null
+                    },
+                    "source": {
+                        "name": "Manuel Alejandro Barreiro",
+                        "id": "1527139338",
+                        "type": "collector"
+                    },
+                    "expiration_date": null,
+                    "partition_details": [],
+                    "amount_refunded_to_payer": 2500,
+                    "payment_id": 66110445890,
+                    "id": 1536939762,
+                    "amount": 2500,
+                    "date_created": "2023-10-30T09:00:47.000-04:00",
+                    "external_refund_id": null,
+                    "unique_sequence_number": null,
+                    "labels": [],
+                    "additional_data": null,
+                    "refund_mode": "standard",
+                    "adjustment_amount": 0,
+                    "external_operations": [],
+                    "status": "approved"
+                }
+            ],
+            "expanded": {
+                "gateway": {
+                    "buyer_fee": 0,
+                    "finance_charge": 0,
+                    "date_created": "2023-10-30T07:53:44.000-04:00",
+                    "merchant": null,
+                    "reference": "{\"acquirer_reference_id\":\"\",\"acquirer_transaction_id\":\"CAQACAQRyUJCpsZ1s8foo9R9sTrvJnQYaHkRc-IqkAJ-ESJB5rQDxAFypHq2hPRM\",\"card_acceptor_id\":\"1007\",\"iso_response_code\":\"00\",\"merchant_operation_reference\":\"42522100704_37357f6b7b737571767f_P\",\"merchant_transaction_reference\":\"CAQACAQRyUJCpsZ1s8foo9R9sTrvJnQYaHkRc-IqkAJ-ESJB5rQDxAFypHq2hPRM\",\"pem\":\"pem10\",\"processed_at\":\"2023-10-30T07:53:45-04:00\",\"processed_at_source\":\"integration\",\"retrieval_reference_number\":\"330311021454\",\"ticket_id\":\"42522100704_37357f6b7b737571767f_P\",\"transaction_identification_number\":\"303303428254106\",\"transmission_date_time\":\"1030115345\"}",
+                    "statement_descriptor": "MERPAGO*MANUELALEJANDROBARREIRO",
+                    "issuer_id": "1",
+                    "usn": null,
+                    "installments": 1,
+                    "soft_descriptor": "MANUELALEJANDROBARREIRO",
+                    "authorization_code": "021454",
+                    "payment_id": 66110445890,
+                    "profile_id": "g2_genova_genova_1007",
+                    "options": "[{\"collector_id\":1527139338},{\"payment_operation_type\":\"regular_payment\"},{\"has_wallet_id\":false},{\"regulation\":{\"legal_name\":\"Manuel Alejandro Barreiro\",\"address_street\":\"FLORIDA 9680 BP LA LOMADA DEL PILAR\",\"address_door_number\":77,\"zip\":\"1669\",\"city\":\"DEL VISO\",\"country\":\"ARG\",\"document_number\":\"20427201792\",\"document_type\":\"CUIT\",\"region_code\":\"AR\",\"region_code_iso\":\"AR-B\",\"fiscal_condition\":\"Monotributo\",\"mcc\":\"7392\"}},{\"security_code_data\":{\"ads_remove_cvv\":false}},{\"freepass\":true}]",
+                    "connection": "genova",
+                    "id": "42522100704_37357f6b7b737571767f",
+                    "operation": "refund"
+                }
+            },
+            "authorization_code": "021454",
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-30T09:02:49.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-30T07:53:44.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "1",
+            "payment_method_id": "debvisa",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 1.64,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": "2023-10-30T07:40:13.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "23438533389",
+                    "type": "CUIL"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "1355088740",
+                "type": null,
+                "first_name": null,
+                "email": "marcospizzini85@gmail.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 40,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 38.36,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [
+                        {
+                            "amount": 1.64,
+                            "date_created": "2023-10-30T09:01:10.000-04:00",
+                            "reserve_id": null,
+                            "operation": {
+                                "id": 1536941228,
+                                "type": "refund_payment"
+                            },
+                            "client_id": 3016981581429034,
+                            "currency_id": "ARS"
+                        }
+                    ],
+                    "last_updated": "2023-10-30T09:01:10.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 1.64,
+                        "refunded": 1.64
+                    },
+                    "date_created": "2023-10-30T07:40:13.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66110077102-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66110077102,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12894058872",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "released",
+            "brand_id": null,
+            "status_detail": "refunded",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "refunded",
+            "accounts_info": null,
+            "transaction_amount_refunded": 40,
+            "transaction_amount": 40,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-10-30T09:01:10.000-04:00",
+            "merchant_number": null,
+            "refunds": [
+                {
+                    "funder": null,
+                    "alternative_refund_mode": null,
+                    "reason": null,
+                    "metadata": {
+                        "status_detail": null
+                    },
+                    "source": {
+                        "name": "Manuel Alejandro Barreiro",
+                        "id": "1527139338",
+                        "type": "collector"
+                    },
+                    "expiration_date": null,
+                    "partition_details": [],
+                    "amount_refunded_to_payer": 40,
+                    "payment_id": 66110077102,
+                    "id": 1536941228,
+                    "amount": 40,
+                    "date_created": "2023-10-30T09:01:10.000-04:00",
+                    "external_refund_id": null,
+                    "unique_sequence_number": null,
+                    "labels": [],
+                    "additional_data": null,
+                    "refund_mode": "standard",
+                    "adjustment_amount": 0,
+                    "external_operations": [],
+                    "status": "approved"
+                }
+            ],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-30T09:01:12.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-30T07:40:13.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": "2023-10-29T23:09:34.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "20427201792",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "193757580",
+                "type": null,
+                "first_name": null,
+                "email": "manuelbarreiro3815@yahoo.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T23:09:33.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T23:09:33.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "65932768527-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 65932768527,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12891820006",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-16T23:09:34.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T23:11:02.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T23:09:33.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": "2023-10-29T23:09:14.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "27428164011",
+                    "type": "CUIL"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "180408888",
+                "type": null,
+                "first_name": null,
+                "email": "clarilarguia@hotmail.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 10,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": "MERPAGO*MANUELALEJANDROBARREIRO",
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T23:09:12.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T23:09:12.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "65932751267-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 65932751267,
+            "payment_type_id": "debit_card",
+            "payment_method": {
+                "issuer_id": "1",
+                "data": {
+                    "routing_data": {
+                        "merchant_account_id": "1007"
+                    }
+                },
+                "id": "debvisa",
+                "type": "debit_card"
+            },
+            "order": {
+                "id": "12888794345",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {
+                "first_six_digits": "411197",
+                "expiration_year": 2027,
+                "bin": "411197",
+                "date_created": "2023-10-29T23:09:13.000-04:00",
+                "expiration_month": 2,
+                "id": "9016187453",
+                "cardholder": {
+                    "identification": {
+                        "number": "42816401",
+                        "type": "DNI"
+                    },
+                    "name": "CLARA "
+                },
+                "last_four_digits": "8163",
+                "date_last_updated": "2023-10-29T23:09:13.000-04:00"
+            },
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-16T23:09:14.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": {
+                    "buyer_fee": 0,
+                    "finance_charge": 0,
+                    "date_created": "2023-10-29T23:09:13.000-04:00",
+                    "merchant": null,
+                    "reference": "{\"acquirer_reference_id\":\"\",\"acquirer_transaction_id\":\"CAQACAQQHo8RO1Gal3L9cD9aOgvAOkxCB0eWjKyqGjQow7bKD_ADcjaNO0d2spg0\",\"card_acceptor_id\":\"1007\",\"iso_response_code\":\"00\",\"merchant_operation_reference\":\"42520662280_767c7f7e737674737777_P\",\"merchant_transaction_reference\":\"CAQACAQQHo8RO1Gal3L9cD9aOgvAOkxCB0eWjKyqGjQow7bKD_ADcjaNO0d2spg0\",\"pem\":\"pem10\",\"processed_at\":\"2023-10-29T23:09:14-04:00\",\"processed_at_source\":\"integration\",\"retrieval_reference_number\":\"330303016201\",\"ticket_id\":\"42520662280_767c7f7e737674737777_P\",\"transaction_identification_number\":\"303303113540249\",\"transmission_date_time\":\"1030030914\"}",
+                    "statement_descriptor": "MERPAGO*MANUELALEJANDROBARREIRO",
+                    "issuer_id": "1",
+                    "usn": null,
+                    "installments": 1,
+                    "soft_descriptor": "MANUELALEJANDROBARREIRO",
+                    "authorization_code": "624298",
+                    "payment_id": 65932751267,
+                    "profile_id": "g2_genova_genova_1007",
+                    "options": "[{\"collector_id\":1527139338},{\"payment_operation_type\":\"regular_payment\"},{\"has_wallet_id\":false},{\"regulation\":{\"legal_name\":\"Manuel Alejandro Barreiro\",\"address_street\":\"FLORIDA 9680 BP LA LOMADA DEL PILAR\",\"address_door_number\":77,\"zip\":\"1669\",\"city\":\"DEL VISO\",\"country\":\"ARG\",\"document_number\":\"20427201792\",\"document_type\":\"CUIT\",\"region_code\":\"AR\",\"region_code_iso\":\"AR-B\",\"fiscal_condition\":\"Monotributo\",\"mcc\":\"7392\"}},{\"tokenization\":{\"dpan_id\":\"DPSAYUTHPFJXERWWIZXYAPRNREOSZNSQRKQQKZCV\",\"cryptogram\":\"/wAAAAAAmCchZaUAmbV0gy8AAAA=\",\"expiration_month\":2,\"expiration_year\":2027,\"trunc_card_number\":\"467120XXXXXX7762\",\"eci\":\"07\",\"par\":\"V0010015821040665024856038695\"}},{\"security_code_data\":{\"ads_remove_cvv\":false}},{\"freepass\":true},{\"tokenization\":{\"dpan_id\":\"DPSAYUTHPFJXERWWIZXYAPRNREOSZNSQRKQQKZCV\",\"cryptogram\":\"/wAAAAAAmCchZaUAmbV0gy8AAAA=\",\"expiration_month\":2,\"expiration_year\":2027,\"trunc_card_number\":\"467120XXXXXX7762\",\"eci\":\"07\",\"par\":\"V0010015821040665024856038695\"}}]",
+                    "connection": "genova",
+                    "id": "42520662280_767c7f7e737674737777",
+                    "operation": "purchase"
+                }
+            },
+            "authorization_code": "624298",
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T23:12:32.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T23:09:12.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "1",
+            "payment_method_id": "debvisa",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": "2023-10-29T22:31:08.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "20427201792",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "193757580",
+                "type": null,
+                "first_name": null,
+                "email": "manuelbarreiro3815@yahoo.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T22:31:07.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T22:31:07.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66103767788-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66103767788,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12891447206",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-16T22:31:08.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T22:31:10.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T22:31:07.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": "2023-10-29T22:11:23.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "27203509826",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "298086939",
+                "type": null,
+                "first_name": null,
+                "email": "maravictoria2018@gmail.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 10,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": "MERPAGO*MANUELALEJANDROBARREIRO",
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T22:11:21.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T22:11:21.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66103288282-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66103288282,
+            "payment_type_id": "credit_card",
+            "payment_method": {
+                "issuer_id": "296",
+                "data": {
+                    "routing_data": {
+                        "merchant_account_id": "1053"
+                    }
+                },
+                "id": "visa",
+                "type": "credit_card"
+            },
+            "order": {
+                "id": "12888189197",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {
+                "first_six_digits": "485011",
+                "expiration_year": 2024,
+                "bin": "485011",
+                "date_created": "2023-10-29T22:11:21.000-04:00",
+                "expiration_month": 2,
+                "id": "9196952408",
+                "cardholder": {
+                    "identification": {
+                        "number": "20350982",
+                        "type": "DNI"
+                    },
+                    "name": "MARA VICTO BERGALLO"
+                },
+                "last_four_digits": "5019",
+                "date_last_updated": "2023-10-29T22:11:21.000-04:00"
+            },
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-16T22:11:23.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": {
+                    "buyer_fee": 0,
+                    "finance_charge": 0,
+                    "date_created": "2023-10-29T22:11:22.000-04:00",
+                    "merchant": null,
+                    "reference": "{\"acquirer_reference_id\":\"1030021122330302075758WmajVQYR463303078833035\",\"acquirer_transaction_id\":\"CAQACAQS6slN66asqiqmGSIsR2OjYNq87ZZwUt_yJwOPEsJiKEgCKwBR6ZVpMDig\",\"card_acceptor_id\":\"1053\",\"iso_response_code\":\"00\",\"merchant_operation_reference\":\"42518681427_7b7b7f7e7e79747f7d63_A\",\"merchant_transaction_reference\":\"CAQACAQS6slN66asqiqmGSIsR2OjYNq87ZZwUt_yJwOPEsJiKEgCKwBR6ZVpMDig\",\"pem\":\"pem10\",\"processed_at\":\"2023-10-29T22:11:23-04:00\",\"processed_at_source\":\"integration\",\"retrieval_reference_number\":\"330302075758\",\"ticket_id\":\"42518681427_7b7b7f7e7e79747f7d63_A\",\"transaction_identification_number\":\"463303078833035\",\"transmission_date_time\":\"1030021122\"}",
+                    "statement_descriptor": "MERPAGO*MANUELALEJANDROBARREIRO",
+                    "issuer_id": "296",
+                    "usn": null,
+                    "installments": 1,
+                    "soft_descriptor": "MANUELALEJANDROBARREIRO",
+                    "authorization_code": "010423",
+                    "payment_id": 66103288282,
+                    "profile_id": "g2_genova_genova_1053",
+                    "options": "[{\"collector_id\":1527139338},{\"payment_operation_type\":\"regular_payment\"},{\"has_wallet_id\":false},{\"regulation\":{\"legal_name\":\"Manuel Alejandro Barreiro\",\"address_street\":\"FLORIDA 9680 BP LA LOMADA DEL PILAR\",\"address_door_number\":77,\"zip\":\"1669\",\"city\":\"DEL VISO\",\"country\":\"ARG\",\"document_number\":\"20427201792\",\"document_type\":\"CUIT\",\"region_code\":\"AR\",\"region_code_iso\":\"AR-B\",\"fiscal_condition\":\"Monotributo\",\"mcc\":\"7392\"}},{\"tokenization\":{\"dpan_id\":\"JSMGTCYHDFLFYZAJKORFMAYPUEBNCGCFBIUAJEQQ\",\"cryptogram\":\"/wAAAAAAv5hpJAIAmbV0gy8AAAA=\",\"expiration_month\":2,\"expiration_year\":2024,\"trunc_card_number\":\"451723XXXXXX2939\",\"eci\":\"07\",\"par\":\"V0010015822347818537734174511\"}},{\"security_code_data\":{\"ads_remove_cvv\":false}},{\"freepass\":true},{\"tokenization\":{\"dpan_id\":\"JSMGTCYHDFLFYZAJKORFMAYPUEBNCGCFBIUAJEQQ\",\"cryptogram\":\"/wAAAAAAv5hpJAIAmbV0gy8AAAA=\",\"expiration_month\":2,\"expiration_year\":2024,\"trunc_card_number\":\"451723XXXXXX2939\",\"eci\":\"07\",\"par\":\"V0010015822347818537734174511\"}}]",
+                    "connection": "genova",
+                    "id": "42518681427_7b7b7f7e7e79747f7d63",
+                    "operation": "capture"
+                }
+            },
+            "authorization_code": "010423",
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T22:11:24.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T22:11:21.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "296",
+            "payment_method_id": "visa",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": "2023-10-29T22:08:10.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "33717101079",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "300756995",
+                "type": null,
+                "first_name": null,
+                "email": "gabarreiro18@gmail.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 10,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": "MERPAGO*MANUELALEJANDROBARREIRO",
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T22:08:08.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T22:08:08.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "65931376755-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 65931376755,
+            "payment_type_id": "credit_card",
+            "payment_method": {
+                "issuer_id": "692",
+                "data": {
+                    "routing_data": {
+                        "merchant_account_id": "56"
+                    }
+                },
+                "id": "master",
+                "type": "credit_card"
+            },
+            "order": {
+                "id": "12891172800",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {
+                "first_six_digits": "559198",
+                "expiration_year": 2027,
+                "bin": "55919893",
+                "date_created": "2023-10-29T22:08:08.000-04:00",
+                "expiration_month": 8,
+                "id": "9043765638",
+                "cardholder": {
+                    "identification": {
+                        "number": "18146632",
+                        "type": "DNI"
+                    },
+                    "name": "BARREIRO GABRIEL"
+                },
+                "last_four_digits": "1172",
+                "date_last_updated": "2023-10-29T22:08:08.000-04:00"
+            },
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-16T22:08:10.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": {
+                    "buyer_fee": 0,
+                    "finance_charge": 0,
+                    "date_created": "2023-10-29T22:08:08.000-04:00",
+                    "merchant": null,
+                    "reference": "{\"acquirer_reference_id\":\"1030020809425203085407R1ON5KD1                LBBOUL\",\"acquirer_transaction_id\":\"CAQABAQQPUm8kkjB0tkhy07Tdt0JA1S8SfNObPAO-RwfRlKy4pAC2R5skfDIlBvE\",\"card_acceptor_id\":\"56\",\"iso_response_code\":\"00\",\"merchant_operation_reference\":\"42520308540_75327b777f3677757777_A\",\"merchant_transaction_reference\":\"CAQABAQQPUm8kkjB0tkhy07Tdt0JA1S8SfNObPAO-RwfRlKy4pAC2R5skfDIlBvE\",\"pem\":\"pem10\",\"processed_at\":\"2023-10-29T22:08:10-04:00\",\"processed_at_source\":\"integration\",\"retrieval_reference_number\":\"425203085407\",\"ticket_id\":\"42520308540_75327b777f3677757777_A\",\"transaction_identification_number\":\"LBBOUL\",\"transmission_date_time\":\"1030020809\"}",
+                    "statement_descriptor": "MERPAGO*MANUELALEJANDROBARREIRO",
+                    "issuer_id": "692",
+                    "usn": null,
+                    "installments": 1,
+                    "soft_descriptor": "MANUELALEJANDROBARREIRO",
+                    "authorization_code": "629061",
+                    "payment_id": 65931376755,
+                    "profile_id": "g2_genova_genova_56",
+                    "options": "[{\"collector_id\":1527139338},{\"payment_operation_type\":\"regular_payment\"},{\"has_wallet_id\":false},{\"regulation\":{\"legal_name\":\"Manuel Alejandro Barreiro\",\"address_street\":\"FLORIDA 9680 BP LA LOMADA DEL PILAR\",\"address_door_number\":77,\"zip\":\"1669\",\"city\":\"DEL VISO\",\"country\":\"ARG\",\"document_number\":\"20427201792\",\"document_type\":\"CUIT\",\"region_code\":\"AR\",\"region_code_iso\":\"AR-B\",\"fiscal_condition\":\"Monotributo\",\"mcc\":\"7392\"}},{\"tokenization\":{\"dpan_id\":\"YAFDSETQEQCNGVBXOONVBGYDMNOLEJYSAFSEZQZS\",\"cryptogram\":\"AF2MkJUP8nDXADFxDKmGAAADFA==\",\"expiration_month\":10,\"expiration_year\":2024,\"trunc_card_number\":\"547043XXXXXX7362\",\"eci\":\"\",\"par\":\"50013MCPFTSASOXAGT736NHBSGC3G\"}},{\"security_code_data\":{\"ads_remove_cvv\":true}},{\"freepass\":true},{\"tokenization\":{\"dpan_id\":\"YAFDSETQEQCNGVBXOONVBGYDMNOLEJYSAFSEZQZS\",\"cryptogram\":\"AF2MkJUP8nDXADFxDKmGAAADFA==\",\"expiration_month\":10,\"expiration_year\":2024,\"trunc_card_number\":\"547043XXXXXX7362\",\"eci\":\"\",\"par\":\"50013MCPFTSASOXAGT736NHBSGC3G\"}}]",
+                    "connection": "genova",
+                    "id": "42520308540_75327b777f3677757777",
+                    "operation": "capture"
+                }
+            },
+            "authorization_code": "629061",
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T22:08:12.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T22:08:08.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "692",
+            "payment_method_id": "master",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": "2023-10-29T22:07:25.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "33717101079",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "300756995",
+                "type": null,
+                "first_name": null,
+                "email": "gabarreiro18@gmail.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10.06,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T22:07:24.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T22:07:24.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "65931351237-001",
+                    "type": "fee",
+                    "client_id": 0
+                },
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T22:07:25.000-04:00",
+                    "metadata": {
+                        "mov_type": "expense",
+                        "user_id": 300756995,
+                        "tax_status": "applied",
+                        "mov_detail": "tax_withholding_payer",
+                        "mov_financial_entity": "debitos_creditos",
+                        "tax_id": 77345951978
+                    },
+                    "amounts": {
+                        "original": 0.06,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T22:07:25.000-04:00",
+                    "name": "tax_withholding_payer-debitos_creditos",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "payer",
+                        "to": "mp"
+                    },
+                    "id": "65931351237-002",
+                    "type": "tax",
+                    "client_id": 0
+                }
+            ],
+            "id": 65931351237,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12888138095",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-16T22:07:25.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T22:07:26.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T22:07:24.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": "2023-10-29T22:04:17.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "33717101079",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "300756995",
+                "type": null,
+                "first_name": null,
+                "email": "gabarreiro18@gmail.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10.06,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T22:04:17.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T22:04:17.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66103079094-001",
+                    "type": "fee",
+                    "client_id": 0
+                },
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T22:04:17.000-04:00",
+                    "metadata": {
+                        "mov_type": "expense",
+                        "user_id": 300756995,
+                        "tax_status": "applied",
+                        "mov_detail": "tax_withholding_payer",
+                        "mov_financial_entity": "debitos_creditos",
+                        "tax_id": 77297644981
+                    },
+                    "amounts": {
+                        "original": 0.06,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T22:04:17.000-04:00",
+                    "name": "tax_withholding_payer-debitos_creditos",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "payer",
+                        "to": "mp"
+                    },
+                    "id": "66103079094-002",
+                    "type": "tax",
+                    "client_id": 0
+                }
+            ],
+            "id": 66103079094,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12891125800",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-16T22:04:17.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T22:04:18.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T22:04:17.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 0.41,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": "2023-10-29T21:18:12.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "20427201792",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "193757580",
+                "type": null,
+                "first_name": null,
+                "email": "manuelbarreiro3815@yahoo.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 0,
+                "financial_institution": null,
+                "net_received_amount": 9.59,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T21:18:12.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T21:18:12.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66101660690-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66101660690,
+            "payment_type_id": "account_money",
+            "payment_method": {
+                "issuer_id": "2005",
+                "id": "account_money",
+                "type": "account_money"
+            },
+            "order": {
+                "id": "12887444475",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "accredited",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {},
+            "integrator_id": null,
+            "status": "approved",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": "2023-11-16T21:18:12.000-04:00",
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": null
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T21:18:14.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T21:18:12.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "2005",
+            "payment_method_id": "account_money",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": null,
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": null,
+                    "type": null
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "193757580",
+                "type": null,
+                "first_name": null,
+                "email": null
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 10,
+                "financial_institution": null,
+                "net_received_amount": 0,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T21:16:51.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T21:16:51.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66101616170-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66101616170,
+            "payment_type_id": "credit_card",
+            "payment_method": {
+                "issuer_id": "310",
+                "data": {
+                    "routing_data": {
+                        "merchant_account_id": "1053"
+                    }
+                },
+                "id": "visa",
+                "type": "credit_card"
+            },
+            "order": {
+                "id": "12887420393",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "cc_rejected_high_risk",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {
+                "first_six_digits": "450979",
+                "expiration_year": 2025,
+                "bin": "450979",
+                "date_created": "2023-10-29T21:16:52.000-04:00",
+                "expiration_month": 6,
+                "id": "9003724748",
+                "cardholder": {
+                    "identification": {
+                        "number": "42720179",
+                        "type": "DNI"
+                    },
+                    "name": "MANUEL A BARREIRO"
+                },
+                "last_four_digits": "1474",
+                "date_last_updated": "2023-10-29T21:16:52.000-04:00"
+            },
+            "integrator_id": null,
+            "status": "rejected",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": null,
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": {
+                    "buyer_fee": 0,
+                    "finance_charge": 0,
+                    "date_created": "2023-10-29T21:16:52.000-04:00",
+                    "merchant": null,
+                    "reference": null,
+                    "statement_descriptor": null,
+                    "issuer_id": "310",
+                    "usn": null,
+                    "installments": 1,
+                    "soft_descriptor": "MANUELALEJANDROBARREIRO",
+                    "authorization_code": null,
+                    "payment_id": 66101616170,
+                    "profile_id": "g2_genova_genova_1053",
+                    "options": "[{\"collector_id\":1527139338},{\"payment_operation_type\":\"regular_payment\"},{\"has_wallet_id\":false},{\"regulation\":{\"legal_name\":\"Manuel Alejandro Barreiro\",\"address_street\":\"FLORIDA 9680 BP LA LOMADA DEL PILAR\",\"address_door_number\":77,\"zip\":\"1669\",\"city\":\"DEL VISO\",\"country\":\"ARG\",\"document_number\":\"20427201792\",\"document_type\":\"CUIT\",\"region_code\":\"AR\",\"region_code_iso\":\"AR-B\",\"fiscal_condition\":\"Monotributo\",\"mcc\":\"7392\"}},{\"tokenization\":{\"dpan_id\":\"MXFRTCHCWZBVABXZENOCLUAQFAIQSVLBBQTCURUX\",\"cryptogram\":\"/wAAAAABGXtmZVMAmbV0gy8AAAA=\",\"expiration_month\":6,\"expiration_year\":2025,\"trunc_card_number\":\"454789XXXXXX4751\",\"eci\":\"07\",\"par\":\"V0010014621135641291530009808\"}},{\"security_code_data\":{\"ads_remove_cvv\":false}},{\"freepass\":true},{\"tokenization\":{\"dpan_id\":\"MXFRTCHCWZBVABXZENOCLUAQFAIQSVLBBQTCURUX\",\"cryptogram\":\"/wAAAAABGXtmZVMAmbV0gy8AAAA=\",\"expiration_month\":6,\"expiration_year\":2025,\"trunc_card_number\":\"454789XXXXXX4751\",\"eci\":\"07\",\"par\":\"V0010014621135641291530009808\"}}]",
+                    "connection": "genova",
+                    "id": "42519893416_347667396a7b6b7b7777",
+                    "operation": "authorization"
+                }
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T21:16:53.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T21:16:51.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "310",
+            "payment_method_id": "visa",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {
+                    "e2e_id": null
+                },
+                "location": {
+                    "source": "Payer",
+                    "state_id": "AR-B"
+                },
+                "type": "CHECKOUT"
+            },
+            "fee_details": [],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": null,
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": null,
+                    "type": null
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "193757580",
+                "type": null,
+                "first_name": null,
+                "email": null
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 10,
+                "financial_institution": null,
+                "net_received_amount": 0,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T21:08:56.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T21:08:56.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "65929526587-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 65929526587,
+            "payment_type_id": "credit_card",
+            "payment_method": {
+                "issuer_id": "296",
+                "data": {
+                    "routing_data": {
+                        "merchant_account_id": "1053"
+                    }
+                },
+                "id": "visa",
+                "type": "credit_card"
+            },
+            "order": {
+                "id": "12890302516",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "cc_rejected_high_risk",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "ip_address": "200.114.144.88",
+                "nsu_processadora": null,
+                "available_balance": null,
+                "items": [
+                    {
+                        "quantity": "1",
+                        "category_id": null,
+                        "picture_url": null,
+                        "description": null,
+                        "id": null,
+                        "title": "PruebaXXX",
+                        "unit_price": "10"
+                    }
+                ]
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {
+                "first_six_digits": "485011",
+                "expiration_year": 2024,
+                "bin": "485011",
+                "date_created": "2023-10-29T21:08:56.000-04:00",
+                "expiration_month": 2,
+                "id": "8978679809",
+                "cardholder": {
+                    "identification": {
+                        "number": "42720179",
+                        "type": "DNI"
+                    },
+                    "name": "BARREIRO MANUEL"
+                },
+                "last_four_digits": "5258",
+                "date_last_updated": "2023-10-29T21:08:56.000-04:00"
+            },
+            "integrator_id": null,
+            "status": "rejected",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": null,
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": {
+                    "buyer_fee": 0,
+                    "finance_charge": 0,
+                    "date_created": "2023-10-29T21:08:56.000-04:00",
+                    "merchant": null,
+                    "reference": null,
+                    "statement_descriptor": null,
+                    "issuer_id": "296",
+                    "usn": null,
+                    "installments": 1,
+                    "soft_descriptor": "BARREIROMANUE",
+                    "authorization_code": null,
+                    "payment_id": 65929526587,
+                    "profile_id": "g2_genova_genova_1053",
+                    "options": "[{\"collector_id\":1527139338},{\"payment_operation_type\":\"regular_payment\"},{\"has_wallet_id\":true},{\"regulation\":{\"legal_name\":\"Manuel Alejandro Barreiro\",\"address_street\":\"FLORIDA 9680 BP LA LOMADA DEL PILAR\",\"address_door_number\":77,\"zip\":\"1669\",\"city\":\"DEL VISO\",\"country\":\"ARG\",\"document_number\":\"20427201792\",\"document_type\":\"CUIT\",\"region_code\":\"AR\",\"region_code_iso\":\"AR-B\",\"fiscal_condition\":\"Monotributo\",\"mcc\":\"7392\"}},{\"security_code_data\":{\"ads_remove_cvv\":false}},{\"freepass\":true}]",
+                    "connection": "genova",
+                    "id": "42518168467_6377636c6f7a7d777d7c",
+                    "operation": "authorization"
+                }
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T21:08:57.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T21:08:56.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "296",
+            "payment_method_id": "visa",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {
+                    "e2e_id": null
+                },
+                "location": {
+                    "source": "Payer",
+                    "state_id": "AR-B"
+                },
+                "type": "CHECKOUT"
+            },
+            "fee_details": [],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": null,
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": null,
+                    "type": null
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "193757580",
+                "type": null,
+                "first_name": null,
+                "email": null
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 10,
+                "financial_institution": null,
+                "net_received_amount": 0,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T21:08:26.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T21:08:26.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "65929514299-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 65929514299,
+            "payment_type_id": "credit_card",
+            "payment_method": {
+                "issuer_id": "310",
+                "data": {
+                    "routing_data": {
+                        "merchant_account_id": "1053"
+                    }
+                },
+                "id": "visa",
+                "type": "credit_card"
+            },
+            "order": {
+                "id": "12890302516",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "cc_rejected_high_risk",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "ip_address": "200.114.144.88",
+                "nsu_processadora": null,
+                "available_balance": null,
+                "items": [
+                    {
+                        "quantity": "1",
+                        "category_id": null,
+                        "picture_url": null,
+                        "description": null,
+                        "id": null,
+                        "title": "PruebaXXX",
+                        "unit_price": "10"
+                    }
+                ]
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {
+                "first_six_digits": "450979",
+                "expiration_year": 2025,
+                "bin": "450979",
+                "date_created": "2023-10-29T21:08:26.000-04:00",
+                "expiration_month": 6,
+                "id": "9003724748",
+                "cardholder": {
+                    "identification": {
+                        "number": "42720179",
+                        "type": "DNI"
+                    },
+                    "name": "MANUEL A BARREIRO"
+                },
+                "last_four_digits": "1474",
+                "date_last_updated": "2023-10-29T21:08:26.000-04:00"
+            },
+            "integrator_id": null,
+            "status": "rejected",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": null,
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": {
+                    "buyer_fee": 0,
+                    "finance_charge": 0,
+                    "date_created": "2023-10-29T21:08:26.000-04:00",
+                    "merchant": null,
+                    "reference": null,
+                    "statement_descriptor": null,
+                    "issuer_id": "310",
+                    "usn": null,
+                    "installments": 1,
+                    "soft_descriptor": "BARREIROMANUE",
+                    "authorization_code": null,
+                    "payment_id": 65929514299,
+                    "profile_id": "g2_genova_genova_1053",
+                    "options": "[{\"collector_id\":1527139338},{\"payment_operation_type\":\"regular_payment\"},{\"has_wallet_id\":true},{\"regulation\":{\"legal_name\":\"Manuel Alejandro Barreiro\",\"address_street\":\"FLORIDA 9680 BP LA LOMADA DEL PILAR\",\"address_door_number\":77,\"zip\":\"1669\",\"city\":\"DEL VISO\",\"country\":\"ARG\",\"document_number\":\"20427201792\",\"document_type\":\"CUIT\",\"region_code\":\"AR\",\"region_code_iso\":\"AR-B\",\"fiscal_condition\":\"Monotributo\",\"mcc\":\"7392\"}},{\"security_code_data\":{\"ads_remove_cvv\":false}},{\"freepass\":true}]",
+                    "connection": "genova",
+                    "id": "42518164325_6f7b767767767579767d",
+                    "operation": "authorization"
+                }
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T21:08:28.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T21:08:26.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "310",
+            "payment_method_id": "visa",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {
+                    "e2e_id": null
+                },
+                "location": {
+                    "source": "Payer",
+                    "state_id": "AR-B"
+                },
+                "type": "CHECKOUT"
+            },
+            "fee_details": [],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": null,
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": null,
+                    "type": null
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "193757580",
+                "type": null,
+                "first_name": null,
+                "email": null
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 10,
+                "financial_institution": null,
+                "net_received_amount": 0,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T21:08:03.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T21:08:03.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66101275856-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66101275856,
+            "payment_type_id": "debit_card",
+            "payment_method": {
+                "issuer_id": "1",
+                "data": {
+                    "routing_data": {
+                        "merchant_account_id": "1007"
+                    }
+                },
+                "id": "debvisa",
+                "type": "debit_card"
+            },
+            "order": {
+                "id": "12890302516",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "cc_rejected_high_risk",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "ip_address": "200.114.144.88",
+                "nsu_processadora": null,
+                "available_balance": null,
+                "items": [
+                    {
+                        "quantity": "1",
+                        "category_id": null,
+                        "picture_url": null,
+                        "description": null,
+                        "id": null,
+                        "title": "PruebaXXX",
+                        "unit_price": "10"
+                    }
+                ]
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {
+                "first_six_digits": "411197",
+                "expiration_year": 2026,
+                "bin": "41119720",
+                "date_created": "2023-10-29T21:08:03.000-04:00",
+                "expiration_month": 10,
+                "id": null,
+                "cardholder": {
+                    "identification": {
+                        "number": "42720179",
+                        "type": "DNI"
+                    },
+                    "name": "MANUEL A BARREIRO"
+                },
+                "last_four_digits": "9267",
+                "date_last_updated": "2023-10-29T21:08:03.000-04:00"
+            },
+            "integrator_id": null,
+            "status": "rejected",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": null,
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": {
+                    "buyer_fee": 0,
+                    "finance_charge": 0,
+                    "date_created": "2023-10-29T21:08:03.000-04:00",
+                    "merchant": null,
+                    "reference": null,
+                    "statement_descriptor": null,
+                    "issuer_id": "1",
+                    "usn": null,
+                    "installments": 1,
+                    "soft_descriptor": "BARREIROMANUE",
+                    "authorization_code": null,
+                    "payment_id": 66101275856,
+                    "profile_id": "g2_genova_genova_1007",
+                    "options": "[{\"collector_id\":1527139338},{\"payment_operation_type\":\"regular_payment\"},{\"has_wallet_id\":false},{\"regulation\":{\"legal_name\":\"Manuel Alejandro Barreiro\",\"address_street\":\"FLORIDA 9680 BP LA LOMADA DEL PILAR\",\"address_door_number\":77,\"zip\":\"1669\",\"city\":\"DEL VISO\",\"country\":\"ARG\",\"document_number\":\"20427201792\",\"document_type\":\"CUIT\",\"region_code\":\"AR\",\"region_code_iso\":\"AR-B\",\"fiscal_condition\":\"Monotributo\",\"mcc\":\"7392\"}},{\"security_code_data\":{\"ads_remove_cvv\":false}}]",
+                    "connection": "genova",
+                    "id": "42518161357_7b76736778777f6e7f67",
+                    "operation": "purchase"
+                }
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T21:08:05.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T21:08:03.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "1",
+            "payment_method_id": "debvisa",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {
+                    "e2e_id": null
+                },
+                "type": "CHECKOUT"
+            },
+            "fee_details": [],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": null,
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": null,
+                    "type": null
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "1529696550",
+                "type": null,
+                "first_name": null,
+                "email": null
+            },
+            "transaction_details": {
+                "total_paid_amount": 10,
+                "acquirer_reference": null,
+                "installment_amount": 10,
+                "financial_institution": null,
+                "net_received_amount": 0,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": null,
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [],
+                    "last_updated": "2023-10-29T21:06:05.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 0.41,
+                        "refunded": 0
+                    },
+                    "date_created": "2023-10-29T21:06:05.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66101196024-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66101196024,
+            "payment_type_id": "debit_card",
+            "payment_method": {
+                "issuer_id": "1",
+                "data": {
+                    "routing_data": {
+                        "merchant_account_id": "1007"
+                    }
+                },
+                "id": "debvisa",
+                "type": "debit_card"
+            },
+            "order": {
+                "id": "12890270022",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "pending",
+            "brand_id": null,
+            "status_detail": "cc_rejected_high_risk",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "ip_address": "200.114.144.88",
+                "nsu_processadora": null,
+                "available_balance": null,
+                "items": [
+                    {
+                        "quantity": "1",
+                        "category_id": null,
+                        "picture_url": null,
+                        "description": null,
+                        "id": null,
+                        "title": "PruebaXXX",
+                        "unit_price": "10"
+                    }
+                ]
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {
+                "first_six_digits": "411197",
+                "expiration_year": 2026,
+                "bin": "41119720",
+                "date_created": "2023-10-29T21:06:05.000-04:00",
+                "expiration_month": 10,
+                "id": null,
+                "cardholder": {
+                    "identification": {
+                        "number": "42720179",
+                        "type": "DNI"
+                    },
+                    "name": "MANUEL A BARREIRO"
+                },
+                "last_four_digits": "9267",
+                "date_last_updated": "2023-10-29T21:06:05.000-04:00"
+            },
+            "integrator_id": null,
+            "status": "rejected",
+            "accounts_info": null,
+            "transaction_amount_refunded": 0,
+            "transaction_amount": 10,
+            "description": "PruebaXXX",
+            "financing_group": null,
+            "money_release_date": null,
+            "merchant_number": null,
+            "refunds": [],
+            "expanded": {
+                "gateway": {
+                    "buyer_fee": 0,
+                    "finance_charge": 0,
+                    "date_created": "2023-10-29T21:06:05.000-04:00",
+                    "merchant": null,
+                    "reference": null,
+                    "statement_descriptor": null,
+                    "issuer_id": "1",
+                    "usn": null,
+                    "installments": 1,
+                    "soft_descriptor": "BARREIROMANUE",
+                    "authorization_code": null,
+                    "payment_id": 66101196024,
+                    "profile_id": "g2_genova_genova_1007",
+                    "options": "[{\"collector_id\":1527139338},{\"payment_operation_type\":\"regular_payment\"},{\"has_wallet_id\":false},{\"regulation\":{\"legal_name\":\"Manuel Alejandro Barreiro\",\"address_street\":\"FLORIDA 9680 BP LA LOMADA DEL PILAR\",\"address_door_number\":77,\"zip\":\"1669\",\"city\":\"DEL VISO\",\"country\":\"ARG\",\"document_number\":\"20427201792\",\"document_type\":\"CUIT\",\"region_code\":\"AR\",\"region_code_iso\":\"AR-B\",\"fiscal_condition\":\"Monotributo\",\"mcc\":\"7392\"}},{\"security_code_data\":{\"ads_remove_cvv\":false}}]",
+                    "connection": "genova",
+                    "id": "42519790214_7765777d757b7b76737f",
+                    "operation": "purchase"
+                }
+            },
+            "authorization_code": null,
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T21:06:06.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T21:06:05.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "1",
+            "payment_method_id": "debvisa",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        },
+        {
+            "metadata": {},
+            "corporation_id": null,
+            "operation_type": "regular_payment",
+            "point_of_interaction": {
+                "business_info": {
+                    "unit": "online_payments",
+                    "sub_unit": "checkout_pro"
+                },
+                "transaction_data": {},
+                "type": "UNSPECIFIED"
+            },
+            "fee_details": [
+                {
+                    "amount": 102.5,
+                    "fee_payer": "collector",
+                    "type": "mercadopago_fee"
+                }
+            ],
+            "notification_url": "https://intime-nigeria.vercel.app/api/notify",
+            "date_approved": "2023-10-29T19:41:32.000-04:00",
+            "money_release_schema": null,
+            "payer": {
+                "entity_type": null,
+                "identification": {
+                    "number": "20427201792",
+                    "type": "CUIT"
+                },
+                "phone": {
+                    "number": null,
+                    "extension": null,
+                    "area_code": null
+                },
+                "operator_id": null,
+                "last_name": null,
+                "id": "193757580",
+                "type": null,
+                "first_name": null,
+                "email": "manuelbarreiro3815@yahoo.com"
+            },
+            "transaction_details": {
+                "total_paid_amount": 2500,
+                "acquirer_reference": null,
+                "installment_amount": 2500,
+                "financial_institution": null,
+                "net_received_amount": 2397.5,
+                "overpaid_amount": 0,
+                "external_resource_url": null,
+                "payable_deferral_period": null,
+                "payment_method_reference_id": null
+            },
+            "statement_descriptor": "MERPAGO*MANUELALEJANDROBARREIRO",
+            "call_for_authorize_id": null,
+            "installments": 1,
+            "pos_id": null,
+            "external_reference": null,
+            "date_of_expiration": null,
+            "charges_details": [
+                {
+                    "refund_charges": [
+                        {
+                            "amount": 102.5,
+                            "date_created": "2023-10-29T19:45:13.000-04:00",
+                            "reserve_id": null,
+                            "operation": {
+                                "id": 1536682952,
+                                "type": "refund_payment"
+                            },
+                            "client_id": 3016981581429034,
+                            "currency_id": "ARS"
+                        }
+                    ],
+                    "last_updated": "2023-10-29T19:45:13.000-04:00",
+                    "metadata": {},
+                    "amounts": {
+                        "original": 102.5,
+                        "refunded": 102.5
+                    },
+                    "date_created": "2023-10-29T19:41:30.000-04:00",
+                    "name": "mercadopago_fee",
+                    "reserve_id": null,
+                    "accounts": {
+                        "from": "collector",
+                        "to": "mp"
+                    },
+                    "id": "66097821776-001",
+                    "type": "fee",
+                    "client_id": 0
+                }
+            ],
+            "id": 66097821776,
+            "payment_type_id": "credit_card",
+            "payment_method": {
+                "issuer_id": "310",
+                "data": {
+                    "routing_data": {
+                        "merchant_account_id": "1053"
+                    }
+                },
+                "id": "visa",
+                "type": "credit_card"
+            },
+            "order": {
+                "id": "12885669435",
+                "type": "mercadopago"
+            },
+            "counter_currency": null,
+            "money_release_status": "released",
+            "brand_id": null,
+            "status_detail": "refunded",
+            "tags": null,
+            "differential_pricing_id": null,
+            "additional_info": {
+                "authentication_code": null,
+                "nsu_processadora": null,
+                "available_balance": null
+            },
+            "live_mode": true,
+            "marketplace_owner": null,
+            "card": {
+                "first_six_digits": "450979",
+                "expiration_year": 2025,
+                "bin": "450979",
+                "date_created": "2023-10-29T19:41:30.000-04:00",
+                "expiration_month": 6,
+                "id": "9003724748",
+                "cardholder": {
+                    "identification": {
+                        "number": "42720179",
+                        "type": "DNI"
+                    },
+                    "name": "MANUEL A BARREIRO"
+                },
+                "last_four_digits": "1474",
+                "date_last_updated": "2023-10-29T19:41:30.000-04:00"
+            },
+            "integrator_id": null,
+            "status": "refunded",
+            "accounts_info": null,
+            "transaction_amount_refunded": 2500,
+            "transaction_amount": 2500,
+            "description": "Corona",
+            "financing_group": null,
+            "money_release_date": "2023-10-29T19:46:33.000-04:00",
+            "merchant_number": null,
+            "refunds": [
+                {
+                    "funder": null,
+                    "alternative_refund_mode": null,
+                    "reason": null,
+                    "metadata": {
+                        "status_detail": null
+                    },
+                    "source": {
+                        "name": "Manuel Alejandro Barreiro",
+                        "id": "1527139338",
+                        "type": "collector"
+                    },
+                    "expiration_date": null,
+                    "partition_details": [],
+                    "amount_refunded_to_payer": 2500,
+                    "payment_id": 66097821776,
+                    "id": 1536682952,
+                    "amount": 2500,
+                    "date_created": "2023-10-29T19:45:13.000-04:00",
+                    "external_refund_id": null,
+                    "unique_sequence_number": null,
+                    "labels": [],
+                    "additional_data": null,
+                    "refund_mode": "standard",
+                    "adjustment_amount": 0,
+                    "external_operations": [],
+                    "status": "approved"
+                }
+            ],
+            "expanded": {
+                "gateway": {
+                    "buyer_fee": 0,
+                    "finance_charge": 0,
+                    "date_created": "2023-10-29T19:41:31.000-04:00",
+                    "merchant": null,
+                    "reference": "{\"acquirer_reference_id\":\"1029234131330223028381nVLkpayH463302852910170\",\"acquirer_transaction_id\":\"CAQACAQTPNlngeXQk47N6B6sZ2oL7oHKZ9Iqu_EeGByzc3SUTJwDjB67g9HfZFG4\",\"card_acceptor_id\":\"1053\",\"iso_response_code\":\"00\",\"merchant_operation_reference\":\"42518889524_7f6e7967637f73377771_A\",\"merchant_transaction_reference\":\"CAQACAQTPNlngeXQk47N6B6sZ2oL7oHKZ9Iqu_EeGByzc3SUTJwDjB67g9HfZFG4\",\"pem\":\"pem10\",\"processed_at\":\"2023-10-29T19:41:32-04:00\",\"processed_at_source\":\"integration\",\"retrieval_reference_number\":\"330223028381\",\"ticket_id\":\"42518889524_7f6e7967637f73377771_A\",\"transaction_identification_number\":\"463302852910170\",\"transmission_date_time\":\"1029234131\"}",
+                    "statement_descriptor": "MERPAGO*MANUELALEJANDROBARREIRO",
+                    "issuer_id": "310",
+                    "usn": null,
+                    "installments": 1,
+                    "soft_descriptor": "MANUELALEJANDROBARREIRO",
+                    "authorization_code": "009202",
+                    "payment_id": 66097821776,
+                    "profile_id": "g2_genova_genova_1053",
+                    "options": "[{\"collector_id\":1527139338},{\"payment_operation_type\":\"regular_payment\"},{\"has_wallet_id\":false},{\"regulation\":{\"legal_name\":\"Manuel Alejandro Barreiro\",\"address_street\":\"FLORIDA 9680 BP LA LOMADA DEL PILAR\",\"address_door_number\":77,\"zip\":\"1669\",\"city\":\"DEL VISO\",\"country\":\"ARG\",\"document_number\":\"20427201792\",\"document_type\":\"CUIT\",\"region_code\":\"AR\",\"region_code_iso\":\"AR-B\",\"fiscal_condition\":\"Monotributo\",\"mcc\":\"7392\"}},{\"tokenization\":{\"dpan_id\":\"MXFRTCHCWZBVABXZENOCLUAQFAIQSVLBBQTCURUX\",\"cryptogram\":\"/wAAAAABBcLkW/UAmbV0gy4AAAA=\",\"expiration_month\":6,\"expiration_year\":2025,\"trunc_card_number\":\"454789XXXXXX4751\",\"eci\":\"07\",\"par\":\"V0010014621135641291530009808\"}},{\"security_code_data\":{\"ads_remove_cvv\":false}},{\"freepass\":true},{\"tokenization\":{\"dpan_id\":\"MXFRTCHCWZBVABXZENOCLUAQFAIQSVLBBQTCURUX\",\"cryptogram\":\"/wAAAAABBcLkW/UAmbV0gy4AAAA=\",\"expiration_month\":6,\"expiration_year\":2025,\"trunc_card_number\":\"454789XXXXXX4751\",\"eci\":\"07\",\"par\":\"V0010014621135641291530009808\"}}]",
+                    "connection": "genova",
+                    "id": "42518889524_7f6e7967637f73377771",
+                    "operation": "refund"
+                }
+            },
+            "authorization_code": "009202",
+            "captured": true,
+            "collector_id": 1527139338,
+            "merchant_account_id": null,
+            "taxes_amount": 0,
+            "date_last_updated": "2023-10-29T19:47:15.000-04:00",
+            "coupon_amount": 0,
+            "store_id": null,
+            "build_version": "54.20.6-hotfix-4",
+            "date_created": "2023-10-29T19:41:30.000-04:00",
+            "acquirer_reconciliation": [],
+            "sponsor_id": null,
+            "shipping_amount": 0,
+            "issuer_id": "310",
+            "payment_method_id": "visa",
+            "binary_mode": false,
+            "platform_id": null,
+            "deduction_schema": null,
+            "processing_mode": "aggregator",
+            "currency_id": "ARS",
+            "shipping_cost": 0
+        }
+    ],
+    "paging": {
+        "total": 23,
+        "limit": 30,
+        "offset": 0
+    }
+}

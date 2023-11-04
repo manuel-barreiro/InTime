@@ -1,0 +1,3753 @@
+{
+  "results": [
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 471.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T19:13:23.133-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 11500,
+              "acquirer_reference": null,
+              "installment_amount": 11500,
+              "financial_institution": null,
+              "net_received_amount": 11028.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T19:13:22.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 471.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T19:13:22.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1319268439-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1319268439,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12931960225",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": "1",
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": "2",
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": "3",
+                      "title": "Jack Daniels",
+                      "unit_price": "5000"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": "7",
+                      "title": "Shot Jaggermeister",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T19:13:22.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Nahuel"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T19:13:22.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 11500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T19:13:23.133-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T19:13:23.133-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T19:13:22.837-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 389.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T19:10:37.909-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 9500,
+              "acquirer_reference": null,
+              "installment_amount": 9500,
+              "financial_institution": null,
+              "net_received_amount": 9110.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T19:10:37.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 389.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T19:10:37.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1319268399-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1319268399,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12934949420",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": "1",
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": "2",
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": "3",
+                      "title": "Jack Daniels",
+                      "unit_price": "5000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T19:10:37.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Nahuel"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T19:10:37.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 9500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T19:10:37.909-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T19:10:37.909-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T19:10:37.601-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T19:03:18.651-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T19:03:18.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T19:03:18.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1319268365-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1319268365,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12934738236",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T19:03:18.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Nahuel"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T19:03:18.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T19:03:18.651-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T19:03:18.651-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T19:03:18.386-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T18:59:50.070-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T18:59:49.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T18:59:49.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1319270053-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1319270053,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12934637218",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T18:59:49.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T18:59:49.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T18:59:50.070-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T18:59:50.070-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T18:59:49.798-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T18:36:54.707-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T18:36:54.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T18:36:54.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1319268023-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1319268023,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12930894205",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T18:36:54.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T18:36:54.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T18:36:54.707-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T18:36:54.707-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T18:36:54.322-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T18:34:26.304-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T18:34:25.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T18:34:25.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1319267995-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1319267995,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12933897030",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T18:34:26.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T18:34:26.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T18:34:26.304-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T18:34:26.304-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T18:34:25.977-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T17:43:54.235-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T17:43:53.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T17:43:53.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315736226-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315736226,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12929312399",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T17:43:53.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T17:43:53.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T17:43:54.235-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T17:43:54.235-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T17:43:53.960-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T17:29:07.413-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T17:29:07.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T17:29:07.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315736050-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315736050,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12928866399",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T17:29:07.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T17:29:07.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T17:29:07.413-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T17:29:07.413-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T17:29:07.159-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T17:27:40.841-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T17:27:40.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T17:27:40.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315737930-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315737930,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12928831221",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T17:27:40.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T17:27:40.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T17:27:40.841-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T17:27:40.841-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T17:27:40.570-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T17:25:06.622-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T17:25:06.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T17:25:06.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315735944-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315735944,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12928748497",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T17:25:06.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T17:25:06.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T17:25:06.622-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T17:25:06.622-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T17:25:06.320-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T17:23:52.127-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T17:23:51.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T17:23:51.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315735916-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315735916,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12928710621",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T17:23:51.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T17:23:51.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T17:23:52.127-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T17:23:52.127-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T17:23:51.847-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T17:21:57.822-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T17:21:57.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T17:21:57.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315735894-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315735894,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12931721614",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T17:21:57.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T17:21:57.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T17:21:57.822-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T17:21:57.822-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T17:21:57.532-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T17:20:40.982-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T17:20:40.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T17:20:40.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315737834-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315737834,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12928608981",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T17:20:40.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T17:20:40.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T17:20:40.982-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T17:20:40.982-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T17:20:40.719-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T17:19:01.264-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T17:19:00.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T17:19:00.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315737816-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315737816,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12931630154",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T17:19:00.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T17:19:00.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T17:19:01.264-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T17:19:01.264-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T17:19:00.934-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T17:17:50.339-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T17:17:50.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T17:17:50.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315735836-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315735836,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12928526489",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T17:17:50.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T17:17:50.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T17:17:50.339-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T17:17:50.339-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T17:17:50.038-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T16:55:58.443-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T16:55:58.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T16:55:58.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315735492-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315735492,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12930957880",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T16:55:58.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T16:55:58.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T16:55:58.443-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T16:55:58.443-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T16:55:58.145-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T16:53:48.464-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T16:53:48.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T16:53:48.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315737340-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315737340,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12930894624",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T16:53:48.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T16:53:48.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T16:53:48.464-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T16:53:48.464-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T16:53:48.183-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T16:52:36.642-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T16:52:36.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T16:52:36.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315737302-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315737302,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12930858658",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T16:52:36.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T16:52:36.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T16:52:36.642-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T16:52:36.642-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T16:52:36.373-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T16:46:05.863-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T16:46:05.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T16:46:05.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315737138-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315737138,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12927614391",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T16:46:05.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T16:46:05.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T16:46:05.863-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T16:46:05.863-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T16:46:05.559-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T16:44:09.758-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T16:44:09.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T16:44:09.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315737112-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315737112,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12930627340",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T16:44:09.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Pepe"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T16:44:09.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T16:44:09.758-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T16:44:09.758-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T16:44:09.497-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      },
+      {
+          "metadata": {},
+          "corporation_id": null,
+          "operation_type": "regular_payment",
+          "point_of_interaction": {
+              "business_info": {
+                  "unit": "online_payments",
+                  "sub_unit": "checkout_pro"
+              },
+              "transaction_data": {
+                  "e2e_id": null
+              },
+              "type": "CHECKOUT"
+          },
+          "fee_details": [
+              {
+                  "amount": 184.5,
+                  "fee_payer": "collector",
+                  "type": "mercadopago_fee"
+              }
+          ],
+          "notification_url": "https://6400-200-114-144-88.ngrok-free.app/api/notify",
+          "date_approved": "2023-10-31T16:36:07.996-04:00",
+          "money_release_schema": null,
+          "payer": {
+              "identification": {
+                  "number": "32659430",
+                  "type": "DNI"
+              },
+              "entity_type": null,
+              "phone": {
+                  "number": null,
+                  "extension": null,
+                  "area_code": null
+              },
+              "last_name": null,
+              "id": "1531723048",
+              "type": null,
+              "first_name": null,
+              "email": "test_user_80507629@testuser.com"
+          },
+          "transaction_details": {
+              "total_paid_amount": 4500,
+              "acquirer_reference": null,
+              "installment_amount": 4500,
+              "financial_institution": null,
+              "net_received_amount": 4315.5,
+              "overpaid_amount": 0,
+              "external_resource_url": null,
+              "payable_deferral_period": null,
+              "payment_method_reference_id": null
+          },
+          "statement_descriptor": null,
+          "call_for_authorize_id": null,
+          "installments": 1,
+          "pos_id": null,
+          "external_reference": null,
+          "date_of_expiration": null,
+          "charges_details": [
+              {
+                  "refund_charges": [],
+                  "last_updated": "2023-10-31T16:36:07.000-04:00",
+                  "metadata": {},
+                  "amounts": {
+                      "original": 184.5,
+                      "refunded": 0
+                  },
+                  "date_created": "2023-10-31T16:36:07.000-04:00",
+                  "name": "mercadopago_fee",
+                  "reserve_id": null,
+                  "accounts": {
+                      "from": "collector",
+                      "to": "mp"
+                  },
+                  "id": "1315735064-001",
+                  "type": "fee",
+                  "client_id": 0
+              }
+          ],
+          "id": 1315735064,
+          "payment_type_id": "credit_card",
+          "payment_method": {
+              "issuer_id": "310",
+              "data": {
+                  "routing_data": {
+                      "merchant_account_id": "1001"
+                  }
+              },
+              "id": "visa",
+              "type": "credit_card"
+          },
+          "order": {
+              "id": "12930394214",
+              "type": "mercadopago"
+          },
+          "counter_currency": null,
+          "money_release_status": "pending",
+          "brand_id": null,
+          "status_detail": "accredited",
+          "tags": null,
+          "differential_pricing_id": null,
+          "additional_info": {
+              "authentication_code": null,
+              "ip_address": "200.114.144.88",
+              "nsu_processadora": null,
+              "available_balance": null,
+              "items": [
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Corona",
+                      "unit_price": "2500"
+                  },
+                  {
+                      "quantity": "1",
+                      "category_id": null,
+                      "picture_url": null,
+                      "description": null,
+                      "id": null,
+                      "title": "Budweiser Lata 473cc",
+                      "unit_price": "2000"
+                  }
+              ]
+          },
+          "live_mode": false,
+          "marketplace_owner": null,
+          "card": {
+              "first_six_digits": "450995",
+              "expiration_year": 2025,
+              "date_created": "2023-10-31T16:36:07.000-04:00",
+              "expiration_month": 11,
+              "id": null,
+              "cardholder": {
+                  "identification": {
+                      "number": "12345678",
+                      "type": "DNI"
+                  },
+                  "name": "Nahuel"
+              },
+              "last_four_digits": "3704",
+              "date_last_updated": "2023-10-31T16:36:07.000-04:00"
+          },
+          "integrator_id": null,
+          "status": "approved",
+          "accounts_info": null,
+          "transaction_amount_refunded": 0,
+          "transaction_amount": 4500,
+          "description": "Corona",
+          "financing_group": null,
+          "money_release_date": "2023-11-18T16:36:07.996-04:00",
+          "merchant_number": null,
+          "refunds": [],
+          "authorization_code": "229549003",
+          "captured": true,
+          "collector_id": 1527139338,
+          "merchant_account_id": null,
+          "taxes_amount": 0,
+          "date_last_updated": "2023-10-31T16:36:07.996-04:00",
+          "coupon_amount": 0,
+          "store_id": null,
+          "build_version": "3.24.1",
+          "date_created": "2023-10-31T16:36:07.682-04:00",
+          "acquirer_reconciliation": [],
+          "sponsor_id": null,
+          "shipping_amount": 0,
+          "issuer_id": "310",
+          "payment_method_id": "visa",
+          "binary_mode": false,
+          "platform_id": null,
+          "deduction_schema": null,
+          "processing_mode": "aggregator",
+          "currency_id": "ARS",
+          "shipping_cost": 0
+      }
+  ],
+  "paging": {
+      "total": 21,
+      "limit": 30,
+      "offset": 0
+  }
+}

@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, useEffect, useState } from 'react'
+import { ReactEventHandler, createContext, useContext, useEffect, useState } from 'react'
 // import { useLocalStorage } from "../hooks/useLocalStorage"
 
 type ShoppingCartProviderProps = {
@@ -8,11 +8,11 @@ type ShoppingCartProviderProps = {
 }
 
 type ShoppingCartContext = {
-  openCart: () => void
-  closeCart: () => void
   getItemQuantity: (id: number) => number
   increaseCartQuantity: (id: number, name: string, price: number) => void
   decreaseCartQuantity: (id: number) => void
+  contactInfoHandler: (name: any) => ReactEventHandler<HTMLInputElement>
+  contactInfo: { nombre: string, email: string, whatsapp: number }
   cartItems: CartItem[]
   cartSubtotal: number
   cartQuantity: number
@@ -32,9 +32,17 @@ export function useShoppingCart (): any {
 }
 
 export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps): JSX.Element {
-  const [isOpen, setIsOpen] = useState(false)
-  const openCart = () => setIsOpen(true)
-  const closeCart = () => setIsOpen(false)
+  // const [isOpen, setIsOpen] = useState(false)
+  // const openCart = () => setIsOpen(true)
+  // const closeCart = () => setIsOpen(false)
+
+  const [contactInfo, setContactInfo] = useState({ nombre: '', email: '', whatsapp: 0 });
+
+  function contactInfoHandler (name: any) {
+    return (event: any) => {
+      setContactInfo({ ...contactInfo, [name]: event.target.value });
+    };
+  };
 
   const [cartItems, setCartItems] = useState<CartItem[]>([])
   
@@ -96,7 +104,7 @@ export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps): 
   }
 
   return (
-    <ShoppingCartContext.Provider value={{ openCart, closeCart, getItemQuantity, increaseCartQuantity, decreaseCartQuantity, cartItems, cartSubtotal, cartQuantity }}>
+    <ShoppingCartContext.Provider value={{ getItemQuantity, increaseCartQuantity, decreaseCartQuantity, contactInfoHandler, contactInfo,  cartItems, cartSubtotal, cartQuantity }}>
       {children}
     </ShoppingCartContext.Provider>
   )
