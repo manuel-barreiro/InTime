@@ -9,8 +9,9 @@ export async function POST(request: Request){
   if (notification.type === 'payment') {
     const paymentId = notification.data.id
     console.log('ID del pago: ', paymentId)
-    
-    const infoPagoAPIResponse = await fetch(`https://api.mercadopago.com/v1/payments/${paymentId}`, {
+
+    try {
+      const infoPagoAPIResponse = await fetch(`https://api.mercadopago.com/v1/payments/${paymentId}`, {
       method: 'GET',
       headers: {
       'Content-Type': 'application/json',
@@ -38,7 +39,11 @@ export async function POST(request: Request){
 
       await connectMongoDB();
       await Order.create( paymentData );
-      return NextResponse.json( { status: 200 } )
+      return NextResponse.json( {message: 'Added order to DB'}, { status: 200 } )
+      
+    } catch (error) {
+      return NextResponse.json( { error: error }, { status: 400 } )
+    }
   }
 
   return NextResponse.json( { status: 200 } )

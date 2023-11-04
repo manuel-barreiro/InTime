@@ -12,39 +12,16 @@ import { formatDate } from "@/utilities/formatDate"
 import connectMongoDB from "@/utilities/mongodb";
 
 async function getOrders() {
-  try {
-    // const infoPagosAPIResponse = await fetch('https://api.mercadopago.com/v1/payments/search?sort=date_created&criteria=desc', {
-    // method: 'GET',
-    // headers: {
-    // 'Content-Type': 'application/json',
-    // Authorization: `Bearer ${process.env.ACCESS_TOKEN}`
-    // },
-    // })
-    // const infoPagosJSON = await infoPagosAPIResponse.json()
-    // const pagos = infoPagosJSON.results
 
+  try {
     await connectMongoDB();
     const orders = await Order.find().sort( { updatedAt: -1 } );
-    // const ordersMappeadas = orders.map((order: any) => {return {
-    //   id: order.id,
-    //   date_created: formatDate(new Date(Date.parse(order.date_created))),
-    //   items: order.additional_info.items,
-    //   total: order.transaction_amount,
-    //   status: order.status,
-    //   status_detail: order.status_detail,
-    //   payment_method_type: order.payment_method.type,
-    //   payment_method_id: order.payment_method.id,
-    //   nombre: order.payer.first_name,
-    //   apellido: order.payer.last_name,
-    //   whatsapp: order.whatsapp,
-    //   email: order.payer.email
-    // }}) 
-
     return orders
 
   } catch {
     console.log(Error)
   }
+
 }
 
 
