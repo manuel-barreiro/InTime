@@ -38,11 +38,9 @@ export async function POST(request: Request){
 
       await connectMongoDB();
       await Order.create( paymentData );
-      return NextResponse.json( { message: "Task Created" }, { status: 200 } );
+      return NextResponse.json( { status: 200 } )
   }
 
-  return NextResponse.json({
-    status: 200,
-  })
+  return NextResponse.json( { status: 200 } )
 
 }
