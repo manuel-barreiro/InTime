@@ -17,7 +17,7 @@ export default async function page () {
 
   const pedidos = await pedidosResponse.json()
 
-  console.log(pedidos)
+  console.log('PEDIDOS PAGE RENDER', pedidos)
   
   
   return (
