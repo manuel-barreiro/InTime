@@ -23,6 +23,7 @@ export default function page () {
       try {
         const res = await fetch('/api/getOrders', {
           method: 'GET', 
+          cache: 'no-store'
         })
         const data = await res.json()
         setPedidos(data)
