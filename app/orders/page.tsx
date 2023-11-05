@@ -1,5 +1,3 @@
-'use client'
-
 import {
   Table,
   TableBody,
@@ -10,13 +8,7 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
-
-// import { useEffect, useState } from "react";
-
 import { formatCurrency } from "@/utilities/formatCurrency";
-import connectMongoDB from "@/utilities/mongodb";
-import Order from "@/models/order";
-import { useEffect, useState } from "react";
 
 function formatDate(inputDate: string) {
   const originalDate = new Date(inputDate);
@@ -40,29 +32,26 @@ function formatHour(inputDate: string) {
   return formattedDate;
 }
 
+async function getOrders() {
+  try {
+    const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
+        cache: "no-store",
+        method: "POST",
+    })
 
-  async function getOrders() {
-    try {
-      const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
-          cache: "no-store",
-          method: "POST",
-      })
-
-      if (!res.ok) {
-          throw new Error("Failed to fetch orders.")
-      }
-      const data = await res.json()
-      return data
-  } catch (error) {
-      console.log("Error loading orders:", error)
-  }
-  }
+    if (!res.ok) {
+        throw new Error("Failed to fetch orders.")
+    }
+    const data = await res.json()
+    return data
+} catch (error) {
+    console.log("Error loading orders:", error)
+}
+}
 
 export default async function page () {
 
   const pedidos = await getOrders()
-
-  // console.log('PEDIDOS PAGE RENDER', pedidos[0])
 
   // const [pedidos, setPedidos] = useState<any>([]);
   // const [loading, setLoading] = useState<boolean>(true);
@@ -85,31 +74,6 @@ export default async function page () {
   //   fetchPedidos()
   // }, [])
 
-  // useEffect(() => {
-  //   const fetchPedidos = async () => {
-  //     setLoading(true);
-  //     try {
-  //       await connectMongoDB();
-  //       const ordersResponse = await Order.find().sort( { updatedAt: -1 } )
-  //       const orders: any = await ordersResponse.json()
-  //       console.log(orders)
-  //       setPedidos(orders)
-    
-  //     } catch(error) {
-  //       console.log(error)
-  //     }
-  //     setLoading(false);
-  //   }
-  //   fetchPedidos()
-  // }, [])
-
-  // const pedidosResponse = await fetch('https://www.shortcut.com.ar/api/getOrders', { cache: 'no-store' })
-
-  // const pedidos = await pedidosResponse.json()
-
-  // console.log('PEDIDOS PAGE RENDER', pedidos)
-  
-  
   return (
     <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center">
       <h3 className="text-white text-4xl font-bold">Pedidos - Nigeria</h3>
