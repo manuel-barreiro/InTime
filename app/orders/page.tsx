@@ -11,19 +11,10 @@ import Order from "@/models/order";
 import { formatDate } from "@/utilities/formatDate"
 import connectMongoDB from "@/utilities/mongodb";
 
-async function getOrders() {
-  try {
-    await connectMongoDB();
-    const orders = await Order.find().sort( { updatedAt: -1 } );
-    return orders
-  } catch(error) {
-    console.log(error)
-  }
-}
-
 export default async function page () {
 
-  const pedidos = await getOrders();
+  const pedidosResponse = await fetch('https://www.shortcut.com.ar/api/getOrders', { cache: 'no-store' })
+  const pedidos = await pedidosResponse.json()
 
   return (
     <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center">
