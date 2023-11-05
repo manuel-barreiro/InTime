@@ -40,7 +40,7 @@ export default async function page () {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {/* {pedidos?.map((pedido: any) => (
+              {pedidos?.map((pedido: any) => (
                 <TableRow key={pedido.id}>
                   <TableCell className="font-medium">{pedido.id}</TableCell>
                   <TableCell className="font-medium">{pedido.date_created}</TableCell>
@@ -52,7 +52,7 @@ export default async function page () {
                   <TableCell className="font-medium">{pedido.whatsapp}</TableCell>
                   <TableCell className="font-medium">{pedido.email}</TableCell>
                 </TableRow>
-              ))} */}
+              ))}
             </TableBody>
           </Table>
     </div>
