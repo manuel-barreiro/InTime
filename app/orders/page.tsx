@@ -13,9 +13,14 @@ import connectMongoDB from "@/utilities/mongodb";
 
 export default async function page () {
 
-  const pedidosResponse = await fetch('https://www.shortcut.com.ar/api/getOrders', { cache: 'no-store' })
-  const pedidos = await pedidosResponse.json()
+  const pedidosResponse = await fetch('http://localhost:3000/api/getOrders', {
+    method: 'GET',
+    cache: 'no-store',
+  })
 
+  const pedidos = await pedidosResponse.json()
+  
+  
   return (
     <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center">
       <h3 className="text-white text-4xl font-bold">Pedidos - Nigeria</h3>
@@ -39,13 +44,11 @@ export default async function page () {
               {pedidos?.map((pedido: any) => (
                 <TableRow key={pedido.id}>
                   <TableCell className="font-medium">{pedido.id}</TableCell>
-                  <TableCell className="font-medium">{formatDate(pedido.date_created)}</TableCell>
+                  <TableCell className="font-medium">{pedido.date_created}</TableCell>
                   <TableCell className="font-medium">{pedido.items.map((i: any) => i.title)}</TableCell>
                   <TableCell className="font-medium">{pedido.total}</TableCell>
                   <TableCell className="font-medium">{pedido.status}</TableCell>
-                  {/* <TableCell className="font-medium">{pedido.status_detail}</TableCell> */}
                   <TableCell className="font-medium">{pedido.payment_method_type}</TableCell>
-                  {/* <TableCell className="font-medium">{pedido.payment_method_id}</TableCell> */}
                   <TableCell className="font-medium">{pedido.nombre}</TableCell>
                   <TableCell className="font-medium">{pedido.whatsapp}</TableCell>
                   <TableCell className="font-medium">{pedido.email}</TableCell>

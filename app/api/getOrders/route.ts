@@ -5,6 +5,8 @@ import { NextResponse } from "next/server";
 
 export async function GET (request: Request) {
 
+  console.log('getOrders')
+
   try {
     await connectMongoDB();
     const orders = await Order.find().sort( { updatedAt: -1 } );
@@ -14,6 +16,4 @@ export async function GET (request: Request) {
     console.log(error)
   }
 
-
-  return NextResponse.json({ status: 200 })
 }
