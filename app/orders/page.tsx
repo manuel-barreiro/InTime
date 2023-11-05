@@ -115,16 +115,16 @@ export default async function page () {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {/* {pedidos?.map((pedido: any) => (
+              {pedidos?.map((pedido: any) => (
                 <TableRow key={pedido.id}>
                   <TableCell className="font-medium text-sm text-center">{pedido.id.toString().slice(-4)}</TableCell>
                   <TableCell className="font-medium text-sm text-center">
-                    {<div>
+                    {<div key={pedido.id}>
                       <p>{formatDate(pedido.date_created)}</p>
                       <p>{formatHour(pedido.date_created)}</p>
                     </div>}
                   </TableCell>
-                  <TableCell className="font-medium text-sm">{pedido.items.map((i: any) => <p>x{i.quantity} {i.title}</p>)}</TableCell>
+                  <TableCell className="font-medium text-sm">{pedido.items.map((i: any) => <p key={pedido.item}>x{i.quantity} {i.title}</p>)}</TableCell>
                   <TableCell className="font-medium text-sm text-center">{formatCurrency(pedido.total)}</TableCell>
                   <TableCell className="font-medium text-sm text-center">
                     {pedido.status === 'approved' ?
@@ -137,7 +137,7 @@ export default async function page () {
                   <TableCell className="font-medium text-sm text-center">{pedido.whatsapp}</TableCell>
                   <TableCell className="font-medium text-sm text-center">{pedido.email}</TableCell>
                 </TableRow>
-              ))} */}
+              ))}
             </TableBody>
           </Table>
     </div>
