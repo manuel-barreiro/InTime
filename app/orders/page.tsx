@@ -39,17 +39,33 @@ function formatHour(inputDate: string) {
   return formattedDate;
 }
 
-export default async function page () {
+  // async function getOrders() {
+  //   await connectMongoDB();
+  //   const orders: any = await Order.find().sort( { updatedAt: -1 } )
+  //   return orders
+  // }
 
   async function getOrders() {
-    await connectMongoDB();
-    const orders: any = await Order.find().sort( { updatedAt: -1 } )
-    return orders
+    try {
+      const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
+          cache: "no-store"
+      })
+
+      if (!res.ok) {
+          throw new Error("Failed to fetch orders.")
+      }
+
+      return res.json()
+  } catch (error) {
+      console.log("Error loading orders:", error)
   }
+  }
+
+export default async function page () {
 
   const pedidos = await getOrders()
 
-  console.log('PEDIDOS PAGE RENDER', pedidos[0])
+  // console.log('PEDIDOS PAGE RENDER', pedidos[0])
 
   // const [pedidos, setPedidos] = useState<any>([]);
   // const [loading, setLoading] = useState<boolean>(true);
