@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 
 import {
   Table,
@@ -11,9 +11,11 @@ import {
 } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 import { formatCurrency } from "@/utilities/formatCurrency";
+import connectMongoDB from "@/utilities/mongodb";
+import Order from "@/models/order";
 
 function formatDate(inputDate: string) {
   const originalDate = new Date(inputDate);
@@ -37,27 +39,37 @@ function formatHour(inputDate: string) {
   return formattedDate;
 }
 
-export default function page () {
+export default async function page () {
 
-  const [pedidos, setPedidos] = useState<any>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  async function getOrders() {
+    await connectMongoDB();
+    const orders: any = await Order.find().sort( { updatedAt: -1 } )
+    return orders
+  }
 
-  useEffect(() => {
-    const fetchPedidos = async () => {
-      setLoading(true);
-      try {
-        const res = await fetch('/api/getOrders', {
-          cache: 'no-store'
-        })
-        const data = await res.json()
-        setPedidos(data)
-      } catch (error) {
-        console.error(error);
-      }
-      setLoading(false);
-    }
-    fetchPedidos()
-  }, [])
+  const pedidos = await getOrders()
+
+  console.log('PEDIDOS PAGE RENDER', pedidos[0])
+
+  // const [pedidos, setPedidos] = useState<any>([]);
+  // const [loading, setLoading] = useState<boolean>(true);
+
+  // useEffect(() => {
+  //   const fetchPedidos = async () => {
+  //     setLoading(true);
+  //     try {
+  //       const res = await fetch('/api/getOrders', {
+  //         cache: 'no-store'
+  //       })
+  //       const data = await res.json()
+  //       setPedidos(data)
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //     setLoading(false);
+  //   }
+  //   fetchPedidos()
+  // }, [])
 
   // useEffect(() => {
   //   const fetchPedidos = async () => {
@@ -103,7 +115,7 @@ export default function page () {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {pedidos?.map((pedido: any) => (
+              {/* {pedidos?.map((pedido: any) => (
                 <TableRow key={pedido.id}>
                   <TableCell className="font-medium text-sm text-center">{pedido.id.toString().slice(-4)}</TableCell>
                   <TableCell className="font-medium text-sm text-center">
@@ -120,14 +132,12 @@ export default function page () {
                       :
                       <Badge variant={'destructive'}>{pedido.status}</Badge>
                     }
-                    
                   </TableCell>
-                  {/* <TableCell className="font-medium">{pedido.payment_method_type}</TableCell> */}
                   <TableCell className="font-medium text-sm text-center">{pedido.nombre}</TableCell>
                   <TableCell className="font-medium text-sm text-center">{pedido.whatsapp}</TableCell>
                   <TableCell className="font-medium text-sm text-center">{pedido.email}</TableCell>
                 </TableRow>
-              ))}
+              ))} */}
             </TableBody>
           </Table>
     </div>
