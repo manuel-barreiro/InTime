@@ -124,7 +124,7 @@ export default async function page () {
                       <p>{formatHour(pedido.date_created)}</p>
                     </div>}
                   </TableCell>
-                  <TableCell className="font-medium text-sm">{pedido.items.map((i: any) => <p key={pedido.item}>x{i.quantity} {i.title}</p>)}</TableCell>
+                  <TableCell className="font-medium text-sm">{pedido.items.map((i: any) => <p key={i.id}>x{i.quantity} {i.title}</p>)}</TableCell>
                   <TableCell className="font-medium text-sm text-center">{formatCurrency(pedido.total)}</TableCell>
                   <TableCell className="font-medium text-sm text-center">
                     {pedido.status === 'approved' ?
