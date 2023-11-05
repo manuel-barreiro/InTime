@@ -14,7 +14,7 @@ export async function POST(request: Request){
     };
   });
 
-  const url = "https://shortcut.com.ar";
+  const url = "https://www.shortcut.com.ar";
 
   try {
 

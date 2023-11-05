@@ -1,0 +1,156 @@
+{
+  "accounts_info": null,
+  "acquirer_reconciliation": [],
+  "additional_info": {
+      "authentication_code": null,
+      "available_balance": null,
+      "ip_address": "200.114.144.88",
+      "items": [
+          {
+              "category_id": null,
+              "description": null,
+              "id": "99",
+              "picture_url": null,
+              "quantity": "1",
+              "title": "PruebaXXX",
+              "unit_price": "10"
+          }
+      ],
+      "nsu_processadora": null
+  },
+  "authorization_code": null,
+  "binary_mode": false,
+  "brand_id": null,
+  "build_version": "3.24.1",
+  "call_for_authorize_id": null,
+  "captured": true,
+  "card": {},
+  "charges_details": [
+      {
+          "accounts": {
+              "from": "collector",
+              "to": "mp"
+          },
+          "amounts": {
+              "original": 0.41,
+              "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2023-11-04T19:50:03.000-04:00",
+          "id": "66259002963-001",
+          "last_updated": "2023-11-04T19:50:03.000-04:00",
+          "metadata": {},
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee"
+      }
+  ],
+  "collector_id": 1527139338,
+  "corporation_id": null,
+  "counter_currency": null,
+  "coupon_amount": 0,
+  "currency_id": "ARS",
+  "date_approved": "2023-11-04T19:50:03.000-04:00",
+  "date_created": "2023-11-04T19:50:03.000-04:00",
+  "date_last_updated": "2023-11-04T19:50:06.000-04:00",
+  "date_of_expiration": null,
+  "deduction_schema": null,
+  "description": "PruebaXXX",
+  "differential_pricing_id": null,
+  "external_reference": null,
+  "fee_details": [
+      {
+          "amount": 0.41,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+      }
+  ],
+  "financing_group": null,
+  "id": 66259002963,
+  "installments": 1,
+  "integrator_id": null,
+  "issuer_id": "2005",
+  "live_mode": true,
+  "marketplace_owner": null,
+  "merchant_account_id": null,
+  "merchant_number": null,
+  "metadata": {
+      "whatsapp": "1169876909",
+      "nombre": "Lucas",
+      "email": "lucas@hotmail.com"
+  },
+  "money_release_date": "2023-11-22T19:50:03.000-04:00",
+  "money_release_schema": null,
+  "money_release_status": "pending",
+  "notification_url": "https://shortcut.com.ar/api/notify",
+  "operation_type": "regular_payment",
+  "order": {
+      "id": "13041658463",
+      "type": "mercadopago"
+  },
+  "payer": {
+      "email": "manuelbarreiro3815@yahoo.com",
+      "entity_type": null,
+      "first_name": null,
+      "id": "193757580",
+      "identification": {
+          "number": "20427201792",
+          "type": "CUIT"
+      },
+      "last_name": null,
+      "operator_id": null,
+      "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+      },
+      "type": null
+  },
+  "payment_method": {
+      "id": "account_money",
+      "issuer_id": "2005",
+      "type": "account_money"
+  },
+  "payment_method_id": "account_money",
+  "payment_type_id": "account_money",
+  "platform_id": null,
+  "point_of_interaction": {
+      "business_info": {
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+      },
+      "location": {
+          "source": "Payer",
+          "state_id": "AR-B"
+      },
+      "transaction_data": {
+          "e2e_id": null
+      },
+      "type": "CHECKOUT"
+  },
+  "pos_id": null,
+  "processing_mode": "aggregator",
+  "refunds": [],
+  "shipping_amount": 0,
+  "sponsor_id": null,
+  "statement_descriptor": null,
+  "status": "approved",
+  "status_detail": "accredited",
+  "store_id": null,
+  "tags": null,
+  "taxes_amount": 0,
+  "transaction_amount": 10,
+  "transaction_amount_refunded": 0,
+  "transaction_details": {
+      "acquirer_reference": null,
+      "external_resource_url": null,
+      "financial_institution": null,
+      "installment_amount": 0,
+      "net_received_amount": 9.59,
+      "overpaid_amount": 0,
+      "payable_deferral_period": null,
+      "payment_method_reference_id": null,
+      "total_paid_amount": 10
+  }
+}
