@@ -13,7 +13,7 @@ import connectMongoDB from "@/utilities/mongodb";
 
 export default async function page () {
 
-  const pedidosResponse = await fetch('http://localhost:3000/api/getOrders', {
+  const pedidosResponse = await fetch('https://www.shortcut.com.ar/api/getOrders', {
     method: 'GET',
     cache: 'no-store',
   })
