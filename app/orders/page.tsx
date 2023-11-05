@@ -19,10 +19,9 @@ export default function page () {
 
   useEffect(() => {
     const fetchPedidos = async () => {
-    setLoading(true);
+      setLoading(true);
       try {
         const res = await fetch('/api/getOrders', {
-          method: 'GET', 
           cache: 'no-store'
         })
         const data = await res.json()
