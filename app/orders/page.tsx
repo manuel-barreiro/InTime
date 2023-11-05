@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 
 import {
   Table,
@@ -16,6 +16,7 @@ import { Badge } from "@/components/ui/badge"
 import { formatCurrency } from "@/utilities/formatCurrency";
 import connectMongoDB from "@/utilities/mongodb";
 import Order from "@/models/order";
+import { useEffect, useState } from "react";
 
 function formatDate(inputDate: string) {
   const originalDate = new Date(inputDate);
@@ -45,54 +46,55 @@ function formatHour(inputDate: string) {
   //   return orders
   // }
 
-  async function getOrders() {
-    try {
-      const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
-          cache: "no-store"
-      })
+  // async function getOrders() {
+  //   try {
+  //     const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
+  //         cache: "no-store"
+  //     })
 
-      if (!res.ok) {
-          throw new Error("Failed to fetch orders.")
-      }
+  //     if (!res.ok) {
+  //         throw new Error("Failed to fetch orders.")
+  //     }
 
-      return res.json()
-  } catch (error) {
-      console.log("Error loading orders:", error)
-  }
-  }
+  //     return res.json()
+  // } catch (error) {
+  //     console.log("Error loading orders:", error)
+  // }
+  // }
 
-export default async function page () {
+export default function page () {
 
-  const pedidos = await getOrders()
+  // const pedidos = await getOrders()
 
   // console.log('PEDIDOS PAGE RENDER', pedidos[0])
 
-  // const [pedidos, setPedidos] = useState<any>([]);
-  // const [loading, setLoading] = useState<boolean>(true);
+  const [pedidos, setPedidos] = useState<any>([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
-  // useEffect(() => {
-  //   const fetchPedidos = async () => {
-  //     setLoading(true);
-  //     try {
-  //       const res = await fetch('/api/getOrders', {
-  //         cache: 'no-store'
-  //       })
-  //       const data = await res.json()
-  //       setPedidos(data)
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //     setLoading(false);
-  //   }
-  //   fetchPedidos()
-  // }, [])
+  useEffect(() => {
+    const fetchPedidos = async () => {
+      setLoading(true);
+      try {
+        const res = await fetch('/api/getOrders', {
+          cache: 'no-store'
+        })
+        const data = await res.json()
+        setPedidos(data)
+      } catch (error) {
+        console.error(error);
+      }
+      setLoading(false);
+    }
+    fetchPedidos()
+  }, [])
 
   // useEffect(() => {
   //   const fetchPedidos = async () => {
   //     setLoading(true);
   //     try {
   //       await connectMongoDB();
-  //       const orders: any = await Order.find().sort( { updatedAt: -1 } )
+  //       const ordersResponse = await Order.find().sort( { updatedAt: -1 } )
+  //       const orders: any = await ordersResponse.json()
   //       console.log(orders)
   //       setPedidos(orders)
     
