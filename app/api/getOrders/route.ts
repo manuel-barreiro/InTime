@@ -3,12 +3,11 @@ import connectMongoDB from "@/utilities/mongodb";
 import { NextResponse } from "next/server";
 
 
-export async function GET (request: Request) {
+export async function GET () {
 
   try {
     await connectMongoDB();
     const orders = await Order.find().sort( { updatedAt: -1 } )
-    console.log(orders)
     return NextResponse.json(orders)
 
   } catch(error) {
