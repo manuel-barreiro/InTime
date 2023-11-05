@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 
 import {
   Table,
@@ -53,7 +53,7 @@ export default async function page () {
   const router = useRouter();
 
   async function getOrders() {
-    
+
     try {
       const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
           cache: "no-store"
