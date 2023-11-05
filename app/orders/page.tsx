@@ -12,23 +12,26 @@ import { formatCurrency } from "@/utilities/formatCurrency";
 
 function formatDate(inputDate: string) {
   const originalDate = new Date(inputDate);
-
-  const day = originalDate.getDate().toString().padStart(2, '0');
-  const month = (originalDate.getMonth() + 1).toString().padStart(2, '0'); // Month is zero-based
-  const year = originalDate.getFullYear().toString().slice(2);
-  const hours = originalDate.getHours().toString().padStart(2, '0');
-  const minutes = originalDate.getMinutes().toString().padStart(2, '0');
-
-  const formattedDate = `${day}/${month}/${year}`;
+  const formattedDate = originalDate.toLocaleString('es-AR', {
+    day: '2-digit',
+    month: '2-digit',
+    year: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'America/Argentina/Buenos_Aires' // Especifica la zona horaria que desees utilizar
+  });
   
   return formattedDate;
 }
 
 function formatHour(inputDate: string) {
   const originalDate = new Date(inputDate);
-  const hours = originalDate.getHours().toString().padStart(2, '0');
-  const minutes = originalDate.getMinutes().toString().padStart(2, '0');
-  const formattedDate = `${hours}:${minutes}`;
+  const formattedDate = originalDate.toLocaleString('es-AR', {
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'America/Argentina/Buenos_Aires' // Especifica la zona horaria que desees utilizar
+  });
+  
   return formattedDate;
 }
 
@@ -36,6 +39,7 @@ async function getOrders() {
   try {
     const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
         cache: "no-store",
+        next: {revalidate: 30},
         method: "POST",
     })
 
