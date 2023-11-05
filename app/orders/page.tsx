@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Table,
   TableBody,
@@ -8,13 +10,35 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-export default async function page () {
+import { use, useEffect, useState } from "react";
 
-  const pedidosResponse = await fetch('https://www.shortcut.com.ar/api/getOrders', { cache: 'no-store' })
+export default function page () {
 
-  const pedidos = await pedidosResponse.json()
+  const [pedidos, setPedidos] = useState([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
-  console.log('PEDIDOS PAGE RENDER', pedidos)
+  useEffect(() => {
+    const fetchPedidos = async () => {
+    setLoading(true);
+      try {
+        const res = await fetch('/api/getOrders', {
+          method: 'GET', 
+        })
+        const data = await res.json()
+        setPedidos(data)
+      } catch (error) {
+        console.error(error);
+      }
+      setLoading(false);
+    }
+    fetchPedidos()
+  }, [])
+
+  // const pedidosResponse = await fetch('https://www.shortcut.com.ar/api/getOrders', { cache: 'no-store' })
+
+  // const pedidos = await pedidosResponse.json()
+
+  // console.log('PEDIDOS PAGE RENDER', pedidos)
   
   
   return (
