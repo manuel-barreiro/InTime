@@ -62,7 +62,11 @@ function formatHour(inputDate: string) {
   // }
   // }
 
+  export const fetchCache='force-no-store'
+
 export default function page () {
+
+  
 
   // const pedidos = await getOrders()
 
