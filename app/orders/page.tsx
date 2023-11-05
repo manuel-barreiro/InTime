@@ -15,7 +15,9 @@ export default async function page () {
     cache: 'no-store',
   })
 
-  console.log(pedidosResponse)
+  const pedidos = await pedidosResponse.json()
+
+  console.log(pedidos)
   
   
   return (
