@@ -3,7 +3,7 @@ import connectMongoDB from "@/utilities/mongodb";
 import { NextResponse } from "next/server";
 
 
-export default async function GET (request: Request) {
+export async function GET (request: Request) {
 
   try {
     await connectMongoDB();
