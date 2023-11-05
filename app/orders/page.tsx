@@ -80,7 +80,8 @@ export default function page () {
       setLoading(true);
       try {
         const res = await fetch('/api/getOrders', {
-          cache: 'no-store'
+          cache: 'no-store',
+          method: 'POST',
         })
         const data = await res.json()
         setPedidos(data)
