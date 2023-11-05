@@ -16,8 +16,6 @@ function formatDate(inputDate: string) {
     day: '2-digit',
     month: '2-digit',
     year: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
     timeZone: 'America/Argentina/Buenos_Aires' // Especifica la zona horaria que desees utilizar
   });
   
