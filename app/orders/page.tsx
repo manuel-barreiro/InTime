@@ -40,58 +40,50 @@ function formatHour(inputDate: string) {
   return formattedDate;
 }
 
-  // async function getOrders() {
-  //   await connectMongoDB();
-  //   const orders: any = await Order.find().sort( { updatedAt: -1 } )
-  //   return orders
-  // }
 
-  // async function getOrders() {
-  //   try {
-  //     const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
-  //         cache: "no-store"
-  //     })
+  async function getOrders() {
+    try {
+      const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
+          cache: "no-store",
+          method: "POST",
+      })
 
-  //     if (!res.ok) {
-  //         throw new Error("Failed to fetch orders.")
-  //     }
+      if (!res.ok) {
+          throw new Error("Failed to fetch orders.")
+      }
+      const data = await res.json()
+      return data
+  } catch (error) {
+      console.log("Error loading orders:", error)
+  }
+  }
 
-  //     return res.json()
-  // } catch (error) {
-  //     console.log("Error loading orders:", error)
-  // }
-  // }
+export default async function page () {
 
-  export const fetchCache='force-no-store'
-
-export default function page () {
-
-  
-
-  // const pedidos = await getOrders()
+  const pedidos = await getOrders()
 
   // console.log('PEDIDOS PAGE RENDER', pedidos[0])
 
-  const [pedidos, setPedidos] = useState<any>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  // const [pedidos, setPedidos] = useState<any>([]);
+  // const [loading, setLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    const fetchPedidos = async () => {
-      setLoading(true);
-      try {
-        const res = await fetch('/api/getOrders', {
-          cache: 'no-store',
-          method: 'POST',
-        })
-        const data = await res.json()
-        setPedidos(data)
-      } catch (error) {
-        console.error(error);
-      }
-      setLoading(false);
-    }
-    fetchPedidos()
-  }, [])
+  // useEffect(() => {
+  //   const fetchPedidos = async () => {
+  //     setLoading(true);
+  //     try {
+  //       const res = await fetch('/api/getOrders', {
+  //         cache: 'no-store',
+  //         method: 'POST',
+  //       })
+  //       const data = await res.json()
+  //       setPedidos(data)
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //     setLoading(false);
+  //   }
+  //   fetchPedidos()
+  // }, [])
 
   // useEffect(() => {
   //   const fetchPedidos = async () => {
