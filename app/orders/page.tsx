@@ -9,12 +9,37 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import { Badge } from "@/components/ui/badge"
 
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+
+import { formatCurrency } from "@/utilities/formatCurrency";
+
+function formatDate(inputDate: string) {
+  const originalDate = new Date(inputDate);
+
+  const day = originalDate.getDate().toString().padStart(2, '0');
+  const month = (originalDate.getMonth() + 1).toString().padStart(2, '0'); // Month is zero-based
+  const year = originalDate.getFullYear().toString().slice(2);
+  const hours = originalDate.getHours().toString().padStart(2, '0');
+  const minutes = originalDate.getMinutes().toString().padStart(2, '0');
+
+  const formattedDate = `${day}/${month}/${year}`;
+  
+  return formattedDate;
+}
+
+function formatHour(inputDate: string) {
+  const originalDate = new Date(inputDate);
+  const hours = originalDate.getHours().toString().padStart(2, '0');
+  const minutes = originalDate.getMinutes().toString().padStart(2, '0');
+  const formattedDate = `${hours}:${minutes}`;
+  return formattedDate;
+}
 
 export default function page () {
 
-  const [pedidos, setPedidos] = useState([]);
+  const [pedidos, setPedidos] = useState<any>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -34,6 +59,23 @@ export default function page () {
     fetchPedidos()
   }, [])
 
+  // useEffect(() => {
+  //   const fetchPedidos = async () => {
+  //     setLoading(true);
+  //     try {
+  //       await connectMongoDB();
+  //       const orders: any = await Order.find().sort( { updatedAt: -1 } )
+  //       console.log(orders)
+  //       setPedidos(orders)
+    
+  //     } catch(error) {
+  //       console.log(error)
+  //     }
+  //     setLoading(false);
+  //   }
+  //   fetchPedidos()
+  // }, [])
+
   // const pedidosResponse = await fetch('https://www.shortcut.com.ar/api/getOrders', { cache: 'no-store' })
 
   // const pedidos = await pedidosResponse.json()
@@ -47,31 +89,43 @@ export default function page () {
       <Table className="text-white max-w-[80%] mx-auto">
             <TableHeader>
               <TableRow>
-                <TableHead className="font-semibold text-white">id</TableHead>
-                <TableHead className=" font-semibold text-white">date_created</TableHead>
-                <TableHead className="font-semibold text-white">items</TableHead>
-                <TableHead className="font-semibold text-white">total</TableHead>
-                <TableHead className="font-semibold text-white">status</TableHead>
-                {/* <TableHead className=" font-semibold text-white">status_detail</TableHead> */}
-                <TableHead className="font-semibold text-white">payment_method_type</TableHead>
-                {/* <TableHead className="font-semibold text-white">payment_method_id</TableHead> */}
-                <TableHead className="font-semibold text-white">nombre</TableHead>
-                <TableHead className=" font-semibold text-white">whatsapp</TableHead>
-                <TableHead className="font-semibold text-white">email</TableHead>
+                <TableHead className="font-bold text-center text-white text-md">#</TableHead>
+                <TableHead className=" font-bold text-center text-white text-md">Fecha</TableHead>
+                <TableHead className="font-bold text-center text-white text-md">Productos</TableHead>
+                <TableHead className="font-bold text-center text-white text-md">$</TableHead>
+                <TableHead className="font-bold text-center text-white text-md">Estado</TableHead>
+                {/* <TableHead className=" font-bold text-center text-white text-md">status_detail</TableHead> */}
+                {/* <TableHead className="font-bold text-center text-white text-md">payment_method_type</TableHead> */}
+                {/* <TableHead className="font-bold text-center text-white text-md">payment_method_id</TableHead> */}
+                <TableHead className="font-bold text-center text-white text-md">Nombre</TableHead>
+                <TableHead className=" font-bold text-center text-white text-md">WhatsApp</TableHead>
+                <TableHead className="font-bold text-center text-white text-md">Correo</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {pedidos?.map((pedido: any) => (
                 <TableRow key={pedido.id}>
-                  <TableCell className="font-medium">{pedido.id}</TableCell>
-                  <TableCell className="font-medium">{pedido.date_created}</TableCell>
-                  <TableCell className="font-medium">{pedido.items.map((i: any) => i.title)}</TableCell>
-                  <TableCell className="font-medium">{pedido.total}</TableCell>
-                  <TableCell className="font-medium">{pedido.status}</TableCell>
-                  <TableCell className="font-medium">{pedido.payment_method_type}</TableCell>
-                  <TableCell className="font-medium">{pedido.nombre}</TableCell>
-                  <TableCell className="font-medium">{pedido.whatsapp}</TableCell>
-                  <TableCell className="font-medium">{pedido.email}</TableCell>
+                  <TableCell className="font-medium text-sm text-center">{pedido.id.toString().slice(-4)}</TableCell>
+                  <TableCell className="font-medium text-sm text-center">
+                    {<div>
+                      <p>{formatDate(pedido.date_created)}</p>
+                      <p>{formatHour(pedido.date_created)}</p>
+                    </div>}
+                  </TableCell>
+                  <TableCell className="font-medium text-sm">{pedido.items.map((i: any) => <p>x{i.quantity} {i.title}</p>)}</TableCell>
+                  <TableCell className="font-medium text-sm text-center">{formatCurrency(pedido.total)}</TableCell>
+                  <TableCell className="font-medium text-sm text-center">
+                    {pedido.status === 'approved' ?
+                      <Badge variant={'default'} className="bg-green-600">{pedido.status}</Badge>
+                      :
+                      <Badge variant={'destructive'}>{pedido.status}</Badge>
+                    }
+                    
+                  </TableCell>
+                  {/* <TableCell className="font-medium">{pedido.payment_method_type}</TableCell> */}
+                  <TableCell className="font-medium text-sm text-center">{pedido.nombre}</TableCell>
+                  <TableCell className="font-medium text-sm text-center">{pedido.whatsapp}</TableCell>
+                  <TableCell className="font-medium text-sm text-center">{pedido.email}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
