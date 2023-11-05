@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 
 import {
   Table,
@@ -14,7 +14,6 @@ import { Badge } from "@/components/ui/badge"
 // import { useEffect, useState } from "react";
 
 import { formatCurrency } from "@/utilities/formatCurrency";
-import { useRouter } from "next/navigation";
 import connectMongoDB from "@/utilities/mongodb";
 import Order from "@/models/order";
 
@@ -46,23 +45,14 @@ function formatHour(inputDate: string) {
   //   return orders
   // }
 
-  
-
-export default async function page () {
-
-  const router = useRouter();
-
   async function getOrders() {
-
     try {
       const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
           cache: "no-store"
       })
 
-      if (res.ok) {
-        router.refresh()
-      } else {
-        throw new Error("Failed to fetch orders.")
+      if (!res.ok) {
+          throw new Error("Failed to fetch orders.")
       }
 
       return res.json()
@@ -70,6 +60,8 @@ export default async function page () {
       console.log("Error loading orders:", error)
   }
   }
+
+export default async function page () {
 
   const pedidos = await getOrders()
 
