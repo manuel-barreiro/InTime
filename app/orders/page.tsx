@@ -13,6 +13,7 @@ export default async function page () {
   const pedidosResponse = await fetch('https://www.shortcut.com.ar/api/getOrders', {
     method: 'GET',
     cache: 'no-store',
+    next: { revalidate: 10 }
   })
 
   const pedidos = await pedidosResponse.json()
