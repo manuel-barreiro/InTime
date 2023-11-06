@@ -8,37 +8,14 @@ import {
 } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { cn } from "@/utilities/utilities";
-
-function formatDate(inputDate: string) {
-  const originalDate = new Date(inputDate);
-  const formattedDate = originalDate.toLocaleString('es-AR', {
-    day: '2-digit',
-    month: '2-digit',
-    year: '2-digit',
-    timeZone: 'America/Argentina/Buenos_Aires' // Especifica la zona horaria que desees utilizar
-  });
-  
-  return formattedDate;
-}
-
-function formatHour(inputDate: string) {
-  const originalDate = new Date(inputDate);
-  const formattedDate = originalDate.toLocaleString('es-AR', {
-    hour: '2-digit',
-    minute: '2-digit',
-    timeZone: 'America/Argentina/Buenos_Aires' // Especifica la zona horaria que desees utilizar
-  });
-  
-  return formattedDate;
-}
+import { formatHour } from "@/utilities/dateFunctions";
 
 export default function page () {
   const [pedidos, setPedidos] = useState<any>([]);
+  // TODO: Add loading skeleton
   const [loading, setLoading] = useState<boolean>(true);
   const [entregado, setEntregado] = useState<boolean>(false);
-  const router = useRouter()
 
   useEffect(() => {
     const fetchPedidos = async () => {
@@ -58,7 +35,7 @@ export default function page () {
     fetchPedidos()
   }, [entregado])
 
-
+  // Función para marcar como entregado o en preparación
   async function ordenEntregada(id: string) {
     try {
       const res = await fetch('/api/getOrders', {

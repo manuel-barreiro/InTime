@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import Order from '@/models/order';
 import connectMongoDB from '@/utilities/mongodb';
 
+// En este endpoint MP nos notifica via Webhook al recibir un pago. Tomamos esa post request y la procesamos guardandola en la db, quedandonos con los atruibutos que nos interesan.
 export async function POST(request: Request){
   const notification = await request.json();
   console.log(notification)

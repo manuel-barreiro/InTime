@@ -9,29 +9,7 @@ import {
 } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
 import { formatCurrency } from "@/utilities/formatCurrency";
-
-function formatDate(inputDate: string) {
-  const originalDate = new Date(inputDate);
-  const formattedDate = originalDate.toLocaleString('es-AR', {
-    day: '2-digit',
-    month: '2-digit',
-    year: '2-digit',
-    timeZone: 'America/Argentina/Buenos_Aires' // Especifica la zona horaria que desees utilizar
-  });
-  
-  return formattedDate;
-}
-
-function formatHour(inputDate: string) {
-  const originalDate = new Date(inputDate);
-  const formattedDate = originalDate.toLocaleString('es-AR', {
-    hour: '2-digit',
-    minute: '2-digit',
-    timeZone: 'America/Argentina/Buenos_Aires' // Especifica la zona horaria que desees utilizar
-  });
-  
-  return formattedDate;
-}
+import { formatDate, formatHour } from "@/utilities/dateFunctions";
 
 async function getOrders() {
   try {
@@ -54,30 +32,9 @@ export default async function page () {
 
   const pedidos = await getOrders()
 
-  // const [pedidos, setPedidos] = useState<any>([]);
-  // const [loading, setLoading] = useState<boolean>(true);
-
-  // useEffect(() => {
-  //   const fetchPedidos = async () => {
-  //     setLoading(true);
-  //     try {
-  //       const res = await fetch('/api/getOrders', {
-  //         cache: 'no-store',
-  //         method: 'POST',
-  //       })
-  //       const data = await res.json()
-  //       setPedidos(data)
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //     setLoading(false);
-  //   }
-  //   fetchPedidos()
-  // }, [])
-
   return (
     <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center">
-      <h3 className="text-white text-4xl font-bold">Pedidos - Nigeria</h3>
+      <h3 className="text-white text-4xl font-bold">Pagos - Nigeria</h3>
       <Table className="text-white max-w-[80%] mx-auto">
             <TableHeader>
               <TableRow>

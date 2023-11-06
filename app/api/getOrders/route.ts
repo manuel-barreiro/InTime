@@ -2,6 +2,7 @@ import Order from "@/models/order";
 import connectMongoDB from "@/utilities/mongodb";
 import { NextResponse } from "next/server";
 
+// Endponint que simula un GET (para evitar el cache de NextJS)
 export async function POST(request: Request) {
   const req = request
   try {
@@ -15,6 +16,7 @@ export async function POST(request: Request) {
   }
 }
 
+// Endpoint para actualizar el estado de un pedido (entregado: false || true)
 export async function PUT(request: Request) {
   const { id } = await request.json();
   try {

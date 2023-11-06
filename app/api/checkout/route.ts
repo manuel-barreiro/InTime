@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 
+// Al navegar a /checkout, se hace un POST a este endpoint, que recibe el cartItems y contactInfo, y genera y devuelve el url de la preferencia que se creo en MP para realizar el pago. Ese link es el href del boton de MP que se renderiza en el componente MercadoPagoButton.
 export async function POST(request: Request){
 
   // Recibo el cartItems

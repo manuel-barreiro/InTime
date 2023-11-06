@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { formatDate } from "@/utilities/formatDate"
+import { formatDate } from "@/utilities/dateFunctions"
 
 async function getPagos() {
   try {
@@ -22,7 +22,7 @@ async function getPagos() {
     const pagos = infoPagosJSON.results
     const pagosMappeados = pagos.map((pago: any) => {return {
       id: pago.id,
-      date_created: formatDate(new Date(Date.parse(pago.date_created))),
+      date_created: formatDate(pago.date_created),
       items: pago.additional_info.items,
       total: pago.transaction_amount,
       status: pago.status,
