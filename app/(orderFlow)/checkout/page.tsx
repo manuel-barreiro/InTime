@@ -30,7 +30,7 @@ export default function page() {
   return (
     <div className='relative h-auto mb-10'>
       <button className='absolute top-2 left-7'>
-        <Link href={'/cart'}>
+        <Link href={'/contact'}>
           <FaArrowLeft className=' text-white w-6 h-6' />
         </Link>
       </button>
