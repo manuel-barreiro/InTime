@@ -12,7 +12,8 @@ const orderSchema = new Schema (
       payment_method_id: String,
       nombre: String,
       whatsapp: Number,
-      email: String
+      email: String,
+      entregado: Boolean,
     },
     {
         timestamps: true,

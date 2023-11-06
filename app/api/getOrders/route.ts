@@ -2,7 +2,6 @@ import Order from "@/models/order";
 import connectMongoDB from "@/utilities/mongodb";
 import { NextResponse } from "next/server";
 
-
 export async function POST(request: Request) {
   const req = request
   try {
@@ -14,5 +13,11 @@ export async function POST(request: Request) {
   } catch(error) {
     return Response.json(error)
   }
+}
 
+export async function PUT(request: Request) {
+  const { id } = await request.json();
+  await connectMongoDB();
+  await Order.findByIdAndUpdate(id, { entregado: true });
+  return NextResponse.json({message: "Order Updated"}, { status: 200 });
 }

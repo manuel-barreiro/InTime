@@ -32,7 +32,8 @@ export async function POST(request: Request){
         payment_method_id: infoPago.payment_method.id,
         nombre: infoPago.metadata.nombre,
         whatsapp: infoPago.metadata.whatsapp,
-        email: infoPago.metadata.email
+        email: infoPago.metadata.email,
+        entregado: false,
       } 
 
       console.log(JSON.stringify(paymentData))

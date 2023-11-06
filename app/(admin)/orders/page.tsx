@@ -36,7 +36,6 @@ function formatHour(inputDate: string) {
 async function getOrders() {
   try {
     const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
-        cache: "no-store",
         next: {revalidate: 30},
         method: "POST",
     })
@@ -86,10 +85,7 @@ export default async function page () {
                 <TableHead className=" font-bold text-center text-white text-md">Fecha</TableHead>
                 <TableHead className="font-bold text-center text-white text-md">Productos</TableHead>
                 <TableHead className="font-bold text-center text-white text-md">$</TableHead>
-                <TableHead className="font-bold text-center text-white text-md">Estado</TableHead>
-                {/* <TableHead className=" font-bold text-center text-white text-md">status_detail</TableHead> */}
-                {/* <TableHead className="font-bold text-center text-white text-md">payment_method_type</TableHead> */}
-                {/* <TableHead className="font-bold text-center text-white text-md">payment_method_id</TableHead> */}
+                <TableHead className="font-bold text-center text-white text-md">Pago</TableHead>
                 <TableHead className="font-bold text-center text-white text-md">Nombre</TableHead>
                 <TableHead className=" font-bold text-center text-white text-md">WhatsApp</TableHead>
                 <TableHead className="font-bold text-center text-white text-md">Correo</TableHead>
