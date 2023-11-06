@@ -49,6 +49,7 @@ export default function page () {
           method: 'POST',
         })
         const data = await res.json()
+        console.log(data)
         setPedidos(data)
       } catch (error) {
         console.error(error);
@@ -58,14 +59,14 @@ export default function page () {
     fetchPedidos()
   }, [])
 
-  async function ordenEntregada({ id }: any) {
+  async function ordenEntregada(id: string) {
     try {
       const res = await fetch('/api/getOrders', {
         method: "PUT",
         headers: {
           "Content-type": "application/json",
         },
-        body: JSON.stringify({ id })
+        body: JSON.stringify({id: id} )
       })
   
       if (!res.ok) {
@@ -90,7 +91,10 @@ export default function page () {
             return (<AccordionItem key={pedido.id} value={`item-${pedido.id}`} className="h-auto">
             <AccordionTrigger>
               <div className="text-2xl flex items-center gap-3">
-                <Badge className="bg-sky-500">En Preparación</Badge>
+                {!pedido.entregado ? 
+                  <Badge className="bg-sky-500">En Preparación</Badge>
+                  :
+                  <Badge className="bg-green-600">Entregado</Badge>}
                 <span>#{pedido.id.toString().slice(-4)} | <span className="font-bold">{pedido.nombre}</span></span>
               </div>
             </AccordionTrigger>
@@ -101,9 +105,11 @@ export default function page () {
                     <li key={item.id}>x{item.quantity} {item.title}</li>
                   ))}
                 </ul>
-                <button onClick={ordenEntregada} className="bg-green-600 p-2 rounded-lg">
-                  Entregado
-                </button>
+                {!pedido.entregado &&
+                  <button onClick={() => ordenEntregada(pedido._id)} className="bg-green-600 p-2 rounded-lg">
+                    Entregado
+                  </button>
+                }
               </div>
             </AccordionContent>
           </AccordionItem>)

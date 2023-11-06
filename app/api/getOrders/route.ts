@@ -17,7 +17,13 @@ export async function POST(request: Request) {
 
 export async function PUT(request: Request) {
   const { id } = await request.json();
-  await connectMongoDB();
-  await Order.findByIdAndUpdate(id, { entregado: true });
-  return NextResponse.json({message: "Order Updated"}, { status: 200 });
+  try {
+    await connectMongoDB();
+    console.log(id)
+    await Order.findByIdAndUpdate(id, { entregado: true });
+    return NextResponse.json({message: "Order Updated"}, { status: 200 });
+  } catch (error) {
+    console.log(error)
+  }
+  
 }
