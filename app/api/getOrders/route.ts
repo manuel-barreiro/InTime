@@ -6,7 +6,7 @@ export async function POST(request: Request) {
   const req = request
   try {
     await connectMongoDB();
-    const orders = await Order.find().sort( { updatedAt: -1 } )
+    const orders = await Order.find().sort( { createdAt: -1 } )
     console.log('api endpoint getOrders')
     return Response.json(orders)
 

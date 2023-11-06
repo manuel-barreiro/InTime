@@ -9,6 +9,7 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { cn } from "@/utilities/utilities";
 
 function formatDate(inputDate: string) {
   const originalDate = new Date(inputDate);
@@ -95,7 +96,7 @@ export default function page () {
                   <Badge className="bg-sky-500">En Preparación</Badge>
                   :
                   <Badge className="bg-green-600">Entregado</Badge>}
-                <span>#{pedido.id.toString().slice(-4)} | <span className="font-bold">{pedido.nombre}</span></span>
+                <p className={cn("", {'line-through text-gray-400': pedido.entregado})}>#{pedido.id.toString().slice(-4)} | <span className="font-bold">{pedido.nombre} </span> | <span>{formatHour(pedido.date_created)} </span></p>
               </div>
             </AccordionTrigger>
             <AccordionContent>
@@ -107,7 +108,7 @@ export default function page () {
                 </ul>
                 {!pedido.entregado &&
                   <button onClick={() => ordenEntregada(pedido._id)} className="bg-green-600 p-2 rounded-lg">
-                    Entregado
+                    Marcar como entregado
                   </button>
                 }
               </div>
