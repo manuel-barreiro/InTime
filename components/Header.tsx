@@ -23,7 +23,7 @@ export default function Header (): JSX.Element {
       <Link href={'/'}>
         <Image width={50} height={50} src={'/logo.png'} alt='logo' priority={true} />
       </Link>
-      {cartQuantity > 0 && pathname !== '/pedidos' && pathname !== '/pagos' &&
+      {cartQuantity > 0 && (pathname !== '/pedidos' && pathname !== '/pagos' && pathname !== '/success' && pathname !== '/failed') &&
       <button className='top-6 right-6 absolute flex'>
         <Link href={'/cart'}>
           <FaCartShopping className='text-white w-6 h-6' />
