@@ -35,11 +35,10 @@ function formatHour(inputDate: string) {
 }
 
 export default function page () {
-
-  const router = useRouter()
-
   const [pedidos, setPedidos] = useState<any>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const [entregado, setEntregado] = useState<boolean>(false);
+  const router = useRouter()
 
   useEffect(() => {
     const fetchPedidos = async () => {
@@ -50,7 +49,6 @@ export default function page () {
           method: 'POST',
         })
         const data = await res.json()
-        console.log(data)
         setPedidos(data)
       } catch (error) {
         console.error(error);
@@ -58,7 +56,8 @@ export default function page () {
       setLoading(false);
     }
     fetchPedidos()
-  }, [])
+  }, [entregado])
+
 
   async function ordenEntregada(id: string) {
     try {
@@ -67,26 +66,21 @@ export default function page () {
         headers: {
           "Content-type": "application/json",
         },
-        body: JSON.stringify({id: id} )
+        body: JSON.stringify({id: id})
       })
-  
-      if (!res.ok) {
-        throw new Error("Failed to update task.")
-      }
-  
-      router.refresh()
-      router.push("/pedidos")
       
+      // Para forzar el re-render con el useEffect
+      setEntregado(prevState => !prevState)
+
     } catch (error) {
         console.log(error)
     }
   }
-  
 
   return (
     <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center">
       <h3 className="text-white text-4xl font-bold">Pedidos - Nigeria</h3>
-      <Accordion type="single" collapsible className="w-[60%]">
+      <Accordion type="single" collapsible className="md:w-[60%] w-[90%]">
         {pedidos?.map((pedido: any) => {
           if (pedido.status == 'approved') {
             return (<AccordionItem key={pedido.id} value={`item-${pedido.id}`} className="h-auto">
@@ -106,11 +100,15 @@ export default function page () {
                     <li key={item.id}>x{item.quantity} {item.title}</li>
                   ))}
                 </ul>
-                {!pedido.entregado &&
+                {!pedido.entregado ?
                   <button onClick={() => ordenEntregada(pedido._id)} className="bg-green-600 p-2 rounded-lg">
-                    Marcar como entregado
+                    Marcar como Entregado
                   </button>
-                }
+                  :
+                  <button onClick={() => ordenEntregada(pedido._id)} className="bg-sky-500 p-2 rounded-lg">
+                    Marcar como En Preparación
+                  </button>
+                } 
               </div>
             </AccordionContent>
           </AccordionItem>)

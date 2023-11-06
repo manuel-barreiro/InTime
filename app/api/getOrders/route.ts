@@ -6,8 +6,8 @@ export async function POST(request: Request) {
   const req = request
   try {
     await connectMongoDB();
+    console.log('getOrders POST (que es un get)')
     const orders = await Order.find().sort( { createdAt: -1 } )
-    console.log('api endpoint getOrders')
     return Response.json(orders)
 
   } catch(error) {
@@ -19,8 +19,10 @@ export async function PUT(request: Request) {
   const { id } = await request.json();
   try {
     await connectMongoDB();
-    console.log(id)
-    await Order.findByIdAndUpdate(id, { entregado: true });
+    console.log('getOrders PUT')
+    const order = await Order.findOne({_id: id})
+    const { entregado } = order
+    await Order.findByIdAndUpdate(id, { entregado: !entregado });
     return NextResponse.json({message: "Order Updated"}, { status: 200 });
   } catch (error) {
     console.log(error)
