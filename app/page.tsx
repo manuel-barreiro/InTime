@@ -1,7 +1,7 @@
 'use client'
 
-import Menu from '@/components/Menu'
-import MenuFooter from '@/components/MenuFooter'
+import Menu from '@/components/menu/Menu'
+import MenuFooter from '@/components/menu/MenuFooter'
 
 export default function Home (): JSX.Element {
   return (

@@ -1,8 +1,8 @@
 'use client'
 
-import CartFooter from "@/components/CartFooter"
+import CartFooter from "@/components/cart/CartFooter"
 import { useShoppingCart } from "@/context/ShoppingCartContext"
-import Carrito from "@/components/Carrito"
+import Carrito from "@/components/cart/Carrito"
 
 export default function Cart () {
   const { cartItems, cartSubtotal, cartQuantity } = useShoppingCart()

@@ -1,5 +1,5 @@
-import { nigeria } from '../constants/nigeriaNuevo'
-import ProductCard from '@/components/ProductCard'
+import { nigeria } from '../../constants/nigeriaNuevo'
+import ProductCard from '@/components/menu/ProductCard'
 import { formatCurrency } from '@/utilities/formatCurrency'
 
 export default function Menu (): JSX.Element {
