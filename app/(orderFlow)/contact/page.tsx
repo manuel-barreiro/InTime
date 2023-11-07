@@ -1,17 +1,77 @@
-'use client'
-import CartFooter from "@/components/cart/CartFooter";
+"use client"
+ 
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from "react-hook-form"
+import * as z from "zod"
+import validator from 'validator';
+ 
+import { Button } from "@/components/ui/button"
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+import Link from "next/link"
+import { FaArrowLeft } from "react-icons/fa6"
 import { useShoppingCart } from "@/context/ShoppingCartContext";
-import { formatCurrency } from "@/utilities/formatCurrency";
-import Link from "next/link";
-import { FaArrowLeft, FaCreditCard } from "react-icons/fa6";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
+const phoneRegex = new RegExp(
+  /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/
+);
+ 
+const formSchema = z.object({
+  nombre: z.string().min(2, {
+    message: "Mínimo 2 caracteres.",
+  }),
+  email: z.string().refine((val) => validator.isEmail(val), {
+    message: "Ingrese un correo válido.",
+  }),
+  // whatsapp: z.string().refine((val) => validator.isMobilePhone(val, 'es-AR',{strictMode: false}), {
+  //   message: "Ingrese un número de celular válido.",
+  // }),
+  whatsapp: z.string().regex(phoneRegex, {
+    message: "Ingrese un número válido.",
+  }),
+})
+ 
+export default function ProfileForm() {
 
-export default function page() {
-  
-  // const { contactInfo, contactInfoHandler, cartQuantity, cartSubtotal } = useShoppingCart()
+  const router = useRouter()
 
+  const { contactInfo, setContactInfo } = useShoppingCart()
+
+  // 1. Define your form.
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      nombre: contactInfo.nombre,
+      email: contactInfo.email,
+      whatsapp: contactInfo.whatsapp,
+    },
+  })
+ 
+  // 2. Define a submit handler.
+  function onSubmit(values: z.infer<typeof formSchema>, event: any) {
+    // Do something with the form values.
+    // ✅ This will be type-safe and validated.
+    event.preventDefault()
+    setContactInfo(values)
+    router.push('/checkout')
+  }
+
+  useEffect(() => {
+    console.log(contactInfo)
+  },[contactInfo])
+ 
   return (
-    <>
+    <div className="mb-20">
       <div className='relative mt-4 mb-10'>
         <button className='absolute top-2 left-7'>
           <Link href={'/cart'}>
@@ -21,36 +81,61 @@ export default function page() {
         <h1 className="text-white font-black text-3xl text-center">Tus datos</h1>
       </div>
 
-      {/* <div className="w-full">
-        <form action="" className="flex flex-col w-full">
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 text-white mx-auto w-[80%] md:w-[60%]">
+          <FormField
+            control={form.control}
+            name="nombre"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Nombre</FormLabel>
+                <FormControl>
+                  <Input className="bg-white text-black text-[16px]" placeholder="Ingrese su nombre" {...field} />
+                </FormControl>
+                <FormDescription>
+                  Lo utilizaremos para reconocer tu orden.
+                </FormDescription>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
 
-          <div className="flex flex-col gap-4 mx-auto max-w-[70%] md:max-w-[50%]">
-            <label htmlFor="nombre" className="text-sm text-gray-300 w-full">Nombre</label>
-            <input value={contactInfo.nombre} onChange={contactInfoHandler('nombre')} name="nombre" type="text" placeholder="Ingrese su nombre" className="p-2 rounded-lg" />
-            <label htmlFor="email" className="text-sm text-gray-300">Email</label>
-            <input value={contactInfo.email} onChange={contactInfoHandler('email')} name="email" type="email" placeholder="Ingrese su correo" className="p-2 rounded-lg" />
-            <label htmlFor="whatsapp" className="text-sm text-gray-300">Whatsapp</label>
-            <input value={contactInfo.whatsapp} onChange={contactInfoHandler('whatsapp')} name="whatsapp" type="number" placeholder="Ingrese su WhatsApp" className="p-2 rounded-lg" />
-          </div>
-          
-      
-          <footer>
-            <div className="bg-gradient-to-t from-rose-400 to-rose-600 fixed bottom-0 w-full flex items-center justify-between px-6 py-3">
-              <div className='flex flex-col gap-2'>
-                <p className="text-white font-semibold text-lg">N° de productos: <span className='font-light'>{cartQuantity}</span></p>
-                <p className="text-white font-semibold text-lg">Total: <span className='font-light'>{formatCurrency(cartSubtotal)}</span></p>
-              </div>
-              <Link href={'/checkout'}>
-                <button
-                  className="bg-gradient-to-r from-rose-200 to-pink-300 text-md text-bgblue font-semibold rounded-3xl px-3 py-2 flex items-center justify-between gap-2 hover:scale-105 ease-out duration-300 hover:shadow-2xl">
-                  <FaCreditCard className="w-6 h-6" />
-                  Ir al Pago
-                </button>
-              </Link>
-            </div>
-          </footer>
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>E-mail</FormLabel>
+                <FormControl>
+                  <Input className="bg-white text-black text-[16px]" placeholder="Ingrese su correo" {...field} />
+                </FormControl>
+                <FormDescription>
+                  Lo utilizaremos para notificarte acerca del estado de tu orden.
+                </FormDescription>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="whatsapp"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>WhatsApp</FormLabel>
+                <FormControl>
+                  <Input className="bg-white text-black text-[16px]" placeholder="Ingrese su WhatsApp" {...field} />
+                </FormControl>
+                <FormDescription>
+                  Lo utilizaremos para notificarte acerca del estado de tu orden.
+                </FormDescription>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button className="w-full bg-cartPink" type="submit">Ir al Checkout</Button>
         </form>
-      </div> */}
-    </>
-  );
+      </Form>
+      </div>
+  )
 }
