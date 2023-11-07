@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
 import { useEffect, useState } from "react";
-import { cn } from "@/utilities/utilities";
+import { cn } from "@/utilities";
 import { formatHour } from "@/utilities/dateFunctions";
 
 export default function page () {
