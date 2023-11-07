@@ -8,7 +8,7 @@ import { FaArrowLeft, FaCreditCard } from "react-icons/fa6";
 
 export default function page() {
   
-  const { contactInfo, contactInfoHandler, cartQuantity, cartSubtotal } = useShoppingCart()
+  // const { contactInfo, contactInfoHandler, cartQuantity, cartSubtotal } = useShoppingCart()
 
   return (
     <>
@@ -21,7 +21,7 @@ export default function page() {
         <h1 className="text-white font-black text-3xl text-center">Tus datos</h1>
       </div>
 
-      <div className="w-full">
+      {/* <div className="w-full">
         <form action="" className="flex flex-col w-full">
 
           <div className="flex flex-col gap-4 mx-auto max-w-[70%] md:max-w-[50%]">
@@ -50,7 +50,7 @@ export default function page() {
             </div>
           </footer>
         </form>
-      </div>
+      </div> */}
     </>
   );
 }
