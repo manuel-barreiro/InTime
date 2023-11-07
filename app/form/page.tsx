@@ -76,7 +76,7 @@ export default function ProfileForm() {
               <FormItem>
                 <FormLabel>Nombre</FormLabel>
                 <FormControl>
-                  <Input className="bg-white" placeholder="Ingrese su nombre" {...field} />
+                  <Input className="bg-white text-black" placeholder="Ingrese su nombre" {...field} />
                 </FormControl>
                 <FormDescription>
                   Lo utilizaremos para reconocer tu orden.
@@ -93,7 +93,7 @@ export default function ProfileForm() {
               <FormItem>
                 <FormLabel>E-mail</FormLabel>
                 <FormControl>
-                  <Input className="bg-white" placeholder="Ingrese su correo" {...field} />
+                  <Input className="bg-white text-black" placeholder="Ingrese su correo" {...field} />
                 </FormControl>
                 <FormDescription>
                   Lo utilizaremos para notificarte acerca del estado de tu orden.
@@ -110,7 +110,7 @@ export default function ProfileForm() {
               <FormItem>
                 <FormLabel>WhatsApp</FormLabel>
                 <FormControl>
-                  <Input className="bg-white" placeholder="Ingrese su WhatsApp" {...field} />
+                  <Input className="bg-white text-black" placeholder="Ingrese su WhatsApp" {...field} />
                 </FormControl>
                 <FormDescription>
                   Lo utilizaremos para notificarte acerca del estado de tu orden.
