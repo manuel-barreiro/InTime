@@ -18,6 +18,9 @@ import {
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
 import { FaArrowLeft } from "react-icons/fa6"
+import { useShoppingCart } from "@/context/ShoppingCartContext";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const phoneRegex = new RegExp(
   /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/
@@ -48,13 +51,22 @@ export default function ProfileForm() {
       whatsapp: "",
     },
   })
+
+  const router = useRouter()
+
+  const { contactInfo, setContactInfo } = useShoppingCart()
  
   // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    console.log(values)
+    setContactInfo(values)
+    router.push('/checkout')
   }
+
+  useEffect(() => {
+    console.log(contactInfo)
+  },[contactInfo])
  
   return (
     <div className="mb-20">
@@ -68,7 +80,7 @@ export default function ProfileForm() {
       </div>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 text-white mx-auto w-[60%]">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 text-white mx-auto w-[80%] md:w-[60%]">
           <FormField
             control={form.control}
             name="nombre"

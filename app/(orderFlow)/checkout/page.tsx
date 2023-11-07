@@ -14,6 +14,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import { useEffect } from "react";
 
 type CartItem = {
   id: number
@@ -23,9 +24,12 @@ type CartItem = {
 }
 
 export default function page() {
-  const { cartItems, cartSubtotal, cartQuantity } = useShoppingCart()
+  const { cartItems, cartSubtotal, cartQuantity, contactInfo } = useShoppingCart()
 
   // console.log('nasshe: ', cartMp)
+  useEffect(() => {
+    console.log(contactInfo)
+  },[])
 
   return (
     <div className='relative h-auto mb-10'>

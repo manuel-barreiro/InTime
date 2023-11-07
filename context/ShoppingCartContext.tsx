@@ -11,8 +11,10 @@ type ShoppingCartContext = {
   getItemQuantity: (id: number) => number
   increaseCartQuantity: (id: number, name: string, price: number) => void
   decreaseCartQuantity: (id: number) => void
-  contactInfoHandler: (name: any) => ReactEventHandler<HTMLInputElement>
-  contactInfo: { nombre: string, email: string, whatsapp: number }
+  // contactInfoHandler: (name: any) => ReactEventHandler<HTMLInputElement>
+  // contactInfo: { nombre: string, email: string, whatsapp: number }
+  contactInfo: { nombre: string, email: string, whatsapp: string }
+  setContactInfo: React.Dispatch<React.SetStateAction<{ nombre: string; email: string; whatsapp: string; }>>
   cartItems: CartItem[]
   cartSubtotal: number
   cartQuantity: number
@@ -36,13 +38,13 @@ export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps): 
   // const openCart = () => setIsOpen(true)
   // const closeCart = () => setIsOpen(false)
 
-  const [contactInfo, setContactInfo] = useState({ nombre: '', email: '', whatsapp: 0 });
+  const [contactInfo, setContactInfo] = useState({ nombre: '', email: '', whatsapp: '' });
 
-  function contactInfoHandler (name: any) {
-    return (event: any) => {
-      setContactInfo({ ...contactInfo, [name]: event.target.value });
-    };
-  };
+  // function contactInfoHandler (name: any) {
+  //   return (event: any) => {
+  //     setContactInfo({ ...contactInfo, [name]: event.target.value });
+  //   };
+  // };
 
   const [cartItems, setCartItems] = useState<CartItem[]>([])
   
@@ -104,7 +106,7 @@ export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps): 
   }
 
   return (
-    <ShoppingCartContext.Provider value={{ getItemQuantity, increaseCartQuantity, decreaseCartQuantity, contactInfoHandler, contactInfo,  cartItems, cartSubtotal, cartQuantity }}>
+    <ShoppingCartContext.Provider value={{ getItemQuantity, increaseCartQuantity, decreaseCartQuantity, setContactInfo, contactInfo,  cartItems, cartSubtotal, cartQuantity }}>
       {children}
     </ShoppingCartContext.Provider>
   )
