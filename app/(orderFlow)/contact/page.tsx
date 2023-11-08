@@ -19,8 +19,8 @@ import { Input } from "@/components/ui/input"
 import Link from "next/link"
 import { FaArrowLeft, FaCreditCard } from "react-icons/fa6"
 import { useShoppingCart } from "@/context/ShoppingCartContext";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useLayoutEffect } from "react";
+import { redirect, useRouter } from "next/navigation";
 
 const phoneRegex = new RegExp(
   /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/
@@ -45,7 +45,13 @@ export default function ProfileForm() {
 
   const router = useRouter()
 
-  const { contactInfo, setContactInfo } = useShoppingCart()
+  const { cartQuantity, contactInfo, setContactInfo } = useShoppingCart()
+
+  useLayoutEffect(() => {
+    if(cartQuantity === 0){
+      redirect("/")
+    }
+  }, [])
 
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
