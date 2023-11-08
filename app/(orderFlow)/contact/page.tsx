@@ -19,7 +19,7 @@ import { Input } from "@/components/ui/input"
 import Link from "next/link"
 import { FaArrowLeft, FaCreditCard } from "react-icons/fa6"
 import { useShoppingCart } from "@/context/ShoppingCartContext";
-import { useEffect, useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 import { redirect, useRouter } from "next/navigation";
 
 const phoneRegex = new RegExp(
@@ -48,7 +48,7 @@ export default function ProfileForm() {
   const { cartQuantity, contactInfo, setContactInfo } = useShoppingCart()
 
   useLayoutEffect(() => {
-    if(cartQuantity === 0){
+    if(cartQuantity < 1){
       redirect("/")
     }
   }, [])
