@@ -39,7 +39,7 @@ export const MercadoPagoButton = ({ envioCarrito }: MercadoPagoButtonProps) => {
     <div className="flex flex-col gap-5 items-center">
       {loading ? (
         <div className="flex flex-col gap-2 items-center">
-          <button className="rounded-md bg-[#00aeef] hover:bg-sky-600 max-w-md p-3">
+          <button className="rounded-md bg-[#00aeef] max-w-md p-3">
             <span className="text-white flex gap-3 items-center">
               <Image src={'/spinner.svg'} height={30} width={30} alt="mp" className="animate-spin" priority={true}/>
               Generando link de pago...
