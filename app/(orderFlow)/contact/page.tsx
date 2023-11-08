@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
-import { FaArrowLeft } from "react-icons/fa6"
+import { FaArrowLeft, FaCreditCard } from "react-icons/fa6"
 import { useShoppingCart } from "@/context/ShoppingCartContext";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -129,7 +129,10 @@ export default function ProfileForm() {
               </FormItem>
             )}
           />
-          <Button className="w-full bg-cartPink" type="submit">Ir al Checkout</Button>
+          <Button className="w-full group bg-cartPink flex items-center gap-3" type="submit">
+            <FaCreditCard className="text-bgblue w-6 h-6 group-hover:text-cartPink" />
+            Ir al Checkout
+          </Button>
         </form>
       </Form>
       </div>

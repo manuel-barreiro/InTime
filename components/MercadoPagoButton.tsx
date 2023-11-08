@@ -26,14 +26,14 @@ export const MercadoPagoButton = ({ envioCarrito }: MercadoPagoButtonProps) => {
         })
         const data = await res.json()
         setUrl(data.url)
-        console.log(data.url)
       } catch (error) {
         console.error(error);
       }
       setLoading(false);
+      console.log(url)
     };
     generateLink()
-  }, [envioCarrito])
+  }, [])
 
   return (
     <div className="flex flex-col gap-5 items-center">
