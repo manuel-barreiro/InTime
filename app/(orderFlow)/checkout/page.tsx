@@ -14,7 +14,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
+import { redirect } from "next/navigation";
 
 type CartItem = {
   id: number
@@ -25,6 +26,12 @@ type CartItem = {
 
 export default function page() {
   const { cartItems, cartSubtotal, cartQuantity, contactInfo } = useShoppingCart()
+
+  useLayoutEffect(() => {
+    if(cartQuantity === 0 || contactInfo.nombre === '' || contactInfo.email === '' || contactInfo.whatsapp === ''){
+      redirect("/")
+    }
+  }, [])
 
   return (
     <div className='relative h-auto mb-10'>
