@@ -29,7 +29,16 @@ export async function POST(request: Request){
       },
       notification_url: `${url}/api/notify`,
       currency_id: 'ARS',
-      metadata: contactInfo
+      metadata: contactInfo,
+      payment_methods: {
+        excluded_payment_methods: [
+          {id: 'pagofacil'},
+          {id: 'rapipago'},
+        ],
+        excluded_payment_types: [
+          {}
+        ]
+      },
     };
 
     const resPreferenceAPI = await fetch('https://api.mercadopago.com/checkout/preferences', {

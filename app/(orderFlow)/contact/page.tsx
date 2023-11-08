@@ -27,8 +27,8 @@ const phoneRegex = new RegExp(
 );
  
 const formSchema = z.object({
-  nombre: z.string().min(2, {
-    message: "Mínimo 2 caracteres.",
+  nombre: z.string().min(3, {
+    message: "Mínimo 3 caracteres.",
   }),
   email: z.string().refine((val) => validator.isEmail(val), {
     message: "Ingrese un correo válido.",
@@ -86,7 +86,7 @@ export default function ProfileForm() {
               <FormItem>
                 <FormLabel>Nombre</FormLabel>
                 <FormControl>
-                  <Input className="bg-white text-black text-[16px]" placeholder="Ingrese su nombre" {...field} />
+                  <Input className="bg-white text-black text-[16px]" placeholder="Ingrese su nombre" type="text" {...field} />
                 </FormControl>
                 <FormDescription>
                   Lo utilizaremos para reconocer tu orden.
@@ -103,7 +103,7 @@ export default function ProfileForm() {
               <FormItem>
                 <FormLabel>E-mail</FormLabel>
                 <FormControl>
-                  <Input className="bg-white text-black text-[16px]" placeholder="Ingrese su correo" {...field} />
+                  <Input className="bg-white text-black text-[16px]" placeholder="Ingrese su correo" type="email"  {...field} />
                 </FormControl>
                 <FormDescription>
                   Lo utilizaremos para notificarte acerca del estado de tu orden.
@@ -120,7 +120,7 @@ export default function ProfileForm() {
               <FormItem>
                 <FormLabel>WhatsApp</FormLabel>
                 <FormControl>
-                  <Input className="bg-white text-black text-[16px]" placeholder="Ingrese su WhatsApp" {...field} />
+                  <Input className="bg-white text-black text-[16px]" placeholder="Ingrese su WhatsApp" type="tel" {...field} />
                 </FormControl>
                 <FormDescription>
                   Lo utilizaremos para notificarte acerca del estado de tu orden.

@@ -30,10 +30,9 @@ export const MercadoPagoButton = ({ envioCarrito }: MercadoPagoButtonProps) => {
         console.error(error);
       }
       setLoading(false);
-      console.log(url)
     };
     generateLink()
-  }, [])
+  }, [envioCarrito, contactInfo])
 
   return (
     <div className="flex flex-col gap-5 items-center">
