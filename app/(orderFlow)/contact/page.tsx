@@ -66,12 +66,8 @@ export default function ProfileForm() {
     router.push('/checkout')
   }
 
-  useEffect(() => {
-    console.log(contactInfo)
-  },[contactInfo])
- 
   return (
-    <div className="mb-20">
+    <div className="mb-20 font-montserrat">
       <div className='relative mt-4 mb-10'>
         <button className='absolute top-2 left-7'>
           <Link href={'/cart'}>

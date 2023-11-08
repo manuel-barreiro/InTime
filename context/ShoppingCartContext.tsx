@@ -1,5 +1,6 @@
 'use client'
 
+import { set } from 'mongoose'
 import { ReactEventHandler, createContext, useContext, useEffect, useState } from 'react'
 // import { useLocalStorage } from "../hooks/useLocalStorage"
 
@@ -34,30 +35,28 @@ export function useShoppingCart (): any {
 }
 
 export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps): JSX.Element {
-  // const [isOpen, setIsOpen] = useState(false)
-  // const openCart = () => setIsOpen(true)
-  // const closeCart = () => setIsOpen(false)
 
   const [contactInfo, setContactInfo] = useState({ nombre: '', email: '', whatsapp: '' });
-
-  // function contactInfoHandler (name: any) {
-  //   return (event: any) => {
-  //     setContactInfo({ ...contactInfo, [name]: event.target.value });
-  //   };
-  // };
-
   const [cartItems, setCartItems] = useState<CartItem[]>([])
   
   // Read localStorage
   useEffect(() => {
     const cart: string | null = localStorage.getItem('cartItems')
     if (cart) {
-      const cartItems = JSON.parse(cart)
-      if (cartItems.length > 0) {
-        setCartItems(cartItems)
+      const cartItemsLS = JSON.parse(cart)
+      if (cartItemsLS.length > 0) {
+        setCartItems(cartItemsLS)
       }
     } else {
       setCartItems([])
+    }
+
+    const contact: string | null = localStorage.getItem('contactInfo')
+    if (contact) {
+      const contactInfoLS = JSON.parse(contact)
+      if (contactInfoLS.nombre !== '' || contactInfoLS.email !== '' || contactInfoLS.whatsapp !== '') {
+        setContactInfo(contactInfoLS)
+      }
     }
   }, [])
 
@@ -65,6 +64,11 @@ export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps): 
   useEffect(() => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems))
   }, [cartItems])
+
+  useEffect(() => {
+    localStorage.setItem('contactInfo', JSON.stringify(contactInfo))
+  }, [contactInfo])
+
 
   const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0)
   const cartSubtotal = cartItems.reduce((subtotal, item) => item.quantity * item.price + subtotal, 0)

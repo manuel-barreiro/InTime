@@ -26,11 +26,6 @@ type CartItem = {
 export default function page() {
   const { cartItems, cartSubtotal, cartQuantity, contactInfo } = useShoppingCart()
 
-  // console.log('nasshe: ', cartMp)
-  useEffect(() => {
-    console.log(contactInfo)
-  },[])
-
   return (
     <div className='relative h-auto mb-10'>
       <button className='absolute top-2 left-7'>

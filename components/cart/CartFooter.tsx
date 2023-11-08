@@ -18,7 +18,7 @@ export default function CartFooter (): JSX.Element {
         </div>
         <Link href={'/contact'}>
           <button
-            onClick={() => {console.log(cartQuantity, cartItems)}} 
+            // onClick={() => {console.log(cartQuantity, cartItems)}} 
             className="bg-gradient-to-r from-rose-200 to-pink-300 text-md text-bgblue font-semibold rounded-3xl px-3 py-2 flex items-center justify-between gap-2 hover:scale-105 ease-out duration-300 hover:shadow-2xl">
             <FaCreditCard className="w-6 h-6" />
             Ir al Pago
