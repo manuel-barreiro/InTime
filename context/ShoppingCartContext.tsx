@@ -1,8 +1,6 @@
 'use client'
 
-import { set } from 'mongoose'
-import { ReactEventHandler, createContext, useContext, useEffect, useState } from 'react'
-// import { useLocalStorage } from "../hooks/useLocalStorage"
+import { createContext, useContext, useEffect, useState } from 'react'
 
 type ShoppingCartProviderProps = {
   children: React.ReactNode
