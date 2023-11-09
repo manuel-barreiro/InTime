@@ -40,7 +40,7 @@ export default function page() {
           <FaArrowLeft className=' text-white w-6 h-6' />
         </Link>
       </button>
-      <h1 className="text-white font-black text-3xl text-center mt-4 mb-6">Tu Pedido</h1>
+      <h1 className="text-white font-black text-3xl text-center mt-4 mb-6">Checkout</h1>
       <div className="flex flex-col items-center gap-5 mt-10 mx-auto max-w-[90%] md:max-w-[50%]">
           <h3 className="text-2xl font-extrabold mb-1 text-center text-transparent bg-clip-text bg-gradient-to-t from-rose-400 to-rose-600">Productos</h3>
           <Table className="text-white">

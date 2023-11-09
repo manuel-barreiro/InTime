@@ -80,7 +80,7 @@ export default function ProfileForm() {
             <FaArrowLeft className=' text-white w-6 h-6' />
           </Link>
         </button>
-        <h1 className="text-white font-black text-3xl text-center">Tus datos</h1>
+        <h1 className="text-white font-black text-3xl text-center">Tus Datos</h1>
       </div>
 
       <Form {...form}>
@@ -137,7 +137,7 @@ export default function ProfileForm() {
           />
           <Button className="w-full group bg-cartPink flex items-center gap-3" type="submit">
             <FaCreditCard className="text-bgblue w-6 h-6 group-hover:text-cartPink" />
-            Ir al Checkout
+            Checkout
           </Button>
         </form>
       </Form>

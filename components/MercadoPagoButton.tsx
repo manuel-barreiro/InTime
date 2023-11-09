@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { IProduct } from "@/constants/product";
 import Image from "next/image";
 import { useShoppingCart } from "@/context/ShoppingCartContext";
+import { ImSpinner9 } from "react-icons/im";
 
 interface MercadoPagoButtonProps {
   envioCarrito: IProduct[];
@@ -38,19 +39,19 @@ export const MercadoPagoButton = ({ envioCarrito }: MercadoPagoButtonProps) => {
     <div className="flex flex-col gap-5 items-center">
       {loading ? (
         <div className="flex flex-col gap-2 items-center">
-          <button className="rounded-md bg-[#00aeef] max-w-md p-3">
+          <button className="rounded-md bg-sky-600 w-[300px] p-3 flex justify-center">
             <span className="text-white flex gap-3 items-center">
-              <Image src={'/spinner.svg'} height={30} width={30} alt="mp" className="animate-spin" priority={true}/>
-              Generando link de pago...
+              <ImSpinner9 size={20} className="animate-spin" />
+              Generando link de pago
             </span>
           </button>
           <span className="text-gray-400 text-xs">Pagá de manera segura</span>
         </div>) :
 
         (<div className="flex flex-col gap-2 items-center">
-        <button className="rounded-md bg-[#00aeef] hover:bg-sky-600 max-w-md p-3">
+        <button className="rounded-md bg-[#00aeef] hover:bg-sky-600 w-[300px] p-3 flex justify-center">
           <a href={url} className="text-white flex gap-3 items-center">
-            <Image src={'/MPLogo.svg'} height={30} width={30} alt="mp" priority={true}/>
+            <Image src={'/MPLogo.svg'} width={30} height={30} alt="mp" priority={true}/>
             Pagar con Mercado Pago
           </a>
         </button>
