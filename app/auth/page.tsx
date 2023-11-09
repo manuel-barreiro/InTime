@@ -13,11 +13,13 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import Image from "next/image"
 import { FormEvent, use, useEffect, useState } from "react"
+import { Toaster } from "@/components/ui/toaster"
+import { useToast } from "@/components/ui/use-toast"
 
 
 
 export default function DemoCreateAccount() {
-  
+  const { toast } = useToast()
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
@@ -29,12 +31,17 @@ export default function DemoCreateAccount() {
     const password = target.password.value; // typechecks
     
     if (user === process.env.NEXT_PUBLIC_ADMIN_USER && password === process.env.NEXT_PUBLIC_ADMIN_PASS) {
-      alert("You're logged in as admin!");
+      toast({
+        title: "Bienvenido",
+        description: "Inicio de sesión exitoso",
+      })
       return;
     } else {
-      alert("Wrong credentials!");
-      console.log(user, password)
-      console.log(process.env.NEXT_PUBLIC_ADMIN_USER, process.env.NEXT_PUBLIC_ADMIN_PASS)
+      toast({
+        variant: "destructive",
+        title: "Credenciales incorrectas",
+        description: "Intentá de nuevo",
+      })
     }
   };
 
@@ -71,6 +78,7 @@ export default function DemoCreateAccount() {
             </CardFooter>
           </form>
       </Card>
+      <Toaster />
     </div>
     
   )
