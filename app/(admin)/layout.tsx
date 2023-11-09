@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
-import './globals.css'
+import '../globals.css'
 import { ShoppingCartProvider } from '@/context/ShoppingCartContext'
 import Header from '@/components/Header'
 import { Toaster } from "@/components/ui/toaster"
+import { AuthProvider } from '@/context/AuthContext'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -21,15 +22,15 @@ export default function RootLayout ({
 }: {
   children: React.ReactNode
 }): JSX.Element {
+
   return (
     <html lang="es">
       <body className={`${montserrat.variable} bg-bgblue font-montserrat scrollbar-hide`}>
-        <ShoppingCartProvider>
-          <Header />
+        <AuthProvider>
           {children}
-        </ShoppingCartProvider>
+        </AuthProvider>
+        <Toaster />
       </body>
-      <Toaster />
     </html>
   )
 }

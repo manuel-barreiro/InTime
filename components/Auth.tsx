@@ -13,11 +13,14 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import Image from "next/image"
 import { useToast } from "@/components/ui/use-toast"
+import { useAuth } from "@/context/AuthContext"
 
 
 
-export default function DemoCreateAccount() {
+export default function Auth() {
   const { toast } = useToast()
+
+  const {auth, setAuth} = useAuth()
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
@@ -25,14 +28,14 @@ export default function DemoCreateAccount() {
       user: { value: string };
       password: { value: string };
     };
-    const user = target.user.value; // typechecks!
-    const password = target.password.value; // typechecks
-    
+    const user = target.user.value; 
+    const password = target.password.value;     
     if (user === process.env.NEXT_PUBLIC_ADMIN_USER && password === process.env.NEXT_PUBLIC_ADMIN_PASS) {
       toast({
         title: "Bienvenido",
         description: "Inicio de sesión exitoso",
       })
+      setAuth(true)
       return;
     } else {
       toast({
@@ -43,10 +46,8 @@ export default function DemoCreateAccount() {
     }
   };
 
-
-
   return (
-    <div className="h-full mt-16 flex justify-center items-center font-montserrat">
+    <div className="min-h-screen flex justify-center items-center font-montserrat">
       <Card className="w-[80%] md:w-auto">
         <CardHeader className="space-y-1">
           <Image src={'/logoTransparente.png'} height={50} width={50} alt='logo' priority={true} className="self-center mb-2" />
@@ -76,8 +77,6 @@ export default function DemoCreateAccount() {
             </CardFooter>
           </form>
       </Card>
-      
-    </div>
-    
+    </div>     
   )
 }

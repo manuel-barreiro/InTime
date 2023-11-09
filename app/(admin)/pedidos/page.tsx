@@ -10,12 +10,16 @@ import { Badge } from "@/components/ui/badge"
 import { useEffect, useState } from "react";
 import { cn } from "@/utilities";
 import { formatHour } from "@/utilities/dateFunctions";
+import { useAuth } from "@/context/AuthContext";
+import Auth from "@/components/Auth";
 
 export default function page () {
   const [pedidos, setPedidos] = useState<any>([]);
   // TODO: Add loading skeleton
   const [loading, setLoading] = useState<boolean>(true);
   const [entregado, setEntregado] = useState<boolean>(false);
+
+  const { auth } = useAuth()
 
   useEffect(() => {
     const fetchPedidos = async () => {
@@ -55,6 +59,9 @@ export default function page () {
   }
 
   return (
+    <>
+    {!auth ? 
+      <Auth /> :
     <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center">
       <h3 className="text-white text-4xl font-bold">Pedidos - Nigeria</h3>
       <Accordion type="single" collapsible className="md:w-[60%] w-[90%]">
@@ -92,6 +99,7 @@ export default function page () {
           }
           })}
     </Accordion>
-    </div>
+    </div>}
+    </>
   )
 }
