@@ -50,14 +50,12 @@ export const MercadoPagoButton = ({ envioCarrito }: MercadoPagoButtonProps) => {
         (<div className="flex flex-col gap-2 items-center">
         <button className="rounded-md bg-[#00aeef] hover:bg-sky-600 max-w-md p-3">
           <a href={url} className="text-white flex gap-3 items-center">
-            <Image src={'/MPLogo.svg'} height={40} width={40} alt="mp" priority={true}/>
+            <Image src={'/MPLogo.svg'} height={30} width={30} alt="mp" priority={true}/>
             Pagar con Mercado Pago
           </a>
         </button>
         <span className="text-gray-400 text-xs">Pagá de manera segura</span>
       </div>)
-        
-        
       } 
     </div>
   );
