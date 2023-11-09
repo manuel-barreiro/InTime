@@ -64,11 +64,11 @@ export default function DemoCreateAccount() {
             </div>                  
               <div className="grid gap-2">
                 <Label htmlFor="user">Usuario</Label>
-                <Input id="user" type="text" placeholder="Usuario" />
+                <Input id="user" type="text" className="text-[16px]" placeholder="Usuario" />
               </div>
               <div className="grid gap-2">
                 <Label htmlFor="password">Password</Label>
-                <Input id="password" type="password" placeholder="********" />
+                <Input id="password" type="password" className="text-[16px]" placeholder="********" />
               </div>
             </CardContent>
             <CardFooter>
