@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import { useAuth } from "@/context/AuthContext";
 import Auth from "@/components/Auth";
 import { Button } from "@/components/ui/button";
+import { LuLogOut } from "react-icons/lu";
 
 export default function page () {
   const [pedidos, setPedidos] = useState<any>([]);
@@ -45,11 +46,15 @@ export default function page () {
   return (
     <>
     {!auth ? <Auth /> :
+
+    <>
+      <div className="w-full bg-bgblue sticky top-0 z-50 p-4 flex justify-center items-center gap-7 border-b-[1px] mb-3">
+        <h3 className="text-white text-2xl px-5 md:p-0 md:text-3xl font-bold">Pagos - Nigeria</h3>
+        <Button onClick={() => setAuth(false)} className="bg-cartPink">
+          <LuLogOut className="w-5 h-5 md:w-6 md:h-6" />
+        </Button>
+      </div>
       <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center relative">
-      <Button onClick={() => setAuth(false)} className="absolute top-1 right-20 bg-cartPink">
-        Cerrar sesión
-      </Button>
-      <h3 className="text-white text-4xl font-bold">Pagos - Nigeria</h3>
       <Table className="text-white max-w-[80%] mx-auto">
             <TableHeader>
               <TableRow>
@@ -58,6 +63,7 @@ export default function page () {
                 <TableHead className="font-bold text-center text-white text-md">Productos</TableHead>
                 <TableHead className="font-bold text-center text-white text-md">$</TableHead>
                 <TableHead className="font-bold text-center text-white text-md">Pago</TableHead>
+                <TableHead className="font-bold text-center text-white text-md">Método</TableHead>
                 <TableHead className="font-bold text-center text-white text-md">Nombre</TableHead>
                 <TableHead className=" font-bold text-center text-white text-md">WhatsApp</TableHead>
                 <TableHead className="font-bold text-center text-white text-md">Correo</TableHead>
@@ -78,10 +84,12 @@ export default function page () {
                   <TableCell className="font-medium text-sm text-center">
                     {pedido.status === 'approved' ?
                       <Badge variant={'default'} className="bg-green-600">{pedido.status}</Badge>
-                      :
-                      <Badge variant={'destructive'}>{pedido.status}</Badge>
+                      : pedido.status === 'refunded' ?
+                      <Badge variant={'default'} className="bg-sky-500">{pedido.status}</Badge>
+                      : <Badge variant={'destructive'}>{pedido.status}</Badge>
                     }
                   </TableCell>
+                  <TableCell className="font-medium text-sm text-center">{pedido.payment_method_id}</TableCell>
                   <TableCell className="font-medium text-sm text-center">{pedido.nombre}</TableCell>
                   <TableCell className="font-medium text-sm text-center">{pedido.whatsapp}</TableCell>
                   <TableCell className="font-medium text-sm text-center">{pedido.email}</TableCell>
@@ -89,7 +97,8 @@ export default function page () {
               ))}
             </TableBody>
           </Table>
-      </div>}
+      </div>
+      </>}
     </>
   )
 }
