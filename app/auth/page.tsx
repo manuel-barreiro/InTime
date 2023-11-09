@@ -34,7 +34,7 @@ export default function DemoCreateAccount() {
     } else {
       alert("Wrong credentials!");
       console.log(user, password)
-      console.log(process.env.ADMIN_USER, process.env.ADMIN_PASS)
+      console.log(process.env.NEXT_PUBLIC_ADMIN_USER, process.env.NEXT_PUBLIC_ADMIN_PASS)
     }
   };
 
