@@ -3,6 +3,7 @@ import { Montserrat } from 'next/font/google'
 import './globals.css'
 import { ShoppingCartProvider } from '@/context/ShoppingCartContext'
 import Header from '@/components/Header'
+import { Toaster } from "@/components/ui/toaster"
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout ({
           {children}
         </ShoppingCartProvider>
       </body>
+      <Toaster />
     </html>
   )
 }

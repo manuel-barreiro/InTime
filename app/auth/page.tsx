@@ -12,8 +12,6 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import Image from "next/image"
-import { FormEvent, use, useEffect, useState } from "react"
-import { Toaster } from "@/components/ui/toaster"
 import { useToast } from "@/components/ui/use-toast"
 
 
@@ -48,13 +46,13 @@ export default function DemoCreateAccount() {
 
 
   return (
-    <div className="h-screen flex justify-center items-center font-montserrat">
-      <Card className="w-[500px]">
+    <div className="h-full mt-16 flex justify-center items-center font-montserrat">
+      <Card className="w-[80%] md:w-auto">
         <CardHeader className="space-y-1">
-          <Image src={'/logoTransparente.png'} height={50} width={50} alt='logo' priority={true} className="self-center mb-4" />
+          <Image src={'/logoTransparente.png'} height={50} width={50} alt='logo' priority={true} className="self-center mb-2" />
           <CardTitle className="text-2xl">Iniciar sesión</CardTitle>
           <CardDescription>
-            Para acceder a esta función debes iniciar sesión.
+            Para acceder a esta función debes ingresar las credenciales de administrador.
           </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>        
@@ -78,7 +76,7 @@ export default function DemoCreateAccount() {
             </CardFooter>
           </form>
       </Card>
-      <Toaster />
+      
     </div>
     
   )
