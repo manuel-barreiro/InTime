@@ -1,5 +1,3 @@
-'use client'
-
 import {
   Table,
   TableBody,
@@ -12,43 +10,30 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { formatCurrency } from "@/utilities/formatCurrency";
 import { formatDate, formatHour } from "@/utilities/dateFunctions";
-import { useEffect, useState } from "react";
-import { useAuth } from "@/context/AuthContext";
-import Auth from "@/components/Auth";
-import { Button } from "@/components/ui/button";
 
-export default function page () {
-  const [pedidos, setPedidos] = useState<any>([]);
-  // TODO: Add loading skeleton
-  const [loading, setLoading] = useState<boolean>(true);
+async function getOrders() {
+  try {
+    const res = await fetch('https://www.shortcut.com.ar/api/getOrders', {
+        next: {revalidate: 30},
+        method: "POST",
+    })
 
-  const { auth, setAuth } = useAuth()
-
-  useEffect(() => {
-    const fetchPedidos = async () => {
-      setLoading(true);
-      try {
-        const res = await fetch('/api/getOrders', {
-          cache: 'no-store',
-          method: 'POST',
-        })
-        const data = await res.json()
-        setPedidos(data)
-      } catch (error) {
-        console.error(error);
-      }
-      setLoading(false);
+    if (!res.ok) {
+        throw new Error("Failed to fetch orders.")
     }
-    fetchPedidos()
-  }, [])
+    const data = await res.json()
+    return data
+} catch (error) {
+    console.log("Error loading orders:", error)
+}
+}
+
+export default async function page () {
+
+  const pedidos = await getOrders()
 
   return (
-    <>
-    {!auth ? <Auth /> :
-      <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center relative">
-      <Button onClick={() => setAuth(false)} className="absolute top-1 right-20 bg-cartPink">
-        Cerrar sesión
-      </Button>
+    <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center">
       <h3 className="text-white text-4xl font-bold">Pagos - Nigeria</h3>
       <Table className="text-white max-w-[80%] mx-auto">
             <TableHeader>
@@ -65,7 +50,7 @@ export default function page () {
             </TableHeader>
             <TableBody>
               {pedidos?.map((pedido: any) => (
-                <TableRow key={pedido._id}>
+                <TableRow key={pedido.id}>
                   <TableCell className="font-medium text-sm text-center">{pedido.id.toString().slice(-4)}</TableCell>
                   <TableCell className="font-medium text-sm text-center">
                     {<div key={pedido.id}>
@@ -89,7 +74,6 @@ export default function page () {
               ))}
             </TableBody>
           </Table>
-      </div>}
-    </>
+    </div>
   )
 }

@@ -12,6 +12,7 @@ import { cn } from "@/utilities";
 import { formatHour } from "@/utilities/dateFunctions";
 import { useAuth } from "@/context/AuthContext";
 import Auth from "@/components/Auth";
+import { Button } from "@/components/ui/button";
 
 export default function page () {
   const [pedidos, setPedidos] = useState<any>([]);
@@ -19,7 +20,7 @@ export default function page () {
   const [loading, setLoading] = useState<boolean>(true);
   const [entregado, setEntregado] = useState<boolean>(false);
 
-  const { auth } = useAuth()
+  const { auth, setAuth } = useAuth()
 
   useEffect(() => {
     const fetchPedidos = async () => {
@@ -62,7 +63,10 @@ export default function page () {
     <>
     {!auth ? 
       <Auth /> :
-    <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center">
+    <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center relative">
+      <Button onClick={() => setAuth(false)} className="absolute top-1 right-20 bg-cartPink">
+        Cerrar sesión
+      </Button>
       <h3 className="text-white text-4xl font-bold">Pedidos - Nigeria</h3>
       <Accordion type="single" collapsible className="md:w-[60%] w-[90%]">
         {pedidos?.map((pedido: any) => {

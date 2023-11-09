@@ -15,8 +15,6 @@ import Image from "next/image"
 import { useToast } from "@/components/ui/use-toast"
 import { useAuth } from "@/context/AuthContext"
 
-
-
 export default function Auth() {
   const { toast } = useToast()
 
@@ -43,6 +41,7 @@ export default function Auth() {
         title: "Credenciales incorrectas",
         description: "Intentá de nuevo",
       })
+      console.log(process.env.NEXT_PUBLIC_ADMIN_USER, process.env.NEXT_PUBLIC_ADMIN_PASS)
     }
   };
 
