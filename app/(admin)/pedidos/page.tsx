@@ -72,7 +72,7 @@ export default function page () {
         </Button>
       </div>
       <div className="text-white flex flex-col gap-6 items-center justify-center">
-        <Accordion type="single" collapsible className="md:w-[60%] w-[90%]">
+        <Accordion type="multiple" className="md:w-[60%] w-[90%]">
           {pedidos?.map((pedido: any) => {
             if (pedido.status == 'approved') {
               return (<AccordionItem key={pedido.id} value={`item-${pedido.id}`} className="h-auto">

@@ -55,7 +55,7 @@ export default function page () {
         </Button>
       </div>
       <div className="text-white flex flex-col gap-6 mt-5 items-center justify-center relative">
-      <Table className="text-white max-w-[80%] mx-auto">
+      <Table className="text-white max-w-[95%] mx-auto">
             <TableHeader>
               <TableRow>
                 <TableHead className="font-bold text-center text-white text-md">#</TableHead>
@@ -72,8 +72,8 @@ export default function page () {
             <TableBody>
               {pedidos?.map((pedido: any) => (
                 <TableRow key={pedido._id}>
-                  <TableCell className="font-medium text-sm text-center">{pedido.id.toString().slice(-4)}</TableCell>
-                  <TableCell className="font-medium text-sm text-center">
+                  <TableCell className="font-bold text-sm text-center">{pedido.id.toString().slice(-4)}</TableCell>
+                  <TableCell className="font-bold text-sm text-center">
                     {<div key={pedido.id}>
                       <p>{formatDate(pedido.date_created)}</p>
                       <p>{formatHour(pedido.date_created)}</p>
