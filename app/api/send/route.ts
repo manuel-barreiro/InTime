@@ -1,21 +1,31 @@
-import { PlaidVerifyIdentityEmail } from '../../../components/email-template';
+import { EmailTemplate } from '../../../components/email-template';
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import * as React from 'react';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function GET() {
+export async function POST(request: Request) {
+
+  const pedido = await request.json();
+
+  const nombre = pedido.nombre;
+  const numero_pedido = pedido.numero_pedido;
+  const correo = pedido.correo;
+
   try {
     const { data, error } = await resend.emails.send({
       from: 'ShortCut <noreply@shortcut.com.ar>',
-      to: ['manuel.barreiro@ing.austral.edu.ar'],
-      subject: "Tu pedido esá siendo preparado.",
-      react: PlaidVerifyIdentityEmail({ firstName: "Manuel" }) as React.ReactElement,
+      to: [`${correo}`],
+      subject: `Pedido ${numero_pedido}`,
+      react: EmailTemplate({
+        nombre,
+        numero_pedido,
+      }) as React.ReactElement,
     });
 
     if (error) {
-      return NextResponse.json({ error });
+      return NextResponse.json({ error, pedido });
     }
 
     return NextResponse.json({ data });

@@ -11,59 +11,53 @@ import {
 } from '@react-email/components';
 import * as React from 'react';
 
-interface PlaidVerifyIdentityEmailProps {
-  order_id?: string;
-  firstName?: string;
+interface EmailTemplateProps {
+  nombre?: string;
+  numero_pedido?: string;
 }
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : '';
+const baseUrl = 'https://www.shortcut.com.ar';
 
-export const PlaidVerifyIdentityEmail = ({
-  order_id, firstName
-}: PlaidVerifyIdentityEmailProps) => (
+export const EmailTemplate = ({
+  nombre,
+  numero_pedido,
+}: EmailTemplateProps) => (
   <Html>
-    <Head />
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`${baseUrl}/static/plaid-logo.png`}
-          width="212"
+          src={`${baseUrl}/logoTransparente.png`}
+          width="88"
           height="88"
           alt="Plaid"
           style={logo}
         />
-        <Text style={tertiary}>Gracias por tu compra, {firstName}</Text>
-        <Heading style={secondary}>
-          Enter the following code to finish linking Venmo.
-        </Heading>
         <Section style={codeContainer}>
-          <Text style={code}>{order_id}</Text>
+          <p style={secondaryOne}>
+            <span>Gracias, {nombre}</span>
+          </p>
+          <p style={secondary}>
+            <span>Recibimos tu pedido </span>
+          </p>
         </Section>
-        <Text style={paragraph}>Not expecting this email?</Text>
+        <Section style={codeContainer}>
+          <Text style={code}>#{numero_pedido}</Text>
+        </Section>
         <Text style={paragraph}>
-          Contact{' '}
-          <Link href="mailto:login@plaid.com" style={link}>
-            login@plaid.com
-          </Link>{' '}
-          if you did not request this code.
+          Retiralo por la barra con tu nombre y número de pedido.
         </Text>
       </Container>
-      <Text style={footer}>Securely powered by Plaid.</Text>
     </Body>
   </Html>
 );
 
-export default PlaidVerifyIdentityEmail;
-
 const main = {
-  backgroundColor: '#ffffff',
-  fontFamily: 'HelveticaNeue,Helvetica,Arial,sans-serif',
+  backgroundColor: '#ffff',
+  fontFamily: 'Montserrat,Arial,sans-serif',
 };
 
 const container = {
-  backgroundColor: '#ffffff',
+  backgroundColor: '#0B1044',
   border: '1px solid #eee',
   borderRadius: '5px',
   boxShadow: '0 5px 10px rgba(20,50,70,.2)',
@@ -75,30 +69,33 @@ const container = {
 
 const logo = {
   margin: '0 auto',
-};
-
-const tertiary = {
-  color: '#0a85ea',
-  fontSize: '11px',
-  fontWeight: 700,
-  fontFamily: 'HelveticaNeue,Helvetica,Arial,sans-serif',
-  height: '16px',
-  letterSpacing: '0',
-  lineHeight: '16px',
-  margin: '16px 8px 8px 8px',
-  textTransform: 'uppercase' as const,
-  textAlign: 'center' as const,
+  marginBottom: '30px',
 };
 
 const secondary = {
-  color: '#000',
-  display: 'inline-block',
-  fontFamily: 'HelveticaNeue-Medium,Helvetica,Arial,sans-serif',
+  color: '#DF9BB7',
+  // display: 'flex',
+  // justifyContent: 'center',
+  fontFamily: 'Montserrat,Arial,sans-serif',
   fontSize: '20px',
   fontWeight: 500,
   lineHeight: '24px',
   marginBottom: '0',
-  marginTop: '0',
+  marginTop: '100px',
+  margin: '0 auto',
+  textAlign: 'center' as const,
+};
+
+const secondaryOne = {
+  color: '#DF9BB7',
+  // display: 'flex',
+  // justifyContent: 'center',
+  fontFamily: 'Montserrat,Arial,sans-serif',
+  fontSize: '35px',
+  fontWeight: 700,
+  lineHeight: '24px',
+  marginBottom: '20px',
+  marginTop: '10px',
   textAlign: 'center' as const,
 };
 
@@ -111,11 +108,11 @@ const codeContainer = {
 };
 
 const code = {
-  color: '#000',
+  color: '#fff',
   display: 'inline-block',
-  fontFamily: 'HelveticaNeue-Bold',
-  fontSize: '32px',
-  fontWeight: 700,
+  fontFamily: 'Montserrat-Bold',
+  fontSize: '52px',
+  fontWeight: 1000,
   letterSpacing: '6px',
   lineHeight: '40px',
   paddingBottom: '8px',
@@ -126,30 +123,14 @@ const code = {
 };
 
 const paragraph = {
-  color: '#444',
+  color: '#acacac',
   fontSize: '15px',
-  fontFamily: 'HelveticaNeue,Helvetica,Arial,sans-serif',
+  fontFamily: 'Montserrat,Arial,sans-serif',
   letterSpacing: '0',
   lineHeight: '23px',
   padding: '0 40px',
-  margin: '0',
-  textAlign: 'center' as const,
-};
-
-const link = {
-  color: '#444',
-  textDecoration: 'underline',
-};
-
-const footer = {
-  color: '#000',
-  fontSize: '12px',
-  fontWeight: 800,
-  letterSpacing: '0',
-  lineHeight: '23px',
-  margin: '0',
   marginTop: '20px',
-  fontFamily: 'HelveticaNeue,Helvetica,Arial,sans-serif',
   textAlign: 'center' as const,
-  textTransform: 'uppercase' as const,
 };
+
+export default EmailTemplate;

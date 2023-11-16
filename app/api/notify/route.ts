@@ -41,7 +41,16 @@ export async function POST(request: Request){
 
       await connectMongoDB();
       await Order.create( paymentData );
-      return NextResponse.json( {message: 'Added order to DB'}, { status: 200 } )
+
+      await fetch(`https://www.shortcut.com.ar/api/send`, {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json',
+      body: JSON.stringify({nombre: paymentData.nombre, correo: paymentData.email, numero_pedido: paymentData.id} )
+      },
+      })
+
+      return NextResponse.json( {message: 'Added order to DB and email sent'}, { status: 200 } )
       
     } catch (error) {
       return NextResponse.json( { error: error }, { status: 400 } )
