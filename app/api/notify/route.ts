@@ -1,8 +1,14 @@
 import { NextResponse } from 'next/server';
 import Order from '@/models/order';
 import connectMongoDB from '@/utilities/mongodb';
+import { Resend } from 'resend';
+import { EmailTemplate } from '../../../components/email-template';
+
 
 // En este endpoint MP nos notifica via Webhook al recibir un pago. Tomamos esa post request y la procesamos guardandola en la db, quedandonos con los atruibutos que nos interesan.
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
 export async function POST(request: Request){
   const notification = await request.json();
   console.log(notification)
@@ -42,19 +48,37 @@ export async function POST(request: Request){
       await connectMongoDB();
       await Order.create( paymentData );
 
-      try {
-        await fetch(`https://www.shortcut.com.ar/api/send`, {
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/json',
-        body: JSON.stringify({nombre: paymentData.nombre, correo: paymentData.email, numero_pedido: paymentData.id} )
-        },
-        })   
-      } catch (error) {
-        console.log('hola!', error)
-      }
+      // await fetch(`https://www.shortcut.com.ar/api/send`, {
+      // method: 'POST',
+      // headers: {
+      // 'Content-Type': 'application/json',
+      // body: JSON.stringify({nombre: paymentData.nombre, correo: paymentData.email, numero_pedido: paymentData.id} )
+      // },
+      // })
 
-      
+      const nombre = paymentData.nombre;
+      const numero_pedido = String(paymentData.id);
+      const correo = paymentData.email;
+
+      try {
+        const { data, error } = await resend.emails.send({
+          from: 'ShortCut <noreply@shortcut.com.ar>',
+          to: [`${correo}`],
+          subject: `Pedido ${String(numero_pedido).slice(-4)}`,
+          react: EmailTemplate({
+            nombre,
+            numero_pedido,
+          }) as React.ReactElement,
+        });
+    
+        if (error) {
+          return NextResponse.json({ error });
+        }
+    
+        return NextResponse.json({ data });
+      } catch (error) {
+        return NextResponse.json({ error });
+      }
 
       return NextResponse.json( {message: 'Added order to DB and email sent'}, { status: 200 } )
       
