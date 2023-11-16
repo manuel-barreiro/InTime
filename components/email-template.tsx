@@ -44,7 +44,7 @@ export const EmailTemplate = ({
           <Text style={code}>#{numero_pedido}</Text>
         </Section>
         <Text style={paragraph}>
-          Retiralo por la barra con tu nombre y número de pedido.
+          Retiralo por el stand de ShortCut (N° 20) con tu número de pedido.
         </Text>
       </Container>
     </Body>
