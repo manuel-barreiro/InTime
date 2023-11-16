@@ -6,7 +6,7 @@ import { formatCurrency } from '@/utilities/formatCurrency'
 export default function Menu (): JSX.Element {
   return (
     <div>
-      <h1 className="text-white font-black text-3xl text-center mt-4 mb-6">{feria.nombre}</h1>
+      <h1 className="text-white font-black text-3xl text-center mt-6 mb-6 px-3">{feria.nombre}</h1>
       {feria.categorias_productos.map((categoria) => (
         <div key={categoria.cat_id}>
           <div className="flex flex-col items-center gap-5">
