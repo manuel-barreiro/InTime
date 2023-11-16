@@ -56,6 +56,8 @@ export async function POST(request: Request){
       // },
       // })
 
+      if (paymentData.status === 'approved') {
+
       const nombre = paymentData.nombre;
       const numero_pedido = String(paymentData.id).slice(-4);
       const correo = paymentData.email;
@@ -78,6 +80,7 @@ export async function POST(request: Request){
         return NextResponse.json({ data });
       } catch (error) {
         return NextResponse.json({ error });
+      }
       }
 
       return NextResponse.json( {message: 'Added order to DB and email sent'}, { status: 200 } )
