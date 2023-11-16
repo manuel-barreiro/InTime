@@ -57,14 +57,14 @@ export async function POST(request: Request){
       // })
 
       const nombre = paymentData.nombre;
-      const numero_pedido = String(paymentData.id);
+      const numero_pedido = String(paymentData.id).slice(-4);
       const correo = paymentData.email;
 
       try {
         const { data, error } = await resend.emails.send({
           from: 'ShortCut <noreply@shortcut.com.ar>',
           to: [`${correo}`],
-          subject: `Pedido ${String(numero_pedido).slice(-4)}`,
+          subject: `Tu pedido #${numero_pedido} está confirmado.`,
           react: EmailTemplate({
             nombre,
             numero_pedido,
