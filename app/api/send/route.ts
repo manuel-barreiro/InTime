@@ -9,6 +9,8 @@ export async function POST(request: Request) {
 
   const pedido = await request.json();
 
+  console.log(pedido)
+
   const nombre = pedido.nombre;
   const numero_pedido = String(pedido.numero_pedido);
   const correo = pedido.correo;
