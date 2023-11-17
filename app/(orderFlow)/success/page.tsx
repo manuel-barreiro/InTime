@@ -17,7 +17,7 @@ export default function SuccessPage() {
         <div className="text-center max-w-[80%] mx-auto flex flex-col gap-4">
             <h3 className="text-2xl text-white font-black text-center">Pedido Confirmado</h3>
             <p className="text-white text-2xl font-semibold my-2">Orden #{payment_id?.toString().slice(-4)}</p>
-            <p className='text-white text-lg'>Te notificaremos cuando tu pedido esté listo para retirar.</p>
+            <p className='text-white text-lg'>Te notificaremos por WhatsApp cuando tu pedido esté listo para retirar.</p>
             <p className='text-white text-lg'>Acercate a nuestro stand y retiralo con tu número de orden</p>
         </div>
       </div>
