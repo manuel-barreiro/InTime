@@ -1,8 +1,12 @@
 # ShortCut
 Design and development of a web application for a bar in Buenos Aires, with order system and payment processing via Mercado Pago. Email notifications with Resend
 
-## Figma To Code 
+## Design Proposal
 ![image](https://github.com/manuel-barreiro/InTime/assets/103281038/349be509-3245-4b7c-8086-c92694e23601)
+
+## Finished Product
+
+![image](https://github.com/manuel-barreiro/InTime/assets/103281038/253f4c47-d3b1-458f-94f6-cb8d91274db1)
 
 
 
