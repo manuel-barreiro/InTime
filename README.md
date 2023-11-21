@@ -8,17 +8,19 @@ Design and development of a web application for a bar in Buenos Aires, with orde
 
 ![image](https://github.com/manuel-barreiro/InTime/assets/103281038/253f4c47-d3b1-458f-94f6-cb8d91274db1)
 
-
+## Admin panel
+### /pedidos (orders) and /pagos (payments) are protected routes
+![image](https://github.com/manuel-barreiro/InTime/assets/103281038/8e10c644-4f1e-4300-8a66-dd6ea6d4102d)
 
 
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Node.js, Express.js, Bootstrap, Tailwind, Passport.js, Mongo Atlas
+**Tech used:** Next.js, MongoDB, Tailwind CSS, MercadoPago
 
 ## Optimizations
 
-Some possible optimizations could be adding React, to make the front-end better. Also some functionality could be improved such as deleting and liking comments, and adding usernames in the feed. Of course user-following and post bookmarking would be nice features to add too.
+Some possible optimizations could be adding 
 
 ## Lessons Learned:
 
