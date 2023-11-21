@@ -1,15 +1,9 @@
-# SnapHive
-From breathtaking landscapes to candid snapshots, SnapHive is your gateway to share, discover, and engage with captivating visual narratives. Join the hive and let your stories unfold!
+# ShortCut
+Design and development of a web application for a bar in Buenos Aires, with order system and payment processing via Mercado Pago. Email notifications with Resend
 
-Join the Hive! 
+## Figma To Code 
+![image](https://github.com/manuel-barreiro/InTime/assets/103281038/349be509-3245-4b7c-8086-c92694e23601)
 
-<img width="947" alt="image" src="https://github.com/manuel-barreiro/SnapHive/assets/103281038/8f1529c6-7b5a-4e63-9184-43ab35480071">
-
-<img width="960" alt="image" src="https://github.com/manuel-barreiro/SnapHive/assets/103281038/62dba133-a031-463e-a4a8-456e4288ace0">
-
-<img width="947" alt="image" src="https://github.com/manuel-barreiro/SnapHive/assets/103281038/098e5742-1695-4adc-be4a-c4cd43dc5bd2">
-
-<img width="957" alt="image" src="https://github.com/manuel-barreiro/SnapHive/assets/103281038/d1d9b5de-aa99-4aef-ad95-36282ed31059">
 
 
 
