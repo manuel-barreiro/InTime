@@ -56,32 +56,32 @@ export async function POST(request: Request){
       // },
       // })
 
-      if (paymentData.status === 'approved') {
+      // if (paymentData.status === 'approved') {
 
-      const nombre = paymentData.nombre;
-      const numero_pedido = String(paymentData.id).slice(-4);
-      const correo = paymentData.email;
+      // const nombre = paymentData.nombre;
+      // const numero_pedido = String(paymentData.id).slice(-4);
+      // const correo = paymentData.email;
 
-      try {
-        const { data, error } = await resend.emails.send({
-          from: 'ShortCut <noreply@shortcut.com.ar>',
-          to: [`${correo}`],
-          subject: `Tu pedido #${numero_pedido} está confirmado.`,
-          react: EmailTemplate({
-            nombre,
-            numero_pedido,
-          }) as React.ReactElement,
-        });
+      // try {
+      //   const { data, error } = await resend.emails.send({
+      //     from: 'ShortCut <noreply@shortcut.com.ar>',
+      //     to: [`${correo}`],
+      //     subject: `Tu pedido #${numero_pedido} está confirmado.`,
+      //     react: EmailTemplate({
+      //       nombre,
+      //       numero_pedido,
+      //     }) as React.ReactElement,
+      //   });
     
-        if (error) {
-          return NextResponse.json({ error });
-        }
+      //   if (error) {
+      //     return NextResponse.json({ error });
+      //   }
     
-        return NextResponse.json({ data });
-      } catch (error) {
-        return NextResponse.json({ error });
-      }
-      }
+      //   return NextResponse.json({ data });
+      // } catch (error) {
+      //   return NextResponse.json({ error });
+      // }
+      // }
 
       return NextResponse.json( {message: 'Added order to DB and email sent'}, { status: 200 } )
       
